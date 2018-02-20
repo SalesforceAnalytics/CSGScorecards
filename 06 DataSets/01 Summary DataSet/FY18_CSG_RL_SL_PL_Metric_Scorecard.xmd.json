@@ -1,0 +1,893 @@
+{
+    "dataset": {},
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [],
+    "dimensions": [
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Console_Segment",
+            "fullyQualifiedName": "Console_Segment",
+            "label": "Console Segment",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Console_Segment",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Scorecard",
+            "fullyQualifiedName": "Scorecard",
+            "label": "Scorecard",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Scorecard",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Type",
+            "fullyQualifiedName": "Type",
+            "label": "Type",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Type",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Console_Geo",
+            "fullyQualifiedName": "Console_Geo",
+            "label": "Console Geo",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Console_Geo",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Geo",
+            "fullyQualifiedName": "Geo",
+            "label": "Geo",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Geo",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Console_Region",
+            "fullyQualifiedName": "Console_Region",
+            "label": "Console Region",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Console_Region",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Region",
+            "fullyQualifiedName": "Region",
+            "label": "Region",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Region",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Console_Subregion",
+            "fullyQualifiedName": "Console_Subregion",
+            "label": "Console Subregion",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Console_Subregion",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Console_Portfolio",
+            "fullyQualifiedName": "Console_Portfolio",
+            "label": "Console Portfolio",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Console_Portfolio",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Num",
+            "fullyQualifiedName": "Num",
+            "label": "#",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Num",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Metric",
+            "fullyQualifiedName": "Metric",
+            "label": "Metric",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Metric",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Month",
+            "fullyQualifiedName": "Month",
+            "label": "Month",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Month",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Is_Current_Month",
+            "fullyQualifiedName": "Is_Current_Month",
+            "label": "Is Current Month",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Is_Current_Month",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Month_Number",
+            "fullyQualifiedName": "Month_Number",
+            "label": "Month Number",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Month_Number",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Year_Number",
+            "fullyQualifiedName": "Year_Number",
+            "label": "Year Number",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Year_Number",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Year_Month",
+            "fullyQualifiedName": "Year_Month",
+            "label": "Year Month",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Year_Month",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Snapshot_Month",
+            "fullyQualifiedName": "Snapshot_Month",
+            "label": "Snapshot Month",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Snapshot_Month",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "ASOF_KEY",
+            "fullyQualifiedName": "ASOF_KEY",
+            "label": "ASOF_KEY",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "ASOF_KEY",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "As_of_Date",
+            "fullyQualifiedName": "As_of_Date",
+            "label": "As of Date",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "As_of_Date",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Annual_Target",
+            "fullyQualifiedName": "Annual_Target",
+            "label": "Annual Target",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Annual_Target",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Target_Copy",
+            "fullyQualifiedName": "Target_Copy",
+            "label": "Target (Copy)",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Target_Copy",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "YTD",
+            "fullyQualifiedName": "YTD",
+            "label": "YTD",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "YTD",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "YTD_Attainment",
+            "fullyQualifiedName": "YTD_Attainment",
+            "label": "YTD Attainment",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "YTD_Attainment",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Prior_Month",
+            "fullyQualifiedName": "Prior_Month",
+            "label": "Prior Month",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Prior_Month",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Prior_Month_Attainment",
+            "fullyQualifiedName": "Prior_Month_Attainment",
+            "label": "Prior Month Attainment",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Prior_Month_Attainment",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Display_Type",
+            "fullyQualifiedName": "Display_Type",
+            "label": "Display Type",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Display_Type",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "User",
+            "fullyQualifiedName": "User",
+            "label": "User",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "User",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Colorization",
+            "fullyQualifiedName": "Colorization",
+            "label": "Colorization",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Colorization",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Colorization_Hex_Code",
+            "fullyQualifiedName": "Colorization_Hex_Code",
+            "label": "Colorization Hex Code",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Colorization_Hex_Code",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Colorization_Rank",
+            "fullyQualifiedName": "Colorization_Rank",
+            "label": "Colorization Rank",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Colorization_Rank",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "METRIC_KEY",
+            "fullyQualifiedName": "METRIC_KEY",
+            "label": "METRIC_KEY",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "METRIC_KEY",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Metric_Class",
+            "fullyQualifiedName": "Metric_Class",
+            "label": "Metric Class",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Metric_Class",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Insights_Central_Link",
+            "fullyQualifiedName": "CSG_Insights_Central_Link",
+            "label": "CSG Insights Central Link",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Insights_Central_Link",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Detail_Dashboard_Name",
+            "fullyQualifiedName": "Detail_Dashboard_Name",
+            "label": "Detail Dashboard Name",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Detail_Dashboard_Name",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "SEGMENT_KEY",
+            "fullyQualifiedName": "SEGMENT_KEY",
+            "label": "SEGMENT KEY",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "SEGMENT_KEY",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Grain_Sort_Order",
+            "fullyQualifiedName": "Grain_Sort_Order",
+            "label": "Grain Sort Order",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Grain_Sort_Order",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Grain_Segment_Sort_Order",
+            "fullyQualifiedName": "Grain_Segment_Sort_Order",
+            "label": "Grain Segment Sort Order",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Grain_Segment_Sort_Order",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_WW",
+            "fullyQualifiedName": "CSG_WW",
+            "label": "CSG WW",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_WW",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Geo_Alt",
+            "fullyQualifiedName": "CSG_Geo_Alt",
+            "label": "CSG Geo Alt",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Geo_Alt",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Geo",
+            "fullyQualifiedName": "CSG_Geo",
+            "label": "CSG Geo",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Geo",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Region_Alt",
+            "fullyQualifiedName": "CSG_Region_Alt",
+            "label": "CSG Region Alt",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Region_Alt",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Region",
+            "fullyQualifiedName": "CSG_Region",
+            "label": "CSG Region",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Region",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Subregion_Alt",
+            "fullyQualifiedName": "CSG_Subregion_Alt",
+            "label": "CSG Subregion Alt",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Subregion_Alt",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Subregion",
+            "fullyQualifiedName": "CSG_Subregion",
+            "label": "CSG Subregion",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Subregion",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Portfolio",
+            "fullyQualifiedName": "CSG_Portfolio",
+            "label": "CSG Portfolio",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Portfolio",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Hierarchy_Version",
+            "fullyQualifiedName": "CSG_Hierarchy_Version",
+            "label": "CSG Hierarchy Version",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Hierarchy_Version",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CONCAT",
+            "fullyQualifiedName": "CONCAT",
+            "label": "CONCAT",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CONCAT",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Security_KEY",
+            "fullyQualifiedName": "Security_KEY",
+            "label": "Security_KEY",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Security_KEY",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        }
+    ],
+    "measures": [
+        {
+            "field": "Annual_Target_Metric",
+            "format": {
+                "customFormat": "[\"$#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Annual_Target_Metric",
+            "label": "Annual Target (Metric)",
+            "origin": "Annual_Target_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "Annual_Target_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "Annual_Target_Pct",
+            "label": "Annual Target (Pct)",
+            "origin": "Annual_Target_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "Annual_Target_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Annual_Target_Num",
+            "label": "Annual Target (Num)",
+            "origin": "Annual_Target_Num",
+            "showInExplorer": true
+        },
+        {
+            "field": "Target_Copy_Metric",
+            "format": {
+                "customFormat": "[\"$#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Target_Copy_Metric",
+            "label": "Target (Copy) (Metric)",
+            "origin": "Target_Copy_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "YTD_Metric",
+            "format": {
+                "customFormat": "[\"$#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "YTD_Metric",
+            "label": "YTD (Metric)",
+            "origin": "YTD_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "YTD_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "YTD_Pct",
+            "label": "YTD (Pct)",
+            "origin": "YTD_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "YTD_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "YTD_Num",
+            "label": "YTD (Num)",
+            "origin": "YTD_Num",
+            "showInExplorer": true
+        },
+        {
+            "field": "YTD_Attainment_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "YTD_Attainment_Pct",
+            "label": "YTD Attainment (Pct)",
+            "origin": "YTD_Attainment_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "Prior_Month_Metric",
+            "format": {
+                "customFormat": "[\"$#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Prior_Month_Metric",
+            "label": "Prior Month (Metric)",
+            "origin": "Prior_Month_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "Prior_Month_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "Prior_Month_Pct",
+            "label": "Prior Month (Pct)",
+            "origin": "Prior_Month_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "Prior_Month_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Prior_Month_Num",
+            "label": "Prior Month (Num)",
+            "origin": "Prior_Month_Num",
+            "showInExplorer": true
+        },
+        {
+            "field": "Prior_Month_Attainment_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "Prior_Month_Attainment_Pct",
+            "label": "Prior Month Attainment (Pct)",
+            "origin": "Prior_Month_Attainment_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "Change_in_YTD_MoM_Metric",
+            "format": {
+                "customFormat": "[\"$#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Change_in_YTD_MoM_Metric",
+            "label": "Change in YTD (MoM) (Metric)",
+            "origin": "Change_in_YTD_MoM_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "Change_in_YTD_MoM_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "Change_in_YTD_MoM_Pct",
+            "label": "Change in YTD (MoM) (Pct)",
+            "origin": "Change_in_YTD_MoM_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "Change_in_YTD_MoM_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Change_in_YTD_MoM_Num",
+            "label": "Change in YTD (MoM) (Num)",
+            "origin": "Change_in_YTD_MoM_Num",
+            "showInExplorer": true
+        },
+        {
+            "field": "Change_in_Attainment_MoM_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "Change_in_Attainment_MoM_Pct",
+            "label": "Change in Attainment (MoM) (Pct)",
+            "origin": "Change_in_Attainment_MoM_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "On_Track",
+            "format": {
+                "customFormat": "[\"\",1]",
+                "decimalDigits": 0
+            },
+            "fullyQualifiedName": "On_Track",
+            "label": "On Track",
+            "origin": "On_Track",
+            "showInExplorer": true
+        },
+        {
+            "field": "Grain_Sort_Order_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Grain_Sort_Order_Num",
+            "label": "Grain Sort Order (Num)",
+            "origin": "Grain_Sort_Order_Num",
+            "showInExplorer": true
+        },
+        {
+            "field": "Grain_Segment_Sort_Order_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Grain_Segment_Sort_Order_Num",
+            "label": "Grain Segment Sort Order (Num)",
+            "origin": "Grain_Segment_Sort_Order_Num",
+            "showInExplorer": true
+        }
+    ],
+    "organizations": [],
+    "showDetailsDefaultFields": []
+}

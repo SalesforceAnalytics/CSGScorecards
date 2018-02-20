@@ -1,0 +1,23 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [],
+  "measures": [
+    {
+      "conditionalFormatting": {},
+      "field": "FY_Baseline_utilization_Score",
+      "format": {},
+      "label": "FY Baseline EWS Score"
+    },
+    {
+      "conditionalFormatting": {},
+      "field": "Utilization_Score",
+      "format": {},
+      "label": "EWS Score"
+    }
+  ],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}

@@ -1,0 +1,311 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "EWS_Growth_Detail_Data_File_RL_PL_csv",
+      "label": "EWS_Growth_Detail_Data_File_RL_PL.csv",
+      "name": "EWS_Growth_Detail_Data_File_RL_PL_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "Snap_Date",
+          "name": "Snap_Date",
+          "type": "Date",
+          "label": "Snap Date",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "Snap_Date_Lightning",
+          "name": "Snap_Date_Lightning",
+          "type": "Date",
+          "label": "Snap Date (Lightning)",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "Account_ID",
+          "name": "Account_ID",
+          "type": "Text",
+          "label": "Account ID"
+        },
+        {
+          "fullyQualifiedName": "Account_Name",
+          "name": "Account_Name",
+          "type": "Text",
+          "label": "Account Name"
+        },
+        {
+          "fullyQualifiedName": "First_Active_Date",
+          "name": "First_Active_Date",
+          "type": "Date",
+          "label": "First Active Date",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "AOV_Band",
+          "name": "AOV_Band",
+          "type": "Text",
+          "label": "AOV Band"
+        },
+        {
+          "fullyQualifiedName": "PL_Responsibility",
+          "name": "PL_Responsibility",
+          "type": "Text",
+          "label": "PL Responsibility"
+        },
+        {
+          "fullyQualifiedName": "CSG_Region",
+          "name": "CSG_Region",
+          "type": "Text",
+          "label": "CSG Region"
+        },
+        {
+          "fullyQualifiedName": "CSG_Subregion",
+          "name": "CSG_Subregion",
+          "type": "Text",
+          "label": "CSG Subregion"
+        },
+        {
+          "fullyQualifiedName": "Org_ID",
+          "name": "Org_ID",
+          "type": "Text",
+          "label": "Org ID"
+        },
+        {
+          "fullyQualifiedName": "Account_Detail_Name",
+          "name": "Account_Detail_Name",
+          "type": "Numeric",
+          "label": "Account Detail Name",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Account_Detail_ID",
+          "name": "Account_Detail_ID",
+          "type": "Text",
+          "label": "Account Detail ID"
+        },
+        {
+          "fullyQualifiedName": "No_of_SFDC_non_OEM_licenses",
+          "name": "No_of_SFDC_non_OEM_licenses",
+          "type": "Numeric",
+          "label": "No. of SFDC (non OEM) licenses",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "FY_Baseline_utilization_Score",
+          "name": "FY_Baseline_utilization_Score",
+          "type": "Numeric",
+          "label": "FY Baseline utilization Score",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 4,
+          "format": "0.000#",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Utilization_Score",
+          "name": "Utilization_Score",
+          "type": "Numeric",
+          "label": "Utilization Score",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 4,
+          "format": "0.0###",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "FY_EWS_Growth_Target",
+          "name": "FY_EWS_Growth_Target",
+          "type": "Numeric",
+          "label": "FY EWS Growth Target",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 1,
+          "format": "0.#",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Util_Score_Change_From_FY_Baseline",
+          "name": "Util_Score_Change_From_FY_Baseline",
+          "type": "Numeric",
+          "label": "Util Score % Change From FY Baseline",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.0#",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "FY_EWS_Growth_Attainment",
+          "name": "FY_EWS_Growth_Attainment",
+          "type": "Numeric",
+          "label": "FY EWS Growth Attainment   ",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "CSG_Portfolio",
+          "name": "CSG_Portfolio",
+          "type": "Text",
+          "label": "CSG Portfolio"
+        },
+        {
+          "fullyQualifiedName": "CSG_Coverage",
+          "name": "CSG_Coverage",
+          "type": "Text",
+          "label": "CSG Coverage"
+        },
+        {
+          "fullyQualifiedName": "Chatter_Adoption",
+          "name": "Chatter_Adoption",
+          "type": "Numeric",
+          "label": "Chatter Adoption",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Mobile_Adoption",
+          "name": "Mobile_Adoption",
+          "type": "Numeric",
+          "label": "Mobile Adoption",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Lightning_Adoption",
+          "name": "Lightning_Adoption",
+          "type": "Numeric",
+          "label": "Lightning Adoption",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Global_Company",
+          "name": "Global_Company",
+          "type": "Text",
+          "label": "Global Company"
+        },
+        {
+          "fullyQualifiedName": "CSG_Geo",
+          "name": "CSG_Geo",
+          "type": "Text",
+          "label": "CSG Geo"
+        },
+        {
+          "fullyQualifiedName": "CSG_WW",
+          "name": "CSG_WW",
+          "type": "Text",
+          "label": "CSG WW"
+        },
+        {
+          "fullyQualifiedName": "Chatter_Activity_1_Month_Prior",
+          "name": "Chatter_Activity_1_Month_Prior",
+          "type": "Numeric",
+          "label": "Chatter Activity - 1 Month Prior",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "0.##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Total_MAU",
+          "name": "Total_MAU",
+          "type": "Numeric",
+          "label": "Total MAU",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Mobile_MAU",
+          "name": "Mobile_MAU",
+          "type": "Numeric",
+          "label": "Mobile MAU",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Lightning_MAU",
+          "name": "Lightning_MAU",
+          "type": "Numeric",
+          "label": "Lightning MAU",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Utilization_Score_Change_M_M",
+          "name": "Utilization_Score_Change_M_M",
+          "type": "Numeric",
+          "label": "Utilization Score Change - M/M",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 4,
+          "format": "0.####",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Utilization_Score_Change_Q_Q",
+          "name": "Utilization_Score_Change_Q_Q",
+          "type": "Numeric",
+          "label": "Utilization Score Change - Q/Q",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 4,
+          "format": "0.00##",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Flag",
+          "name": "Flag",
+          "type": "Text",
+          "label": "Flag"
+        },
+        {
+            "fullyQualifiedName": "CSG_Hierarchy_Version",
+            "name": "CSG_Hierarchy_Version",
+            "type": "Text",
+            "label": "CSG Hierarchy Version"
+        },
+        {
+            "fullyQualifiedName": "CONCAT",
+            "name": "CONCAT",
+            "type": "Text",
+            "label": "CONCAT"
+        },
+        {
+            "fullyQualifiedName": "Security_KEY",
+            "name": "Security_KEY",
+            "type": "Text",
+            "label": "Security_KEY"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Feb7th4_15Security",
+      "label": "Feb7th4_15Security",
+      "name": "Feb7th4_15Security",
+      "fields": [
+      {
+          "fullyQualifiedName": "CSG_Portfolio_ORIGINAL",
+          "name": "CSG_Portfolio_ORIGINAL",
+          "type": "Text",
+          "label": "CSG Portfolio ORIGINAL"
+        },
+        {
+          "fullyQualifiedName": "CSG_Portfolio",
+          "name": "CSG_Portfolio",
+          "type": "Text",
+          "label": "CSG Portfolio"
+        },
+        {
+          "fullyQualifiedName": "CSG_Subregion_ORIGINAL",
+          "name": "CSG_Subregion_ORIGINAL",
+          "type": "Text",
+          "label": "CSG Subregion ORIGINAL"
+        },
+        {
+          "fullyQualifiedName": "CSG_Subregion",
+          "name": "CSG_Subregion",
+          "type": "Text",
+          "label": "CSG Subregion"
+        },
+        {
+          "fullyQualifiedName": "CSG_Region_ORIGINAL",
+          "name": "CSG_Region_ORIGINAL",
+          "type": "Text",
+          "label": "CSG Region ORIGINAL"
+        },
+        {
+          "fullyQualifiedName": "CSG_Region",
+          "name": "CSG_Region",
+          "type": "Text",
+          "label": "CSG Region"
+        },
+        {
+          "fullyQualifiedName": "Geo_ORIGINAL",
+          "name": "Geo_ORIGINAL",
+          "type": "Text",
+          "label": "Geo ORIGINAL"
+        },
+        {
+          "fullyQualifiedName": "Geo",
+          "name": "Geo",
+          "type": "Text",
+          "label": "Geo"
+        },
+        {
+          "fullyQualifiedName": "PSM_User_Id",
+          "name": "PSM_User_Id",
+          "type": "Text",
+          "label": "PSM User Id",
+          "isMultiValue": true,
+          "multiValueSeparator": ";",
+          "precision": 32000
+        },
+        {
+          "fullyQualifiedName": "PSM_User_Name",
+          "name": "PSM_User_Name",
+          "type": "Text",
+          "label": "PSM User Name",
+          "isMultiValue": true,
+          "multiValueSeparator": ";",
+          "precision": 32000
+        },
+        {
+          "fullyQualifiedName": "CSM_User_Id",
+          "name": "CSM_User_Id",
+          "type": "Text",
+          "label": "CSM User Id",
+          "isMultiValue": true,
+          "multiValueSeparator": ";",
+          "precision": 32000
+        },
+        {
+          "fullyQualifiedName": "CSM_User_Name",
+          "name": "CSM_User_Name",
+          "type": "Text",
+          "label": "CSM User Name",
+          "isMultiValue": true,
+          "multiValueSeparator": ";",
+          "precision": 32000
+        },
+        {
+          "fullyQualifiedName": "Access_Override",
+          "name": "Access_Override",
+          "type": "Text",
+          "label": "Access Override",
+          "isMultiValue": true,
+          "multiValueSeparator": ";",
+          "precision": 32000
+        },
+        {
+          "fullyQualifiedName": "Username",
+          "name": "Username",
+          "type": "Text",
+          "label": "Username",
+          "isMultiValue": true,
+          "multiValueSeparator": ";",
+          "precision": 32000
+        }
+      ]
+    }
+  ]
+}
