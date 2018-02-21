@@ -64,6 +64,8 @@
           "name": "PSM_User_Id",
           "type": "Text",
           "label": "PSM User Id",
+          "isMultiValue":true,
+          "multiValueSeparator":",",
           "precision": 10000
         },
         {
@@ -71,6 +73,8 @@
           "name": "PSM_User_Name",
           "type": "Text",
           "label": "PSM User Name",
+          "isMultiValue":true,
+          "multiValueSeparator":",",
           "precision": 10000
         },
         {
@@ -85,6 +89,8 @@
           "name": "CSM_User_Name",
           "type": "Text",
           "label": "CSM User Name",
+          "isMultiValue":true,
+          "multiValueSeparator":",",
           "precision": 10000
         },
         {
@@ -92,6 +98,8 @@
           "name": "Access_Override",
           "type": "Text",
           "label": "Access Override",
+          "isMultiValue":true,
+          "multiValueSeparator":",",
           "precision": 10000
         },
         {
@@ -99,6 +107,8 @@
           "name": "Username",
           "type": "Text",
           "label": "Username",
+          "isMultiValue":true,
+          "multiValueSeparator":",",
           "precision": 10000
         }
       ]
