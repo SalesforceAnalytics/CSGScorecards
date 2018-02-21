@@ -1,0 +1,22 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [
+    {
+      "conditionalFormatting": {},
+      "customActions": [],
+      "field": "Account_Name",
+      "linkTemplateEnabled": true,
+      "members": [],
+      "recordDisplayFields": [],
+      "recordIdField": "Account_ID",
+      "salesforceActions": [],
+      "salesforceActionsEnabled": false
+    }
+  ],
+  "measures": [],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}

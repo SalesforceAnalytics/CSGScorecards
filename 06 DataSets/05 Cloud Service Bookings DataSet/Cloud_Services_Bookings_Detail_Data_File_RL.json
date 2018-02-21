@@ -1,0 +1,350 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "linesTerminatedBy": "\r\n"
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Cloud_Services_Bookings_Detail_Data_File_RL_csv",
+      "label": "Cloud_Services_Bookings_Detail_Data_File_RL.csv",
+      "name": "Cloud_Services_Bookings_Detail_Data_File_RL_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "Forecast_Category",
+          "name": "Forecast_Category",
+          "type": "Text",
+          "label": "Forecast Category"
+        },
+        {
+          "fullyQualifiedName": "Account_ID",
+          "name": "Account_ID",
+          "type": "Text",
+          "label": "Account ID"
+        },
+        {
+          "fullyQualifiedName": "Account_Name",
+          "name": "Account_Name",
+          "type": "Text",
+          "label": "Account Name"
+        },
+        {
+          "fullyQualifiedName": "Global_Company",
+          "name": "Global_Company",
+          "type": "Text",
+          "label": "Global Company"
+        },
+        {
+          "fullyQualifiedName": "Account_Owner_Role",
+          "name": "Account_Owner_Role",
+          "type": "Text",
+          "label": "Account Owner Role"
+        },
+        {
+          "fullyQualifiedName": "Region",
+          "name": "Region",
+          "type": "Text",
+          "label": "Region."
+        },
+        {
+          "fullyQualifiedName": "Opportunity_ID",
+          "name": "Opportunity_ID",
+          "type": "Text",
+          "label": "Opportunity ID"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_ID_18",
+          "name": "Opportunity_ID_18",
+          "type": "Text",
+          "label": "Opportunity ID 18"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Name",
+          "name": "Opportunity_Name",
+          "type": "Text",
+          "label": "Opportunity Name"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Owner",
+          "name": "Opportunity_Owner",
+          "type": "Text",
+          "label": "Opportunity Owner"
+        },
+        {
+          "fullyQualifiedName": "Owner_Role",
+          "name": "Owner_Role",
+          "type": "Text",
+          "label": "Owner Role"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Record_Type",
+          "name": "Opportunity_Record_Type",
+          "type": "Text",
+          "label": "Opportunity Record Type"
+        },
+        {
+          "fullyQualifiedName": "Account_Type",
+          "name": "Account_Type",
+          "type": "Text",
+          "label": "Account Type"
+        },
+        {
+          "fullyQualifiedName": "Type",
+          "name": "Type",
+          "type": "Text",
+          "label": "Type"
+        },
+        {
+          "fullyQualifiedName": "Practice",
+          "name": "Practice",
+          "type": "Text",
+          "label": "Practice"
+        },
+        {
+          "fullyQualifiedName": "Practices_Support_Offerings",
+          "name": "Practices_Support_Offerings",
+          "type": "Text",
+          "label": "Practices - Support Offerings"
+        },
+        {
+          "fullyQualifiedName": "Primary_Coverage_Country_PCC",
+          "name": "Primary_Coverage_Country_PCC",
+          "type": "Text",
+          "label": "Primary Coverage Country (PCC)"
+        },
+        {
+          "fullyQualifiedName": "Sales_Segment",
+          "name": "Sales_Segment",
+          "type": "Text",
+          "label": "Sales Segment"
+        },
+        {
+          "fullyQualifiedName": "Macro_Segment",
+          "name": "Macro_Segment",
+          "type": "Text",
+          "label": "Macro Segment"
+        },
+        {
+          "fullyQualifiedName": "CSG_Qual_Opp_Portfolio",
+          "name": "CSG_Qual_Opp_Portfolio",
+          "type": "Text",
+          "label": "CSG Qual Opp Portfolio"
+        },
+        {
+          "fullyQualifiedName": "PL_Responsibility",
+          "name": "PL_Responsibility",
+          "type": "Text",
+          "label": "PL Responsibility"
+        },
+        {
+          "fullyQualifiedName": "Classification",
+          "name": "Classification",
+          "type": "Text",
+          "label": "Classification"
+        },
+        {
+          "fullyQualifiedName": "Support_Level",
+          "name": "Support_Level",
+          "type": "Text",
+          "label": "Support Level"
+        },
+        {
+          "fullyQualifiedName": "Support_LoB",
+          "name": "Support_LoB",
+          "type": "Text",
+          "label": "Support LoB"
+        },
+        {
+          "fullyQualifiedName": "CFL_Segment",
+          "name": "CFL_Segment",
+          "type": "Text",
+          "label": "CFL Segment"
+        },
+        {
+          "fullyQualifiedName": "Amount_converted",
+          "name": "Amount_converted",
+          "type": "Numeric",
+          "label": "Amount (converted)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Region1",
+          "name": "Region1",
+          "type": "Text",
+          "label": "Region"
+        },
+        {
+          "fullyQualifiedName": "Fiscal_Period",
+          "name": "Fiscal_Period",
+          "type": "Text",
+          "label": "Fiscal Period"
+        },
+        {
+          "fullyQualifiedName": "Close_Date",
+          "name": "Close_Date",
+          "type": "Date",
+          "label": "Close Date",
+          "format": "yyyy-MM-dd"
+        },
+        {
+          "fullyQualifiedName": "Related_Services_Opportunity",
+          "name": "Related_Services_Opportunity",
+          "type": "Text",
+          "label": "Related Services Opportunity"
+        },
+        {
+          "fullyQualifiedName": "Related_License_Oppty",
+          "name": "Related_License_Oppty",
+          "type": "Text",
+          "label": "Related License Oppty"
+        },
+        {
+          "fullyQualifiedName": "Org_Status_DW",
+          "name": "Org_Status_DW",
+          "type": "Text",
+          "label": "Org Status (DW)"
+        },
+        {
+          "fullyQualifiedName": "Premier_Attached",
+          "name": "Premier_Attached",
+          "type": "Numeric",
+          "label": "Premier Attached",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Premier_Upsell_Upgrade",
+          "name": "Premier_Upsell_Upgrade",
+          "type": "Numeric",
+          "label": "Premier Upsell/Upgrade",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 0,
+          "format": "0"
+        },
+        {
+          "fullyQualifiedName": "Success_Partner",
+          "name": "Success_Partner",
+          "type": "Text",
+          "label": "Success Partner"
+        },
+        {
+          "fullyQualifiedName": "Bookings_Type",
+          "name": "Bookings_Type",
+          "type": "Text",
+          "label": "Bookings Type"
+        },
+        {
+          "fullyQualifiedName": "Product_Raw",
+          "name": "Product_Raw",
+          "type": "Text",
+          "label": "Product Raw"
+        },
+        {
+          "fullyQualifiedName": "Products",
+          "name": "Products",
+          "type": "Text",
+          "label": "Products"
+        },
+        {
+          "fullyQualifiedName": "Bookings",
+          "name": "Bookings",
+          "type": "Numeric",
+          "label": "Bookings",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Close_Month",
+          "name": "Close_Month",
+          "type": "Date",
+          "label": "Close Month",
+          "format": "yyyy-MM-dd"
+        },
+        {
+          "fullyQualifiedName": "Geo_Roll_Up",
+          "name": "Geo_Roll_Up",
+          "type": "Text",
+          "label": "Geo Roll-Up"
+        },
+        {
+          "fullyQualifiedName": "CSG_Region_Roll_Up",
+          "name": "CSG_Region_Roll_Up",
+          "type": "Text",
+          "label": "CSG Region Roll-Up"
+        },
+        {
+          "fullyQualifiedName": "BM_Territory_Level_1",
+          "name": "BM_Territory_Level_1",
+          "type": "Text",
+          "label": "BM Territory Level 1"
+        },
+        {
+          "fullyQualifiedName": "BM_Level_1",
+          "name": "BM_Level_1",
+          "type": "Text",
+          "label": "BM Level 1"
+        },
+        {
+          "fullyQualifiedName": "BM_Territory_Level_2",
+          "name": "BM_Territory_Level_2",
+          "type": "Text",
+          "label": "BM Territory Level 2"
+        },
+        {
+          "fullyQualifiedName": "BM_Level_2",
+          "name": "BM_Level_2",
+          "type": "Text",
+          "label": "BM Level 2"
+        },
+        {
+          "fullyQualifiedName": "SP_SA_EID",
+          "name": "SP_SA_EID",
+          "type": "Text",
+          "label": "SP/SA EID"
+        },
+        {
+          "fullyQualifiedName": "SP_SA",
+          "name": "SP_SA",
+          "type": "Text",
+          "label": "SP/SA"
+        },
+        {
+            "fullyQualifiedName": "CSG_WW",
+            "name": "CSG_WW",
+            "type": "Text",
+            "label": "CSG WW"
+        },
+        {
+            "fullyQualifiedName": "CSG_Hierarchy_Version",
+            "name": "CSG_Hierarchy_Version",
+            "type": "Text",
+            "label": "CSG Hierarchy Version"
+        },
+        {
+            "fullyQualifiedName": "CONCAT",
+            "name": "CONCAT",
+            "type": "Text",
+            "label": "CONCAT"
+        },
+        {
+            "fullyQualifiedName": "Security_KEY",
+            "name": "Security_KEY",
+            "type": "Text",
+            "label": "Security_KEY"
+        }
+      ]
+    }
+  ]
+}

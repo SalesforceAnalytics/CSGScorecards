@@ -1,0 +1,123 @@
+{
+  "dataset": {},
+  "dates": [],
+  "derivedDimensions": [],
+  "derivedMeasures": [],
+  "dimensions": [
+{
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSG_Region_ORIGINAL",
+      "label": "CSG Region ORIGINAL",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSG_Portfolio",
+      "label": "CSG Portfolio",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSG_Portfolio_ORIGINAL",
+      "label": "CSG Portfolio ORIGINAL",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSG_Region",
+      "label": "CSG Region",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "Access_Override",
+      "label": "Access Override",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "Geo_ORIGINAL",
+      "label": "Geo ORIGINAL",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSM_User_Id",
+      "label": "CSM User Id",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "Geo",
+      "label": "Geo",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "Username",
+      "label": "Username",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSM_User_Name",
+      "label": "CSM User Name",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "PSM_User_Name",
+      "label": "PSM User Name",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSG_Subregion",
+      "label": "CSG Subregion",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "PSM_User_Id",
+      "label": "PSM User Id",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    },
+    {
+      "recordDisplayFields": [],
+      "linkTemplateEnabled": true,
+      "field": "CSG_Subregion_ORIGINAL",
+      "label": "CSG Subregion ORIGINAL",
+      "salesforceActionsEnabled": true,
+      "salesforceActions": []
+    }
+  ],
+  "measures": [],
+  "organizations": [],
+  "showDetailsDefaultFields": []
+}

@@ -1,0 +1,471 @@
+{
+    "objects": [
+        {
+            "connector": "CSV",
+            "fullyQualifiedName": "FY18_CSG_RL_SL_PL_Metric_Scorecard_csv",
+            "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard.csv",
+            "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard_csv",
+            "fields": [
+                {
+                    "fullyQualifiedName": "Console_Segment",
+                    "name": "Console_Segment",
+                    "type": "Text",
+                    "label": "Console Segment"
+                },
+                {
+                    "fullyQualifiedName": "Scorecard",
+                    "name": "Scorecard",
+                    "type": "Text",
+                    "label": "Scorecard"
+                },
+                {
+                    "fullyQualifiedName": "Type",
+                    "name": "Type",
+                    "type": "Text",
+                    "label": "Type"
+                },
+                {
+                    "fullyQualifiedName": "Console_Geo",
+                    "name": "Console_Geo",
+                    "type": "Text",
+                    "label": "Console Geo"
+                },
+                {
+                    "fullyQualifiedName": "Geo",
+                    "name": "Geo",
+                    "type": "Text",
+                    "label": "Geo"
+                },
+                {
+                    "fullyQualifiedName": "Console_Region",
+                    "name": "Console_Region",
+                    "type": "Text",
+                    "label": "Console Region"
+                },
+                {
+                    "fullyQualifiedName": "Region",
+                    "name": "Region",
+                    "type": "Text",
+                    "label": "Region"
+                },
+                {
+                    "fullyQualifiedName": "Console_Subregion",
+                    "name": "Console_Subregion",
+                    "type": "Text",
+                    "label": "Console Subregion"
+                },
+                {
+                    "fullyQualifiedName": "Console_Portfolio",
+                    "name": "Console_Portfolio",
+                    "type": "Text",
+                    "label": "Console Portfolio"
+                },
+                {
+                    "fullyQualifiedName": "Num",
+                    "name": "Num",
+                    "type": "Text",
+                    "label": "#"
+                },
+                {
+                    "fullyQualifiedName": "Metric",
+                    "name": "Metric",
+                    "type": "Text",
+                    "label": "Metric"
+                },
+                {
+                    "fullyQualifiedName": "Month",
+                    "name": "Month",
+                    "type": "Text",
+                    "label": "Month"
+                },
+                {
+                    "fullyQualifiedName": "Is_Current_Month",
+                    "name": "Is_Current_Month",
+                    "type": "Text",
+                    "label": "Is Current Month"
+                },
+                {
+                    "fullyQualifiedName": "Month_Number",
+                    "name": "Month_Number",
+                    "type": "Text",
+                    "label": "Month Number"
+                },
+                {
+                    "fullyQualifiedName": "Year_Number",
+                    "name": "Year_Number",
+                    "type": "Text",
+                    "label": "Year Number"
+                },
+                {
+                    "fullyQualifiedName": "Year_Month",
+                    "name": "Year_Month",
+                    "type": "Text",
+                    "label": "Year Month"
+                },
+                {
+                    "fullyQualifiedName": "Snapshot_Month",
+                    "name": "Snapshot_Month",
+                    "type": "Text",
+                    "label": "Snapshot Month"
+                },
+                {
+                    "fullyQualifiedName": "ASOF_KEY",
+                    "name": "ASOF_KEY",
+                    "type": "Text",
+                    "label": "ASOF_KEY"
+                },
+                {
+                    "fullyQualifiedName": "As_of_Date",
+                    "name": "As_of_Date",
+                    "type": "Text",
+                    "label": "As of Date"
+                },
+                {
+                    "fullyQualifiedName": "Annual_Target",
+                    "name": "Annual_Target",
+                    "type": "Text",
+                    "label": "Annual Target"
+                },
+                {
+                    "fullyQualifiedName": "Target_Copy",
+                    "name": "Target_Copy",
+                    "type": "Text",
+                    "label": "Target (Copy)"
+                },
+                {
+                    "fullyQualifiedName": "YTD",
+                    "name": "YTD",
+                    "type": "Text",
+                    "label": "YTD"
+                },
+                {
+                    "fullyQualifiedName": "YTD_Attainment",
+                    "name": "YTD_Attainment",
+                    "type": "Text",
+                    "label": "YTD Attainment"
+                },
+                {
+                    "fullyQualifiedName": "Prior_Month",
+                    "name": "Prior_Month",
+                    "type": "Text",
+                    "label": "Prior Month"
+                },
+                {
+                    "fullyQualifiedName": "Prior_Month_Attainment",
+                    "name": "Prior_Month_Attainment",
+                    "type": "Text",
+                    "label": "Prior Month Attainment"
+                },
+                {
+                    "fullyQualifiedName": "Display_Type",
+                    "name": "Display_Type",
+                    "type": "Text",
+                    "label": "Display Type"
+                },
+                {
+                    "fullyQualifiedName": "Annual_Target_Metric",
+                    "name": "Annual_Target_Metric",
+                    "type": "Numeric",
+                    "label": "Annual Target (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Annual_Target_Pct",
+                    "name": "Annual_Target_Pct",
+                    "type": "Numeric",
+                    "label": "Annual Target (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Annual_Target_Num",
+                    "name": "Annual_Target_Num",
+                    "type": "Numeric",
+                    "label": "Annual Target (Num)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Target_Copy_Metric",
+                    "name": "Target_Copy_Metric",
+                    "type": "Numeric",
+                    "label": "Target (Copy) (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "YTD_Metric",
+                    "name": "YTD_Metric",
+                    "type": "Numeric",
+                    "label": "YTD (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "YTD_Pct",
+                    "name": "YTD_Pct",
+                    "type": "Numeric",
+                    "label": "YTD (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "YTD_Num",
+                    "name": "YTD_Num",
+                    "type": "Numeric",
+                    "label": "YTD (Num)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "YTD_Attainment_Pct",
+                    "name": "YTD_Attainment_Pct",
+                    "type": "Numeric",
+                    "label": "YTD Attainment (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Prior_Month_Metric",
+                    "name": "Prior_Month_Metric",
+                    "type": "Numeric",
+                    "label": "Prior Month (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Prior_Month_Pct",
+                    "name": "Prior_Month_Pct",
+                    "type": "Numeric",
+                    "label": "Prior Month (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Prior_Month_Num",
+                    "name": "Prior_Month_Num",
+                    "type": "Numeric",
+                    "label": "Prior Month (Num)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Prior_Month_Attainment_Pct",
+                    "name": "Prior_Month_Attainment_Pct",
+                    "type": "Numeric",
+                    "label": "Prior Month Attainment (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Change_in_YTD_MoM_Metric",
+                    "name": "Change_in_YTD_MoM_Metric",
+                    "type": "Numeric",
+                    "label": "Change in YTD (MoM) (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Change_in_YTD_MoM_Pct",
+                    "name": "Change_in_YTD_MoM_Pct",
+                    "type": "Numeric",
+                    "label": "Change in YTD (MoM) (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Change_in_YTD_MoM_Num",
+                    "name": "Change_in_YTD_MoM_Num",
+                    "type": "Numeric",
+                    "label": "Change in YTD (MoM) (Num)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Change_in_Attainment_MoM_Pct",
+                    "name": "Change_in_Attainment_MoM_Pct",
+                    "type": "Numeric",
+                    "label": "Change in Attainment (MoM) (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "User",
+                    "name": "User",
+                    "type": "Text",
+                    "label": "User"
+                },
+                {
+                    "fullyQualifiedName": "On_Track",
+                    "name": "On_Track",
+                    "type": "Numeric",
+                    "label": "On Track",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 1
+                },
+                {
+                    "fullyQualifiedName": "Colorization",
+                    "name": "Colorization",
+                    "type": "Text",
+                    "label": "Colorization"
+                },
+                {
+                    "fullyQualifiedName": "Colorization_Hex_Code",
+                    "name": "Colorization_Hex_Code",
+                    "type": "Text",
+                    "label": "Colorization Hex Code"
+                },
+                {
+                    "fullyQualifiedName": "Colorization_Rank",
+                    "name": "Colorization_Rank",
+                    "type": "Text",
+                    "label": "Colorization Rank"
+                },
+                {
+                    "fullyQualifiedName": "METRIC_KEY",
+                    "name": "METRIC_KEY",
+                    "type": "Text",
+                    "label": "METRIC KEY"
+                },
+                {
+                    "fullyQualifiedName": "Metric_Class",
+                    "name": "Metric_Class",
+                    "type": "Text",
+                    "label": "Metric Class"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Insights_Central_Link",
+                    "name": "CSG_Insights_Central_Link",
+                    "type": "Text",
+                    "label": "CSG Insights Central Link"
+                },
+                {
+                    "fullyQualifiedName": "Detail_Dashboard_Name",
+                    "name": "Detail_Dashboard_Name",
+                    "type": "Text",
+                    "label": "Detail Dashboard Name"
+                },
+                {
+                    "fullyQualifiedName": "SEGMENT_KEY",
+                    "name": "SEGMENT_KEY",
+                    "type": "Text",
+                    "label": "SEGMENT KEY"
+                },
+                {
+                    "fullyQualifiedName": "Grain_Sort_Order",
+                    "name": "Grain_Sort_Order",
+                    "type": "Text",
+                    "label": "Grain Sort Order"
+                },
+                {
+                    "fullyQualifiedName": "Grain_Segment_Sort_Order",
+                    "name": "Grain_Segment_Sort_Order",
+                    "type": "Text",
+                    "label": "Grain Segment Sort Order"
+                },
+                {
+                    "fullyQualifiedName": "Grain_Sort_Order_Num",
+                    "name": "Grain_Sort_Order_Num",
+                    "type": "Numeric",
+                    "label": "Grain Sort Order (Num)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Grain_Segment_Sort_Order_Num",
+                    "name": "Grain_Segment_Sort_Order_Num",
+                    "type": "Numeric",
+                    "label": "Grain Segment Sort Order (Num)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "CSG_WW",
+                    "name": "CSG_WW",
+                    "type": "Text",
+                    "label": "CSG WW"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Geo_Alt",
+                    "name": "CSG_Geo_Alt",
+                    "type": "Text",
+                    "label": "CSG Geo Alt"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Geo",
+                    "name": "CSG_Geo",
+                    "type": "Text",
+                    "label": "CSG Geo"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Region_Alt",
+                    "name": "CSG_Region_Alt",
+                    "type": "Text",
+                    "label": "CSG Region Alt"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Region",
+                    "name": "CSG_Region",
+                    "type": "Text",
+                    "label": "CSG Region"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Subregion_Alt",
+                    "name": "CSG_Subregion_Alt",
+                    "type": "Text",
+                    "label": "CSG Subregion Alt"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Subregion",
+                    "name": "CSG_Subregion",
+                    "type": "Text",
+                    "label": "CSG Subregion"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Portfolio",
+                    "name": "CSG_Portfolio",
+                    "type": "Text",
+                    "label": "CSG Portfolio"
+                },
+                {
+                    "fullyQualifiedName": "CSG_Hierarchy_Version",
+                    "name": "CSG_Hierarchy_Version",
+                    "type": "Text",
+                    "label": "CSG Hierarchy Version"
+                },
+                {
+                    "fullyQualifiedName": "CONCAT",
+                    "name": "CONCAT",
+                    "type": "Text",
+                    "label": "CONCAT"
+                },
+                {
+                    "fullyQualifiedName": "Security_KEY",
+                    "name": "Security_KEY",
+                    "type": "Text",
+                    "label": "Security_KEY"
+                }
+            ]
+        }
+    ]
+}
