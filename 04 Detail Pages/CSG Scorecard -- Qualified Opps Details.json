@@ -7,7 +7,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Geo"
                     },
@@ -23,7 +23,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Console_Region"
                     },
@@ -39,7 +39,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Console_Subregion"
                     },
@@ -55,7 +55,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Console_Portfolio"
                     },
@@ -989,7 +989,7 @@
                     "cellSpacingY": 0,
                     "fit": "original",
                     "image": {
-                        "name": "Scorecard_Banner_Detailspng3",
+                        "name": "Scorecard_Banner_Detailspng",
                         "namespace": ""
                     }
                 },
@@ -1028,10 +1028,10 @@
                 "broadcastFacet": true,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1052,6 +1052,50 @@
                 "useGlobal": true,
                 "visualizationParameters": {
                     "options": {}
+                }
+            },
+            "Is_Current_Month_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Is_Current_Month_1",
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Is_Current_Month"
+                    ],
+                    "filters": [
+                        [
+                            "Is_Current_Month",
+                            [
+                                "Current Snapshot"
+                            ],
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": true,
+                "selectMode": "single",
+                "start": [
+                    "Current Snapshot"
+                ],
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "visualizationType": "hbar"
                 }
             },
             "QO_trend_1": {
@@ -1083,11 +1127,11 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
-                        "visualizationType": "time",
                         "missingValue": "connect",
+                        "visualizationType": "time",
                         "dashLine": {
                             "measures": "",
                             "showDashLine": false
@@ -1098,8 +1142,8 @@
                             "title": ""
                         },
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -1138,57 +1182,13 @@
                         "theme": "wave",
                         "drawArea": {
                             "measure": "",
-                            "showDrawArea": false,
                             "bounding1": "",
+                            "showDrawArea": false,
                             "bounding2": ""
                         }
                     },
                     "type": "chart",
                     "visualizationType": "time"
-                }
-            },
-            "Is_Current_Month_1": {
-                "broadcastFacet": true,
-                "datasets": [
-                    {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
-                    }
-                ],
-                "isGlobal": false,
-                "label": "Is_Current_Month_1",
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Is_Current_Month"
-                    ],
-                    "filters": [
-                        [
-                            "Is_Current_Month",
-                            [
-                                "Current Snapshot"
-                            ],
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": true,
-                "selectMode": "single",
-                "start": [
-                    "Current Snapshot"
-                ],
-                "type": "aggregateflex",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "visualizationType": "hbar"
                 }
             },
             "Static_timeperiod_grouping": {
@@ -1214,10 +1214,10 @@
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1260,10 +1260,10 @@
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1312,55 +1312,14 @@
                     "options": {}
                 }
             },
-            "Metric_type": {
-                "broadcastFacet": true,
-                "datasets": [
-                    {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
-                    }
-                ],
-                "isGlobal": false,
-                "label": "Metric_type",
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Type"
-                    ],
-                    "filters": [
-                        [
-                            "Metric",
-                            [
-                                "{{column(Metric_2.selection,[\"value\"]).asObject()}}"
-                            ],
-                            "=="
-                        ]
-                    ]
-                },
-                "receiveFacet": true,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "visualizationType": "hbar"
-                }
-            },
             "step_listselector_region_FFF": {
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1409,14 +1368,190 @@
                     "options": {}
                 }
             },
+            "Metric_type": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Metric_type",
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Type"
+                    ],
+                    "filters": [
+                        [
+                            "Metric",
+                            [
+                                "{{column(Metric_2.selection,[\"value\"]).asObject()}}"
+                            ],
+                            "=="
+                        ]
+                    ]
+                },
+                "receiveFacet": true,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "visualizationType": "hbar"
+                }
+            },
+            "Annual_Target_Metric_1": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "Annual_Target_Metric_1",
+                "numbers": [],
+                "query": "q = load \"FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Qualified Opps\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "receiveFacet": true,
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "showValues": true,
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "showBinLabel": true,
+                            "measures": "",
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": "",
+                            "customizeTooltip": false
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "subtitleFontSize": 11,
+                            "fontSize": 14,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            },
+                            "title": ""
+                        }
+                    },
+                    "type": "chart",
+                    "visualizationType": "hbar"
+                }
+            },
+            "Static_sort_order": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "",
+                "numbers": [],
+                "selectMode": "singlerequired",
+                "start": {
+                    "display": [
+                        "Top 10"
+                    ]
+                },
+                "strings": [],
+                "type": "staticflex",
+                "values": [
+                    {
+                        "display": "Top 10",
+                        "value": "desc"
+                    },
+                    {
+                        "display": "Bottom 10",
+                        "value": "asc"
+                    }
+                ]
+            },
             "step_listselector_geo_FFF": {
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1463,141 +1598,6 @@
                 "useGlobal": true,
                 "visualizationParameters": {
                     "options": {}
-                }
-            },
-            "Static_sort_order": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "",
-                "numbers": [],
-                "selectMode": "singlerequired",
-                "start": {
-                    "display": [
-                        "Top 10"
-                    ]
-                },
-                "strings": [],
-                "type": "staticflex",
-                "values": [
-                    {
-                        "display": "Top 10",
-                        "value": "desc"
-                    },
-                    {
-                        "display": "Bottom 10",
-                        "value": "asc"
-                    }
-                ]
-            },
-            "Annual_Target_Metric_1": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "Annual_Target_Metric_1",
-                "numbers": [],
-                "query": "q = load \"POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Qualified Opps\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
-                "receiveFacet": true,
-                "selectMode": "single",
-                "strings": [],
-                "type": "saql",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "showValues": true,
-                        "bins": {
-                            "breakpoints": {
-                                "high": 100,
-                                "low": 0
-                            },
-                            "bands": {
-                                "high": {
-                                    "color": "#008000",
-                                    "label": ""
-                                },
-                                "low": {
-                                    "color": "#B22222",
-                                    "label": ""
-                                },
-                                "medium": {
-                                    "color": "#ffa500",
-                                    "label": ""
-                                }
-                            }
-                        },
-                        "legend": {
-                            "showHeader": true,
-                            "show": true,
-                            "customSize": "auto",
-                            "position": "right-top",
-                            "inside": false
-                        },
-                        "axisMode": "multi",
-                        "tooltip": {
-                            "showBinLabel": true,
-                            "measures": "",
-                            "showPercentage": true,
-                            "showDimensions": true,
-                            "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
-                        },
-                        "visualizationType": "hbar",
-                        "title": {
-                            "fontSize": 14,
-                            "subtitleFontSize": 11,
-                            "label": "",
-                            "align": "center",
-                            "subtitleLabel": ""
-                        },
-                        "binValues": false,
-                        "trellis": {
-                            "flipLabels": false,
-                            "showGridLines": true,
-                            "size": [
-                                100,
-                                100
-                            ],
-                            "enable": false,
-                            "type": "x",
-                            "chartsPerLine": 4
-                        },
-                        "measureAxis2": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "measureAxis1": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "theme": "wave",
-                        "dimensionAxis": {
-                            "showTitle": true,
-                            "customSize": "auto",
-                            "showAxis": true,
-                            "title": "",
-                            "icons": {
-                                "useIcons": false,
-                                "iconProps": {
-                                    "fit": "cover",
-                                    "column": "",
-                                    "type": "round"
-                                }
-                            }
-                        }
-                    },
-                    "type": "chart",
-                    "visualizationType": "hbar"
                 }
             },
             "Qualified_Ops_raw_ta_1": {
@@ -1647,7 +1647,7 @@
                 "groups": [],
                 "label": "Year_Month_1",
                 "numbers": [],
-                "query": "q = load \"POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Qualified Opps\";\nq = group q by 'Year_Month';\nq = foreach q generate 'Year_Month' as 'Year_Month', sum('{{column(Static_Grouping_5.selection,[\"value\"]).asObject()}}') as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
+                "query": "q = load \"FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Qualified Opps\";\nq = group q by 'Year_Month';\nq = foreach q generate 'Year_Month' as 'Year_Month', sum('{{column(Static_Grouping_5.selection,[\"value\"]).asObject()}}') as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
                 "receiveFacet": false,
                 "selectMode": "single",
                 "strings": [],
@@ -1692,13 +1692,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -1738,7 +1738,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -1746,7 +1745,8 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart",
@@ -1803,13 +1803,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -1849,7 +1849,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -1857,7 +1856,8 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart",
@@ -1932,13 +1932,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -1978,7 +1978,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -1986,49 +1985,11 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart"
-                }
-            },
-            "Cal_1": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Month",
-                        "Month_Number",
-                        "Year_Number"
-                    ],
-                    "filters": [
-                        [
-                            "Is_Current_Month",
-                            "{{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"Error\").asObject()}}",
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "multi",
-                "type": "aggregateflex",
-                "useGlobal": false,
-                "visualizationParameters": {
-                    "options": {}
                 }
             },
             "lens_4": {
@@ -2080,13 +2041,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -2126,7 +2087,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -2134,7 +2094,8 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart",
@@ -2145,10 +2106,10 @@
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -2193,6 +2154,45 @@
                 "selectMode": "single",
                 "type": "aggregateflex",
                 "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {}
+                }
+            },
+            "Cal_1": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Month",
+                        "Month_Number",
+                        "Year_Number"
+                    ],
+                    "filters": [
+                        [
+                            "Is_Current_Month",
+                            "{{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"Error\").asObject()}}",
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": false,
                 "visualizationParameters": {
                     "options": {}
                 }
@@ -2374,18 +2374,10 @@
                 },
                 "type": "text"
             },
-            "container_7": {
-                "parameters": {
-                    "alignmentX": "left",
-                    "alignmentY": "top",
-                    "fit": "original"
-                },
-                "type": "container"
-            },
             "chart_5": {
                 "parameters": {
-                    "autoFitMode": "none",
                     "totalValue": "computeTotal",
+                    "autoFitMode": "none",
                     "showValues": true,
                     "bins": {
                         "breakpoints": {
@@ -2421,14 +2413,14 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
                     "visualizationType": "hbar",
                     "exploreLink": true,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
@@ -2464,13 +2456,12 @@
                             "showDomain": false
                         }
                     },
-                    "theme": "wave",
                     "step": "QO_by_stage_1",
+                    "theme": "wave",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
                         "showAxis": true,
-                        "title": "",
                         "icons": {
                             "useIcons": false,
                             "iconProps": {
@@ -2478,10 +2469,19 @@
                                 "column": "",
                                 "type": "round"
                             }
-                        }
+                        },
+                        "title": ""
                     }
                 },
                 "type": "chart"
+            },
+            "container_7": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
             },
             "text_5": {
                 "parameters": {
@@ -2528,8 +2528,8 @@
             },
             "chart_2": {
                 "parameters": {
-                    "autoFitMode": "none",
                     "totalValue": "computeTotal",
+                    "autoFitMode": "none",
                     "showValues": true,
                     "bins": {
                         "breakpoints": {
@@ -2565,14 +2565,14 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
                     "visualizationType": "hbar",
                     "exploreLink": false,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
@@ -2608,13 +2608,12 @@
                             "showDomain": false
                         }
                     },
-                    "theme": "wave",
                     "step": "lens_3",
+                    "theme": "wave",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
                         "showAxis": true,
-                        "title": "",
                         "icons": {
                             "useIcons": false,
                             "iconProps": {
@@ -2622,15 +2621,25 @@
                                 "column": "",
                                 "type": "round"
                             }
-                        }
+                        },
+                        "title": ""
                     }
                 },
                 "type": "chart"
             },
+            "text_6": {
+                "parameters": {
+                    "fontSize": 20,
+                    "text": "Qualified Opportunities Trend",
+                    "textAlignment": "left",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
             "chart_1": {
                 "parameters": {
-                    "autoFitMode": "fit",
                     "totalValue": "computeTotal",
+                    "autoFitMode": "fit",
                     "showValues": true,
                     "bins": {
                         "breakpoints": {
@@ -2667,8 +2676,8 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
                     "visualizationType": "line",
                     "dashLine": {
@@ -2676,14 +2685,14 @@
                         "showDashLine": false
                     },
                     "exploreLink": true,
+                    "binValues": false,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
                     },
-                    "binValues": false,
                     "trellis": {
                         "flipLabels": false,
                         "showGridLines": true,
@@ -2707,6 +2716,7 @@
                             "showDomain": false
                         }
                     },
+                    "valueType": "none",
                     "measureAxis1": {
                         "sqrtScale": false,
                         "showTitle": true,
@@ -2716,14 +2726,12 @@
                             "showDomain": false
                         }
                     },
-                    "valueType": "none",
                     "theme": "wave",
                     "step": "Year_Month_1",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
                         "showAxis": true,
-                        "title": "",
                         "icons": {
                             "useIcons": false,
                             "iconProps": {
@@ -2731,25 +2739,17 @@
                                 "column": "",
                                 "type": "round"
                             }
-                        }
+                        },
+                        "title": ""
                     },
                     "drawArea": {
                         "measure": "",
-                        "showDrawArea": false,
                         "bounding1": "",
+                        "showDrawArea": false,
                         "bounding2": ""
                     }
                 },
                 "type": "chart"
-            },
-            "text_6": {
-                "parameters": {
-                    "fontSize": 20,
-                    "text": "Qualified Opportunities Trend",
-                    "textAlignment": "left",
-                    "textColor": "#335779"
-                },
-                "type": "text"
             },
             "text_9": {
                 "parameters": {
@@ -2778,24 +2778,24 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
-                    "visualizationType": "time",
                     "missingValue": "connect",
+                    "visualizationType": "time",
                     "dashLine": {
                         "measures": "",
                         "showDashLine": false
                     },
-                    "exploreLink": false,
                     "timeAxis": {
                         "showTitle": true,
                         "showAxis": true,
                         "title": ""
                     },
+                    "exploreLink": false,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
@@ -2833,28 +2833,16 @@
                         }
                     },
                     "valueType": "none",
-                    "theme": "wave",
                     "step": "QO_trend_1",
+                    "theme": "wave",
                     "drawArea": {
                         "measure": "",
-                        "showDrawArea": false,
                         "bounding1": "",
+                        "showDrawArea": false,
                         "bounding2": ""
                     }
                 },
                 "type": "chart"
-            },
-            "listselector_region_FFF": {
-                "parameters": {
-                    "compact": false,
-                    "displayTemplate": "[Console_Region] ",
-                    "exploreLink": false,
-                    "instant": true,
-                    "measureField": "none",
-                    "step": "step_listselector_region_FFF",
-                    "title": ""
-                },
-                "type": "listselector"
             },
             "text_8": {
                 "parameters": {
@@ -2867,8 +2855,8 @@
             },
             "chart_3": {
                 "parameters": {
-                    "autoFitMode": "none",
                     "totalValue": "computeTotal",
+                    "autoFitMode": "none",
                     "showValues": true,
                     "bins": {
                         "breakpoints": {
@@ -2904,18 +2892,19 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
                     "visualizationType": "hbar",
                     "exploreLink": true,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
                     },
+                    "binValues": false,
                     "trellis": {
                         "flipLabels": false,
                         "showGridLines": true,
@@ -2927,7 +2916,6 @@
                         "type": "x",
                         "chartsPerLine": 4
                     },
-                    "binValues": false,
                     "totalLabel": "",
                     "measureAxis2": {
                         "sqrtScale": false,
@@ -2947,13 +2935,12 @@
                             "showDomain": false
                         }
                     },
-                    "theme": "wave",
                     "step": "lens_4",
+                    "theme": "wave",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
                         "showAxis": true,
-                        "title": "",
                         "icons": {
                             "useIcons": false,
                             "iconProps": {
@@ -2961,10 +2948,23 @@
                                 "column": "",
                                 "type": "round"
                             }
-                        }
+                        },
+                        "title": ""
                     }
                 },
                 "type": "chart"
+            },
+            "listselector_region_FFF": {
+                "parameters": {
+                    "compact": false,
+                    "displayTemplate": "[Console_Region] ",
+                    "exploreLink": false,
+                    "instant": true,
+                    "measureField": "none",
+                    "step": "step_listselector_region_FFF",
+                    "title": ""
+                },
+                "type": "listselector"
             },
             "text_1": {
                 "parameters": {
@@ -3135,6 +3135,15 @@
                 },
                 "type": "text"
             },
+            "text_27": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                },
+                "type": "text"
+            },
             "text_140": {
                 "parameters": {
                     "fontSize": 10,
@@ -3154,15 +3163,6 @@
                     "textColor": "#FFFFFF"
                 },
                 "type": "link"
-            },
-            "text_27": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
-                },
-                "type": "text"
             },
             "text_26": {
                 "parameters": {
@@ -3322,16 +3322,16 @@
     },
     "datasets": [
         {
-            "id": "0Fb0M000000Az0OSAS",
+            "id": "0Fb0t0000008RhUCAU",
             "label": "Qualified_Oppty_Detail_Data_File_RL",
             "name": "Qualified_Oppty_Detail_Data_File_RL",
-            "url": "/services/data/v42.0/wave/datasets/0Fb0M000000Az0OSAS"
+            "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhUCAU"
         },
         {
-            "id": "0Fb0M000000TOvJSAW",
-            "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-            "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-            "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+            "id": "0Fb0t0000008RhWCAU",
+            "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+            "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+            "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
         }
     ]
 }

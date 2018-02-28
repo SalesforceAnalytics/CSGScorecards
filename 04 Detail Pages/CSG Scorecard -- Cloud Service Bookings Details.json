@@ -7,7 +7,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Geo"
                     },
@@ -23,7 +23,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Console_Region"
                     },
@@ -39,7 +39,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Console_Subregion"
                     },
@@ -55,7 +55,7 @@
             {
                 "fields": [
                     {
-                        "dataSourceName": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "dataSourceName": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
                         "dataSourceType": "saql",
                         "fieldName": "Console_Portfolio"
                     },
@@ -949,7 +949,7 @@
                     "cellSpacingY": 0,
                     "fit": "original",
                     "image": {
-                        "name": "Scorecard_Banner_Detailspng3",
+                        "name": "Scorecard_Banner_Detailspng",
                         "namespace": ""
                     }
                 },
@@ -1040,10 +1040,10 @@
                 "broadcastFacet": true,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1176,10 +1176,10 @@
                 "broadcastFacet": true,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1217,10 +1217,10 @@
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1269,38 +1269,14 @@
                     "options": {}
                 }
             },
-            "Static_Grouping_ews": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "",
-                "numbers": [],
-                "selectMode": "singlerequired",
-                "start": {
-                    "display": [
-                        "Account Name"
-                    ]
-                },
-                "strings": [],
-                "type": "staticflex",
-                "values": [
-                    {
-                        "display": "Global Company",
-                        "value": "Global_Company"
-                    },
-                    {
-                        "display": "Account Name",
-                        "value": "Account_Name"
-                    }
-                ]
-            },
             "step_listselector_subregion_FFF": {
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1348,6 +1324,30 @@
                 "visualizationParameters": {
                     "options": {}
                 }
+            },
+            "Static_Grouping_ews": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "",
+                "numbers": [],
+                "selectMode": "singlerequired",
+                "start": {
+                    "display": [
+                        "Account Name"
+                    ]
+                },
+                "strings": [],
+                "type": "staticflex",
+                "values": [
+                    {
+                        "display": "Global Company",
+                        "value": "Global_Company"
+                    },
+                    {
+                        "display": "Account Name",
+                        "value": "Account_Name"
+                    }
+                ]
             },
             "Static_sort_order_lightning": {
                 "broadcastFacet": true,
@@ -1423,13 +1423,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -1469,7 +1469,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -1477,7 +1476,8 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart",
@@ -1488,10 +1488,10 @@
                 "broadcastFacet": true,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1528,125 +1528,14 @@
                     "visualizationType": "hbar"
                 }
             },
-            "Chatter_top10": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "Chatter_top10",
-                "numbers": [],
-                "query": "q = load \"EWS_Growth_Detail_Data_File_PL\";\nq = filter q by date('Snap_Date_Year', 'Snap_Date_Month', 'Snap_Date_Day') in [\"current year\"..\"current year\"];\nq = foreach q generate '{{column(Static_Grouping_chatter.selection,[\"value\"]).asObject()}}' as '{{column(Static_Grouping_chatter.selection,[\"value\"]).asObject()}}', 'Chatter_Adoption' as 'Chatter_Adoption';\nq = order q by 'Chatter_Adoption' {{column(Static_sort_order_chatter.selection,[\"value\"]).asObject()}};\nq = limit q 10;",
-                "receiveFacet": true,
-                "selectMode": "single",
-                "strings": [],
-                "type": "saql",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "showValues": true,
-                        "bins": {
-                            "breakpoints": {
-                                "high": 100,
-                                "low": 0
-                            },
-                            "bands": {
-                                "high": {
-                                    "color": "#008000",
-                                    "label": ""
-                                },
-                                "low": {
-                                    "color": "#B22222",
-                                    "label": ""
-                                },
-                                "medium": {
-                                    "color": "#ffa500",
-                                    "label": ""
-                                }
-                            }
-                        },
-                        "legend": {
-                            "showHeader": true,
-                            "show": true,
-                            "customSize": "auto",
-                            "position": "right-top",
-                            "inside": false
-                        },
-                        "axisMode": "multi",
-                        "tooltip": {
-                            "showBinLabel": true,
-                            "measures": "",
-                            "showPercentage": true,
-                            "showDimensions": true,
-                            "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
-                        },
-                        "visualizationType": "hbar",
-                        "title": {
-                            "fontSize": 14,
-                            "subtitleFontSize": 11,
-                            "label": "",
-                            "align": "center",
-                            "subtitleLabel": ""
-                        },
-                        "binValues": false,
-                        "trellis": {
-                            "flipLabels": false,
-                            "showGridLines": true,
-                            "size": [
-                                100,
-                                100
-                            ],
-                            "enable": false,
-                            "type": "x",
-                            "chartsPerLine": 4
-                        },
-                        "measureAxis2": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "measureAxis1": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "theme": "wave",
-                        "dimensionAxis": {
-                            "showTitle": true,
-                            "customSize": "auto",
-                            "showAxis": true,
-                            "title": "",
-                            "icons": {
-                                "useIcons": false,
-                                "iconProps": {
-                                    "fit": "cover",
-                                    "column": "",
-                                    "type": "round"
-                                }
-                            }
-                        }
-                    },
-                    "type": "chart",
-                    "visualizationType": "hbar"
-                }
-            },
             "step_listselector_ww_FFF": {
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1717,10 +1606,10 @@
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1773,10 +1662,10 @@
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -1825,36 +1714,12 @@
                     "options": {}
                 }
             },
-            "Static_sort_order": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "",
-                "numbers": [],
-                "selectMode": "singlerequired",
-                "start": {
-                    "display": [
-                        "Top 10"
-                    ]
-                },
-                "strings": [],
-                "type": "staticflex",
-                "values": [
-                    {
-                        "display": "Top 10",
-                        "value": "desc"
-                    },
-                    {
-                        "display": "Bottom 10",
-                        "value": "asc"
-                    }
-                ]
-            },
             "Annual_Target_Metric_1": {
                 "broadcastFacet": true,
                 "groups": [],
                 "label": "Annual_Target_Metric_1",
                 "numbers": [],
-                "query": "q = load \"POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Cloud Services Bookings\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "query": "q = load \"FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Cloud Services Bookings\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
                 "receiveFacet": true,
                 "selectMode": "single",
                 "strings": [],
@@ -1899,13 +1764,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -1945,7 +1810,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -1953,21 +1817,46 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart",
                     "visualizationType": "hbar"
                 }
             },
+            "Static_sort_order": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "",
+                "numbers": [],
+                "selectMode": "singlerequired",
+                "start": {
+                    "display": [
+                        "Top 10"
+                    ]
+                },
+                "strings": [],
+                "type": "staticflex",
+                "values": [
+                    {
+                        "display": "Top 10",
+                        "value": "desc"
+                    },
+                    {
+                        "display": "Bottom 10",
+                        "value": "asc"
+                    }
+                ]
+            },
             "Cloud_bookings_Produ_1": {
                 "broadcastFacet": true,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000AyyhSAC",
+                        "id": "0Fb0t0000008RhTCAU",
                         "label": "Cloud_Services_Bookings_Detail_Data_File_RL",
                         "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000AyyhSAC"
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhTCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -2025,13 +1914,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -2071,7 +1960,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -2079,7 +1967,8 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart",
@@ -2115,7 +2004,7 @@
                 "groups": [],
                 "label": "Year_Month_1",
                 "numbers": [],
-                "query": "q = load \"POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Cloud Services Bookings\";\nq = group q by 'Year_Month';\nq = foreach q generate 'Year_Month' as 'Year_Month', sum('{{column(Static_Grouping_5.selection,[\"value\"]).asObject()}}') as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
+                "query": "q = load \"FY18_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Cloud Services Bookings\";\nq = group q by 'Year_Month';\nq = foreach q generate 'Year_Month' as 'Year_Month', sum('{{column(Static_Grouping_5.selection,[\"value\"]).asObject()}}') as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
                 "receiveFacet": false,
                 "selectMode": "single",
                 "strings": [],
@@ -2160,13 +2049,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -2206,7 +2095,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -2214,12 +2102,33 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
+                            },
+                            "title": ""
                         }
                     },
                     "type": "chart",
                     "visualizationType": "hbar"
                 }
+            },
+            "Metric_2": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "",
+                "numbers": [],
+                "selectMode": "singlerequired",
+                "start": {
+                    "display": [
+                        "Cloud Services Bookings"
+                    ]
+                },
+                "strings": [],
+                "type": "staticflex",
+                "values": [
+                    {
+                        "display": "Cloud Services Bookings",
+                        "value": "Cloud Services Bookings"
+                    }
+                ]
             },
             "Top10_Bookings": {
                 "broadcastFacet": true,
@@ -2271,13 +2180,13 @@
                             "showPercentage": true,
                             "showDimensions": true,
                             "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
+                            "dimensions": "",
+                            "customizeTooltip": false
                         },
                         "visualizationType": "hbar",
                         "title": {
-                            "fontSize": 14,
                             "subtitleFontSize": 11,
+                            "fontSize": 14,
                             "label": "",
                             "align": "center",
                             "subtitleLabel": ""
@@ -2317,7 +2226,6 @@
                             "showTitle": true,
                             "customSize": "auto",
                             "showAxis": true,
-                            "title": "",
                             "icons": {
                                 "useIcons": false,
                                 "iconProps": {
@@ -2325,138 +2233,8 @@
                                     "column": "",
                                     "type": "round"
                                 }
-                            }
-                        }
-                    },
-                    "type": "chart",
-                    "visualizationType": "hbar"
-                }
-            },
-            "Metric_2": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "",
-                "numbers": [],
-                "selectMode": "singlerequired",
-                "start": {
-                    "display": [
-                        "Cloud Services Bookings"
-                    ]
-                },
-                "strings": [],
-                "type": "staticflex",
-                "values": [
-                    {
-                        "display": "Cloud Services Bookings",
-                        "value": "Cloud Services Bookings"
-                    }
-                ]
-            },
-            "EWS_Top10": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "EWS_Top10",
-                "numbers": [],
-                "query": "q = load \"EWS_Growth_Detail_Data_File_PL\";\nq = filter q by date('Snap_Date_Year', 'Snap_Date_Month', 'Snap_Date_Day') in [\"current year\"..\"current year\"];\nq = group q by '{{column(Static_Grouping_ews.selection,[\"value\"]).asObject()}}';\nq = foreach q generate '{{column(Static_Grouping_ews.selection,[\"value\"]).asObject()}}' as '{{column(Static_Grouping_ews.selection,[\"value\"]).asObject()}}', avg('FY_EWS_Growth_Attainment') as 'avg_FY_EWS_Growth_Attainment';\nq = order q by 'avg_FY_EWS_Growth_Attainment' {{column(Static_sort_order.selection,[\"value\"]).asObject()}};\nq = limit q 10;",
-                "receiveFacet": true,
-                "selectMode": "single",
-                "strings": [],
-                "type": "saql",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "showValues": true,
-                        "bins": {
-                            "breakpoints": {
-                                "high": 100,
-                                "low": 0
                             },
-                            "bands": {
-                                "high": {
-                                    "color": "#008000",
-                                    "label": ""
-                                },
-                                "low": {
-                                    "color": "#B22222",
-                                    "label": ""
-                                },
-                                "medium": {
-                                    "color": "#ffa500",
-                                    "label": ""
-                                }
-                            }
-                        },
-                        "legend": {
-                            "showHeader": true,
-                            "show": true,
-                            "customSize": "auto",
-                            "position": "right-top",
-                            "inside": false
-                        },
-                        "axisMode": "multi",
-                        "tooltip": {
-                            "showBinLabel": true,
-                            "measures": "",
-                            "showPercentage": true,
-                            "showDimensions": true,
-                            "showMeasures": true,
-                            "customizeTooltip": false,
-                            "dimensions": ""
-                        },
-                        "visualizationType": "hbar",
-                        "title": {
-                            "fontSize": 14,
-                            "subtitleFontSize": 11,
-                            "label": "",
-                            "align": "center",
-                            "subtitleLabel": ""
-                        },
-                        "binValues": false,
-                        "trellis": {
-                            "flipLabels": false,
-                            "showGridLines": true,
-                            "size": [
-                                100,
-                                100
-                            ],
-                            "enable": false,
-                            "type": "x",
-                            "chartsPerLine": 4
-                        },
-                        "measureAxis2": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "measureAxis1": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "theme": "wave",
-                        "dimensionAxis": {
-                            "showTitle": true,
-                            "customSize": "auto",
-                            "showAxis": true,
-                            "title": "",
-                            "icons": {
-                                "useIcons": false,
-                                "iconProps": {
-                                    "fit": "cover",
-                                    "column": "",
-                                    "type": "round"
-                                }
-                            }
+                            "title": ""
                         }
                     },
                     "type": "chart",
@@ -2467,10 +2245,10 @@
                 "broadcastFacet": false,
                 "datasets": [
                     {
-                        "id": "0Fb0M000000TOvJSAW",
-                        "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-                        "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+                        "id": "0Fb0t0000008RhWCAU",
+                        "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
                     }
                 ],
                 "isGlobal": false,
@@ -2755,10 +2533,19 @@
                 },
                 "type": "container"
             },
+            "text_7": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": ">",
+                    "textAlignment": "left",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "text"
+            },
             "chart_2": {
                 "parameters": {
-                    "autoFitMode": "none",
                     "totalValue": "computeTotal",
+                    "autoFitMode": "none",
                     "showValues": true,
                     "bins": {
                         "breakpoints": {
@@ -2794,14 +2581,14 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
                     "visualizationType": "hbar",
                     "exploreLink": false,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
@@ -2837,13 +2624,12 @@
                             "showDomain": false
                         }
                     },
-                    "theme": "wave",
                     "step": "Top10_Bookings",
+                    "theme": "wave",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
                         "showAxis": true,
-                        "title": "",
                         "icons": {
                             "useIcons": false,
                             "iconProps": {
@@ -2851,12 +2637,13 @@
                                 "column": "",
                                 "type": "round"
                             }
-                        }
+                        },
+                        "title": ""
                     }
                 },
                 "type": "chart"
             },
-            "text_7": {
+            "text_6": {
                 "parameters": {
                     "fontSize": 12,
                     "text": ">",
@@ -2867,8 +2654,8 @@
             },
             "chart_1": {
                 "parameters": {
-                    "autoFitMode": "fit",
                     "totalValue": "computeTotal",
+                    "autoFitMode": "fit",
                     "showValues": true,
                     "bins": {
                         "breakpoints": {
@@ -2905,8 +2692,8 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
                     "visualizationType": "line",
                     "dashLine": {
@@ -2914,14 +2701,14 @@
                         "showDashLine": false
                     },
                     "exploreLink": true,
+                    "binValues": false,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
                     },
-                    "binValues": false,
                     "trellis": {
                         "flipLabels": false,
                         "showGridLines": true,
@@ -2945,6 +2732,7 @@
                             "showDomain": false
                         }
                     },
+                    "valueType": "none",
                     "measureAxis1": {
                         "sqrtScale": false,
                         "showTitle": true,
@@ -2960,7 +2748,6 @@
                         "showTitle": true,
                         "customSize": "auto",
                         "showAxis": true,
-                        "title": "",
                         "icons": {
                             "useIcons": false,
                             "iconProps": {
@@ -2968,26 +2755,17 @@
                                 "column": "",
                                 "type": "round"
                             }
-                        }
+                        },
+                        "title": ""
                     },
                     "drawArea": {
                         "measure": "",
-                        "showDrawArea": false,
                         "bounding1": "",
+                        "showDrawArea": false,
                         "bounding2": ""
-                    },
-                    "valueType": "none"
+                    }
                 },
                 "type": "chart"
-            },
-            "text_6": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": ">",
-                    "textAlignment": "left",
-                    "textColor": "#FFFFFF"
-                },
-                "type": "text"
             },
             "text_9": {
                 "parameters": {
@@ -2997,18 +2775,6 @@
                     "textColor": "#335779"
                 },
                 "type": "text"
-            },
-            "listselector_region_FFF": {
-                "parameters": {
-                    "compact": false,
-                    "displayTemplate": "[Console_Region]",
-                    "exploreLink": false,
-                    "instant": true,
-                    "measureField": "none",
-                    "step": "step_listselector_region_FFF",
-                    "title": ""
-                },
-                "type": "listselector"
             },
             "text_8": {
                 "parameters": {
@@ -3021,8 +2787,8 @@
             },
             "chart_3": {
                 "parameters": {
-                    "autoFitMode": "none",
                     "totalValue": "computeTotal",
+                    "autoFitMode": "none",
                     "showValues": true,
                     "bins": {
                         "breakpoints": {
@@ -3058,14 +2824,14 @@
                         "showPercentage": true,
                         "showDimensions": true,
                         "showMeasures": true,
-                        "customizeTooltip": false,
-                        "dimensions": ""
+                        "dimensions": "",
+                        "customizeTooltip": false
                     },
                     "visualizationType": "hbar",
                     "exploreLink": false,
                     "title": {
-                        "fontSize": 14,
                         "subtitleFontSize": 11,
+                        "fontSize": 14,
                         "label": "",
                         "align": "center",
                         "subtitleLabel": ""
@@ -3101,13 +2867,12 @@
                             "showDomain": false
                         }
                     },
-                    "theme": "wave",
                     "step": "Account_Name_1",
+                    "theme": "wave",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
                         "showAxis": true,
-                        "title": "",
                         "icons": {
                             "useIcons": false,
                             "iconProps": {
@@ -3115,10 +2880,23 @@
                                 "column": "",
                                 "type": "round"
                             }
-                        }
+                        },
+                        "title": ""
                     }
                 },
                 "type": "chart"
+            },
+            "listselector_region_FFF": {
+                "parameters": {
+                    "compact": false,
+                    "displayTemplate": "[Console_Region]",
+                    "exploreLink": false,
+                    "instant": true,
+                    "measureField": "none",
+                    "step": "step_listselector_region_FFF",
+                    "title": ""
+                },
+                "type": "listselector"
             },
             "text_1": {
                 "parameters": {
@@ -3285,6 +3063,15 @@
                 },
                 "type": "text"
             },
+            "text_27": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                },
+                "type": "text"
+            },
             "text_140": {
                 "parameters": {
                     "fontSize": 10,
@@ -3304,15 +3091,6 @@
                     "textColor": "#FFFFFF"
                 },
                 "type": "link"
-            },
-            "text_27": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
-                },
-                "type": "text"
             },
             "text_26": {
                 "parameters": {
@@ -3472,22 +3250,16 @@
     },
     "datasets": [
         {
-            "id": "0Fb0M000000AyrvSAC",
-            "label": "EWS_Growth_Detail_Data_File_PL",
-            "name": "EWS_Growth_Detail_Data_File_PL",
-            "url": "/services/data/v42.0/wave/datasets/0Fb0M000000AyrvSAC"
-        },
-        {
-            "id": "0Fb0M000000AyyhSAC",
+            "id": "0Fb0t0000008RhTCAU",
             "label": "Cloud_Services_Bookings_Detail_Data_File_RL",
             "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
-            "url": "/services/data/v42.0/wave/datasets/0Fb0M000000AyyhSAC"
+            "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhTCAU"
         },
         {
-            "id": "0Fb0M000000TOvJSAW",
-            "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-            "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-            "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+            "id": "0Fb0t0000008RhWCAU",
+            "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+            "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+            "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
         }
     ]
 }
