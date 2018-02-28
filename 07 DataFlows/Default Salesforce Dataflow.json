@@ -2,30 +2,30 @@
   "rCloud_Services_Booking_Security": {
     "action": "sfdcRegister",
     "parameters": {
-      "name": "Cloud_Services_Booking_Security",
-      "alias": "Cloud_Services_Booking_Security",
+      "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
+      "alias": "Cloud_Services_Bookings_Detail_Data_File_RL",
       "source": "aCloud_Services_Booking"
     }
   },
   "aQualified_Oppty": {
     "action": "augment",
     "parameters": {
-      "right_key": [
-        "Concat"
-      ],
       "left": "eQualified_Oppty",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
       "left_key": [
         "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
       ],
       "right_select": [
         "Access_Override",
         "Username",
         "CSM_User_Name",
-        "CSM_User_ID"
-      ],
-      "right": "eCSG_Filter_New",
-      "relationship": "Secure",
-      "operation": "LookupSingleValue"
+        "CSM_User_Id"
+      ]
     }
   },
   "cCSG_Filter": {
@@ -46,58 +46,58 @@
   "rQualified_Oppty_Security": {
     "action": "sfdcRegister",
     "parameters": {
-      "name": "Qualified_Oppty_Security",
-      "alias": "Qualified_Oppty_Security",
+      "name": "Qualified_Oppty_Detail_Data_File_RL",
+      "alias": "Qualified_Oppty_Detail_Data_File_RL",
       "source": "aQualified_Oppty"
     }
   },
   "rAttrition_Security": {
     "action": "sfdcRegister",
     "parameters": {
-      "name": "Attrition_Security",
-      "alias": "Attrition_Security",
+      "name": "Attrition_Detail_Data_File_RL_PL",
+      "alias": "Attrition_Detail_Data_File_RL_PL",
       "source": "aAttrition"
     }
   },
   "eFY18_Metric_Scorecard": {
     "action": "edgemart",
     "parameters": {
-      "alias": "ADMIN_FY18_CSG_RL_SL_PL_Metric_Scorecard1"
+      "alias": "ADMIN_FY18_CSG_RL_SL_PL_Metric_Scorecard"
     }
   },
   "aEWS_Growth": {
     "action": "augment",
     "parameters": {
-      "right_key": [
-        "Concat"
-      ],
       "left": "eEWS_Growth",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
       "left_key": [
         "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
       ],
       "right_select": [
         "Access_Override",
         "Username",
         "CSM_User_Name",
-        "CSM_User_ID"
-      ],
-      "right": "eCSG_Filter_New",
-      "relationship": "Secure",
-      "operation": "LookupSingleValue"
+        "CSM_User_Id"
+      ]
     }
   },
-  "rCSG_Filter_New": {
+  "rCSG_Filter_Admin": {
     "action": "sfdcRegister",
     "parameters": {
-      "name": "CSG_Filter_New",
-      "alias": "CSG_Filter_New",
+      "name": "[ADMIN] CSG_Filter",
+      "alias": "ADMIN_CSG_Filter",
       "source": "cCSG_Filter"
     }
   },
   "eCSG_Filter": {
     "action": "edgemart",
     "parameters": {
-      "alias": "CSG_Security"
+      "alias": "DEMO_CSG_Filter"
     }
   },
   "eCloud_Services_Booking": {
@@ -115,29 +115,29 @@
   "aCloud_Services_Booking": {
     "action": "augment",
     "parameters": {
-      "right_key": [
-        "Concat"
-      ],
       "left": "eCloud_Services_Booking",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
       "left_key": [
         "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
       ],
       "right_select": [
         "Access_Override",
         "Username",
         "CSM_User_Name",
-        "CSM_User_ID"
-      ],
-      "right": "eCSG_Filter_New",
-      "relationship": "Secure",
-      "operation": "LookupSingleValue"
+        "CSM_User_Id"
+      ]
     }
   },
   "rFY18_Metrix_Scorecard_Security": {
     "action": "sfdcRegister",
     "parameters": {
-      "name": "FY18_Metrix_Scorecard_Security",
-      "alias": "FY18_Metrix_Scorecard_Security",
+      "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+      "alias": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
       "source": "aFY18_Metric_Scorecard"
     }
   },
@@ -150,63 +150,57 @@
   "rEWS_Growth_Security": {
     "action": "sfdcRegister",
     "parameters": {
-      "name": "EWS_Growth_Security",
-      "alias": "EWS_Growth_Security",
+      "name": "EWS_Growth_Detail_Data_File_RL_PL",
+      "alias": "EWS_Growth_Detail_Data_File_RL_PL",
       "source": "aEWS_Growth"
-    }
-  },
-  "eCSG_Filter_New": {
-    "action": "edgemart",
-    "parameters": {
-      "alias": "CSG_Filter_New"
     }
   },
   "eAttrition": {
     "action": "edgemart",
     "parameters": {
-      "alias": "ADMIN_Attrition_Detail_Data_File_RL_PL1"
+      "alias": "ADMIN_Attrition_Detail_Data_File_RL_PL"
     }
   },
   "aAttrition": {
     "action": "augment",
     "parameters": {
-      "right_key": [
-        "Concat"
-      ],
       "left": "eAttrition",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
       "left_key": [
         "CONCAT"
       ],
+      "right_key": [
+        "Concat"
+      ],
       "right_select": [
         "Access_Override",
-        "CSM_User_ID",
         "Username",
-        "CSM_User_Name"
-      ],
-      "right": "eCSG_Filter_New",
-      "relationship": "Secure",
-      "operation": "LookupSingleValue"
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
     }
   },
   "aFY18_Metric_Scorecard": {
     "action": "augment",
     "parameters": {
-      "right_key": [
-        "Concat"
-      ],
       "left": "eFY18_Metric_Scorecard",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
       "left_key": [
         "CONCAT"
       ],
+      "right_key": [
+        "Concat"
+      ],
       "right_select": [
         "Access_Override",
-        "CSM_User_ID",
+        "Username",
         "CSM_User_Name",
-        "Username"
-      ],
-      "right": "eCSG_Filter_New",
-      "relationship": "Secure",
-      "operation": "LookupSingleValue"
+        "CSM_User_Id"
+      ]
     }
   }
 }

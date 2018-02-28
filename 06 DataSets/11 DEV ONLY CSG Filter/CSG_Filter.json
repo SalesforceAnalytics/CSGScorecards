@@ -1,4 +1,9 @@
 {
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "linesTerminatedBy": "\r\n"
+  },
   "objects": [
     {
       "connector": "CSV",
