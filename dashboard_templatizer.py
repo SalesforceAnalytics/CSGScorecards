@@ -8,85 +8,9 @@ import collections
 import pprint
 import sys
 import os
+from __builtin__ import str
+CONFIG_FILE="scorecards_config.json"
 
-db_map = {
-  "Attrition_Detail_Data_File_RL_PL": {
-    "from": {
-      "id": "0Fb0M000000AyrqSAC",
-      "label": "Attrition_Detail_Data_File_RL_PL",
-      "name": "Attrition_Detail_Data_File_RL_PL",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000AyrqSAC"
-    },
-    "to": {
-      "id": "0Fb0t0000008RhXCAU",
-      "name": "Attrition_Detail_Data_File_RL_PL",
-      "label": "Attrition_Detail_Data_File_RL_PL",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhXCAU"
-    }
-  },
-  "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard": {
-    "from": {
-      "id": "0Fb0M000000TOvJSAW",
-      "label": "FY18 CSG RL/SL/PL Metric Scorecard",
-      "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
-    },
-    "to": {
-      "id": "0Fb0t0000008RhWCAU",
-      "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
-      "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
-    }
-  },
-  "EWS_Growth_Detail_Data_File_RL_and_PL_Combined": {
-    "from": {
-      "id": "0Fb0M000000Az1gSAC",
-      "label": "EWS_Growth_Detail_Data_File_RL and PL Combined",
-      "name": "EWS_Growth_Detail_Data_File_RL_and_PL_Combined",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000Az1gSAC"
-    },
-    "to": {
-      "id": "0Fb0t0000008RhSCAU",
-      "name": "EWS_Growth_Detail_Data_File_RL_PL",
-      "label": "EWS_Growth_Detail_Data_File_RL_PL",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhSCAU"
-    }
-  },
-  "Qualified_Oppty_Detail_Data_File_RL": {
-    "from": {
-      "id": "0Fb0M000000Az0OSAS",
-      "label": "Qualified_Oppty_Detail_Data_File_RL",
-      "name": "Qualified_Oppty_Detail_Data_File_RL",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000Az0OSAS"
-    },
-    "to": {
-      "id": "0Fb0t0000008RhUCAU",
-      "name": "Qualified_Oppty_Detail_Data_File_RL",
-      "label": "Qualified_Oppty_Detail_Data_File_RL",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhUCAU"
-    }
-  },
-  "Cloud_Services_Bookings_Detail_Data_File_RL": {
-    "from": {
-      "id": "0Fb0M000000AyyhSAC",
-      "label": "Cloud_Services_Bookings_Detail_Data_File_RL",
-      "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000AyyhSAC"
-    },
-    "to": {
-      "id": "0Fb0t0000008RhTCAU",
-      "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
-      "label": "Cloud_Services_Bookings_Detail_Data_File_RL",
-      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhTCAU"
-    }
-  }
-}
-
-locations = [
-    "state","dataSourceLinks","Array","fields","dataSourceName",
-    "steps","STEP_NAME","datasets","OR","query",
-    ]
-DB_JSON = "/Users/kpolakala/csg/CSGScorecards/04 Detail Pages/CSG Scorecard -- Attrition Scorecard Details.json"
 def load_json_from_file(filename, object_pairs_hook=collections.OrderedDict):
     fl = open(filename, "r")
 #     fl_json = json.load(fl, object_pairs_hook=object_pairs_hook)
@@ -153,6 +77,8 @@ def templatize_stepsquerypigql(db):
     for k in range(len(db["state"]["steps"].keys())):
         step = db["state"]["steps"].keys()[k]
         if db["state"]["steps"][step].has_key("query"):
+            if type(db["state"]["steps"][step]["query"]) is str or type(db["state"]["steps"][step]["query"]) is unicode:
+                continue
             if db["state"]["steps"][step]["query"].has_key("pigql"):
                 if type(db["state"]["steps"][step]["query"]["pigql"]) is unicode or type(db["state"]["steps"][step]["query"]["pigql"]) is str:
                     qry =  db["state"]["steps"][step]["query"]["pigql"]
@@ -180,16 +106,54 @@ def templatize_datasets(db):
             print ds["name"], "is not MAPPED..."
     db["datasets"] = datasets
     return db
+def templatize_images(db):
+    for i in range(len(db["state"]["gridLayouts"])):
+        gl = db["state"]["gridLayouts"][i]
+        if gl["style"].has_key("image"):
+            if db_image_map.has_key(gl["style"]["image"]["name"]):
+                gl["style"]["image"]["name"] = db_image_map[gl["style"]["image"]["name"]]
+#             pprint.pprint(gl["style"]["image"]["name"])
+    return db
+def templatize_links(db):
+    for wname in db["state"]["widgets"].keys():
+        widget = db["state"]["widgets"][wname]
+        if widget["type"] == "link":
+            if widget["parameters"]["destinationType"] == "dashboard":
+                if widget["parameters"].has_key("destinationLink"):
+                    print widget["parameters"]["destinationLink"]["name"]
+                    if db_links_map.has_key(widget["parameters"]["destinationLink"]["name"]):
+                        widget["parameters"]["destinationLink"]["name"] = db_links_map[widget["parameters"]["destinationLink"]["name"]] 
+        
+    return db
+
 if __name__ == '__main__':
-    fllist = get_filelist("/Users/kpolakala/csg/CSGScorecards/03 Team View Page")
+    db_config = load_json_from_file(CONFIG_FILE)
+    db_map = db_config["db_datasets_map"]
+    db_links_map = db_config["db_links_map"]
+    db_image_map = db_config["db_image_map"]
+    
+    src_dir = db_config["SRC_DIR"]
+    dst_dir = db_config["DST_DIR"]
+    db_fls = db_config["dashboards"]
+    
+#     fllist = get_filelist("/Users/kpolakala/csg/CSGScorecards/03 Team View Page")
+    fllist = {}
+    for db_fl in db_fls:
+        fllist[os.path.join(src_dir,db_fl)] = os.path.join(dst_dir,db_fl)
     pprint.pprint(fllist)
     
-    for db_fl in fllist: 
-        db = load_json_from_file(db_fl,object_pairs_hook=None)
+    for db_fl in fllist.keys():
+        print db_fl 
+        db = load_json_from_file(db_fl)
         db = templatize_datasourcelinks(db)
         db = templatize_stepsdatasets(db)
         db = templatize_stepsquery(db)
         db = templatize_stepsquerypigql(db)
         db = templatize_datasets(db)
-        dump_json_to_file(db_fl+"temp", db)
+        db = templatize_images(db)
+        db = templatize_links(db)
+        ddir = os.path.dirname(fllist[db_fl])
+        if os.path.exists(ddir) == False:
+            os.makedirs(ddir)
+        dump_json_to_file(fllist[db_fl], db)
     sys.exit()

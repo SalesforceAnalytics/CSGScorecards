@@ -1,0 +1,99 @@
+{
+  
+  "SRC_DIR": "/Users/kpolakala/csg/CSGScorecards",
+  "DST_DIR": "/Users/kpolakala/csg/CSGScorecards/tmp",
+  "dashboards": [
+    "01 Scorecard View Page/CSG Scorecard View -- POC - UI2 -- Test 30.json",
+    "02 Metric View Page/CSG Metric View -- POC - UI2 -- Test 30.json",
+    "03 Team View Page/CSG Team View -- POC - UI2 -- Test 30.json",
+
+    "04 Detail Pages/CSG Scorecard -- Advisory Heads Deployed Details.json",
+    "04 Detail Pages/CSG Scorecard -- Attrition Scorecard Details.json",
+    "04 Detail Pages/CSG Scorecard -- Billable Project Util & Advisory Heads Deployed Details.json",
+    "04 Detail Pages/CSG Scorecard -- Cloud Service Bookings Details.json",
+    "04 Detail Pages/CSG Scorecard -- EWS Growth Details.json",
+    "04 Detail Pages/CSG Scorecard -- Qualified Opps Details.json"
+],
+
+
+  "db_image_map" : {
+    "Scorecard_Banner_Summarypng": "Scorecard_Banner_Summarypng"
+    },
+  "db_links_map" : {
+      "CSG_Scorecard_View_POC_UI2_Test_30_v10":"CSG_Scorecard_View_POC_UI2_Test_30_v104",
+      "CSG_Metric_View_POC_UI2_Test_30_v10":"CSG_Metric_View_POC_UI2_Test_30_v104",
+      "CSG_Scorecard_View_POC_UI2_Test_30_v10":"CSG_Scorecard_View_POC_UI2_Test_30_v104"
+      },
+"db_datasets_map" : {
+  "Attrition_Detail_Data_File_RL_PL": {
+    "from": {
+      "id": "0Fb0M000000AyrqSAC",
+      "label": "Attrition_Detail_Data_File_RL_PL",
+      "name": "Attrition_Detail_Data_File_RL_PL",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000AyrqSAC"
+    },
+    "to": {
+      "id": "0Fb0t0000008RhXCAU",
+      "name": "Attrition_Detail_Data_File_RL_PL",
+      "label": "Attrition_Detail_Data_File_RL_PL",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhXCAU"
+    }
+  },
+  "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard": {
+    "from": {
+      "id": "0Fb0M000000TOvJSAW",
+      "label": "FY18 CSG RL/SL/PL Metric Scorecard",
+      "name": "POC_DATA_FY18_CSG_RL_SL_PL_Metric_Scorecard",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000TOvJSAW"
+    },
+    "to": {
+      "id": "0Fb0t0000008RhWCAU",
+      "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+      "label": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhWCAU"
+    }
+  },
+  "EWS_Growth_Detail_Data_File_RL_and_PL_Combined": {
+    "from": {
+      "id": "0Fb0M000000Az1gSAC",
+      "label": "EWS_Growth_Detail_Data_File_RL and PL Combined",
+      "name": "EWS_Growth_Detail_Data_File_RL_and_PL_Combined",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000Az1gSAC"
+    },
+    "to": {
+      "id": "0Fb0t0000008RhSCAU",
+      "name": "EWS_Growth_Detail_Data_File_RL_PL",
+      "label": "EWS_Growth_Detail_Data_File_RL_PL",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhSCAU"
+    }
+  },
+  "Qualified_Oppty_Detail_Data_File_RL": {
+    "from": {
+      "id": "0Fb0M000000Az0OSAS",
+      "label": "Qualified_Oppty_Detail_Data_File_RL",
+      "name": "Qualified_Oppty_Detail_Data_File_RL",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000Az0OSAS"
+    },
+    "to": {
+      "id": "0Fb0t0000008RhUCAU",
+      "name": "Qualified_Oppty_Detail_Data_File_RL",
+      "label": "Qualified_Oppty_Detail_Data_File_RL",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhUCAU"
+    }
+  },
+  "Cloud_Services_Bookings_Detail_Data_File_RL": {
+    "from": {
+      "id": "0Fb0M000000AyyhSAC",
+      "label": "Cloud_Services_Bookings_Detail_Data_File_RL",
+      "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0M000000AyyhSAC"
+    },
+    "to": {
+      "id": "0Fb0t0000008RhTCAU",
+      "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
+      "label": "Cloud_Services_Bookings_Detail_Data_File_RL",
+      "url": "/services/data/v42.0/wave/datasets/0Fb0t0000008RhTCAU"
+    }
+  }
+}
+}
