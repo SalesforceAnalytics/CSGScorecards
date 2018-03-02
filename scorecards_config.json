@@ -12,7 +12,8 @@
     "04 Detail Pages/CSG Scorecard -- Billable Project Util & Advisory Heads Deployed Details.json",
     "04 Detail Pages/CSG Scorecard -- Cloud Service Bookings Details.json",
     "04 Detail Pages/CSG Scorecard -- EWS Growth Details.json",
-    "04 Detail Pages/CSG Scorecard -- Qualified Opps Details.json"
+    "04 Detail Pages/CSG Scorecard -- Qualified Opps Details.json",
+    "05 Other Pages/CSG Scorecard -- Under Construction.json"
 ],
 
   "db_url_map" : {
@@ -20,7 +21,8 @@
     },
 
   "db_image_map" : {
-    "Scorecard_Banner_Summarypng": "Scorecard_Banner_Summarypng"
+    "Scorecard_Banner_Summarypng": "Scorecard_Banner_Summarypng",
+    "underConstructionPagepng": "underConstructionPagepng"
     },
   "db_links_map" : {
       "CSG_Scorecard_View_POC_UI2_Test_30_v10":"CSG_Scorecard_View_POC_UI2_Test_30_v104",
