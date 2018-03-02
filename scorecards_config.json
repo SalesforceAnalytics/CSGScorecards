@@ -15,6 +15,9 @@
     "04 Detail Pages/CSG Scorecard -- Qualified Opps Details.json"
 ],
 
+  "db_url_map" : {
+    "https://org62.my.salesforce.com": "https://org62--renewaldev.cs77.my.salesforce.com"
+    },
 
   "db_image_map" : {
     "Scorecard_Banner_Summarypng": "Scorecard_Banner_Summarypng"
@@ -97,3 +100,5 @@
   }
 }
 }
+
+

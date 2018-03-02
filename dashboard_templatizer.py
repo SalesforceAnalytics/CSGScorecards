@@ -125,12 +125,28 @@ def templatize_links(db):
                         widget["parameters"]["destinationLink"]["name"] = db_links_map[widget["parameters"]["destinationLink"]["name"]] 
         
     return db
+def templatize_urls(db):
+    for wname in db["state"]["widgets"].keys():
+        widget = db["state"]["widgets"][wname]
+        if widget["type"] == "link":
+            if widget["parameters"]["destinationType"] == "url":
+                if widget["parameters"].has_key("destinationLink"):
+                    print widget["parameters"]["destinationLink"]["url"]
+                    for url_prefix in db_url_map.keys():
+                        if str(widget["parameters"]["destinationLink"]["url"]).startswith(url_prefix):
+                            widget["parameters"]["destinationLink"]["url"] = str(widget["parameters"]["destinationLink"]["url"]).replace(url_prefix, db_url_map[url_prefix])
+                        
+                    if db_links_map.has_key(widget["parameters"]["destinationLink"]["url"]):
+                        widget["parameters"]["destinationLink"]["name"] = db_links_map[widget["parameters"]["destinationLink"]["name"]] 
+        
+    return db
 
 if __name__ == '__main__':
     db_config = load_json_from_file(CONFIG_FILE)
     db_map = db_config["db_datasets_map"]
     db_links_map = db_config["db_links_map"]
     db_image_map = db_config["db_image_map"]
+    db_url_map = db_config["db_url_map"]
     
     src_dir = db_config["SRC_DIR"]
     dst_dir = db_config["DST_DIR"]
@@ -152,6 +168,7 @@ if __name__ == '__main__':
         db = templatize_datasets(db)
         db = templatize_images(db)
         db = templatize_links(db)
+        db = templatize_urls(db)
         ddir = os.path.dirname(fllist[db_fl])
         if os.path.exists(ddir) == False:
             os.makedirs(ddir)
