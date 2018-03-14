@@ -5,7 +5,7 @@
       "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
       "alias": "Cloud_Services_Bookings_Detail_Data_File_RL",
       "source": "aCloud_Services_Booking",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\" || \"$User.Id\" == \"0050M00000CE54M\" || \"$User.Id\" == \"0053000000BztZeAAJ\""     
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
   },
   "aQualified_Oppty": {
@@ -50,7 +50,7 @@
       "name": "Qualified_Oppty_Detail_Data_File_RL",
       "alias": "Qualified_Oppty_Detail_Data_File_RL",
       "source": "aQualified_Oppty",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\" || \"$User.Id\" == \"0050M00000CE54M\" || \"$User.Id\" == \"0053000000BztZeAAJ\""     
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
   },
   "rAttrition_Security": {
@@ -59,7 +59,7 @@
       "name": "Attrition_Detail_Data_File_RL_PL",
       "alias": "Attrition_Detail_Data_File_RL_PL",
       "source": "aAttrition",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\" || \"$User.Id\" == \"0050M00000CE54M\" || \"$User.Id\" == \"0053000000BztZeAAJ\""     
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
   },
   "eFY18_Metric_Scorecard": {
@@ -95,7 +95,7 @@
       "name": "[ADMIN] CSG_Filter",
       "alias": "ADMIN_CSG_Filter",
       "source": "cCSG_Filter",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\" || \"$User.Id\" == \"0050M00000CE54M\" || \"$User.Id\" == \"0053000000BztZeAAJ\""     
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
   },
   "eCSG_Filter": {
@@ -143,7 +143,7 @@
       "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
       "alias": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
       "source": "aFY18_Metric_Scorecard",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\" || \"$User.Id\" == \"0050M00000CE54M\" || \"$User.Id\" == \"0053000000BztZeAAJ\""     
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
   },
   "eEWS_Growth": {
@@ -158,7 +158,7 @@
       "name": "EWS_Growth_Detail_Data_File_RL_PL",
       "alias": "EWS_Growth_Detail_Data_File_RL_PL",
       "source": "aEWS_Growth",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\" || \"$User.Id\" == \"0050M00000CE54M\" || \"$User.Id\" == \"0053000000BztZeAAJ\""     
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
   },
   "eAttrition": {
