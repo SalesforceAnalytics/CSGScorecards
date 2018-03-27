@@ -467,10 +467,10 @@
                     "label": "CSG Portfolio"
                 },
                 {
-                    "fullyQualifiedName": "CSG_Hierarchy_Version",
-                    "name": "CSG_Hierarchy_Version",
+                    "fullyQualifiedName": "CSG_Hierarchy_Fiscal_Year",
+                    "name": "CSG_Hierarchy_Fiscal_Year",
                     "type": "Text",
-                    "label": "CSG Hierarchy Version"
+                    "label": "CSG Hierarchy Fiscal Year"
                 },
                 {
                     "fullyQualifiedName": "CONCAT",
@@ -483,6 +483,30 @@
                     "name": "SECURITY_KEY",
                     "type": "Text",
                     "label": "SECURITY_KEY"
+                },
+                {
+                    "fullyQualifiedName": "Used_in_Hierarchy_Console",
+                    "name": "Used_in_Hierarchy_Console",
+                    "type": "Text",
+                    "label": "Used in Hierarchy (Console)"
+                },
+                {
+                    "fullyQualifiedName": "Geo_Console",
+                    "name": "Geo_Console",
+                    "type": "Text",
+                    "label": "Geo (Console)"
+                },
+                {
+                    "fullyQualifiedName": "Region_Console",
+                    "name": "Region_Console",
+                    "type": "Text",
+                    "label": "Region (Console)"
+                },
+                {
+                    "fullyQualifiedName": "Portfolio_Console",
+                    "name": "Portfolio_Console",
+                    "type": "Text",
+                    "label": "Portfolio (Console)"
                 }
             ]
         }
