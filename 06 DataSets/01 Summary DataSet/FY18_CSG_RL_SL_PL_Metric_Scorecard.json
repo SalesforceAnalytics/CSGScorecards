@@ -79,6 +79,12 @@
                     "label": "Month"
                 },
                 {
+                    "fullyQualifiedName": "MONTH_KEY",
+                    "name": "MONTH_KEY",
+                    "type": "Text",
+                    "label": "MONTH_KEY"
+                },
+                {
                     "fullyQualifiedName": "Is_Current_Month",
                     "name": "Is_Current_Month",
                     "type": "Text",
@@ -155,6 +161,12 @@
                     "name": "Prior_Month_Attainment",
                     "type": "Text",
                     "label": "Prior Month Attainment"
+                },
+                {
+                    "fullyQualifiedName": "METRIC_KEY",
+                    "name": "METRIC_KEY",
+                    "type": "Text",
+                    "label": "METRIC_KEY"
                 },
                 {
                     "fullyQualifiedName": "Display_Type",
@@ -340,10 +352,10 @@
                     "label": "Colorization Rank"
                 },
                 {
-                    "fullyQualifiedName": "METRIC_KEY",
-                    "name": "METRIC_KEY",
+                    "fullyQualifiedName": "METRIC_PLAN_KEY",
+                    "name": "METRIC_PLAN_KEY",
                     "type": "Text",
-                    "label": "METRIC KEY"
+                    "label": "METRIC_PLAN_KEY"
                 },
                 {
                     "fullyQualifiedName": "Metric_Class",
@@ -364,11 +376,18 @@
                     "label": "Detail Dashboard Name"
                 },
                 {
+                    "fullyQualifiedName": "SEGMENT_KEY_scorecard",
+                    "name": "SEGMENT_KEY_scorecard",
+                    "type": "Text",
+                    "label": "SEGMENT_KEY_scorecard KEY"
+                },
+                {
                     "fullyQualifiedName": "SEGMENT_KEY",
                     "name": "SEGMENT_KEY",
                     "type": "Text",
                     "label": "SEGMENT KEY"
                 },
+                {
                 {
                     "fullyQualifiedName": "Grain_Sort_Order",
                     "name": "Grain_Sort_Order",
@@ -460,10 +479,10 @@
                     "label": "CONCAT"
                 },
                 {
-                    "fullyQualifiedName": "Security_KEY",
-                    "name": "Security_KEY",
+                    "fullyQualifiedName": "SECURITY_KEY",
+                    "name": "SECURITY_KEY",
                     "type": "Text",
-                    "label": "Security_KEY"
+                    "label": "SECURITY_KEY"
                 }
             ]
         }
