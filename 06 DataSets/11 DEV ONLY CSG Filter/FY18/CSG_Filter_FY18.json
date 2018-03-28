@@ -7,9 +7,9 @@
   "objects": [
     {
       "connector": "CSV",
-      "fullyQualifiedName": "CSG_Filter",
-      "label": "CSG_Filter",
-      "name": "CSG_Filter",
+      "fullyQualifiedName": "Feb7th4_15Security",
+      "label": "Feb7th4_15Security",
+      "name": "Feb7th4_15Security",
       "fields": [
       {
           "fullyQualifiedName": "CSG_Portfolio_ORIGINAL",
