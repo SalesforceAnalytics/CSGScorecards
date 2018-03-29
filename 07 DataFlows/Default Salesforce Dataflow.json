@@ -208,5 +208,71 @@
         "CSM_User_Id"
       ]
     }
+  },
+  "eFY19_Metric_Scorecard": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_FY19_CSG_RL_SL_PL_Metric_Scorecard"
+    }
+  },
+  "eFY19_CSG_Filter": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "DEMO_FY19_CSG_Filter"
+    }
+  },
+  "cFY19_CSG_Filter": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "eFY19_CSG_Filter",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "name": "CONCAT",
+          "saqlExpression": "'Geo' + 'CSG_Region' + 'CSG_Portfolio'",
+          "label": "CONCAT",
+          "type": "Text"
+        }
+      ]
+    }
+  },
+  "aFY19_Metric_Scorecard": {
+    "action": "augment",
+    "parameters": {
+      "left": "eFY19_Metric_Scorecard",
+      "right": "cFY19_CSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "CONCAT"
+      ],
+      "right_key": [
+        "CONCAT"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "rFY19_Metrix_Scorecard_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+      "alias": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+      "source": "aFY19_Metric_Scorecard",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""
+    }
+  },
+  "rCSG_Filter_Admin": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "[ADMIN] FY19_CSG_Filter",
+      "alias": "ADMIN_FY19_CSG_Filter",
+      "source": "cFY19_CSG_Filter",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""
+    }
   }
 }
