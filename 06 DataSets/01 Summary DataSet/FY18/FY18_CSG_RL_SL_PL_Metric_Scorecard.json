@@ -388,7 +388,6 @@
                     "label": "SEGMENT KEY"
                 },
                 {
-                {
                     "fullyQualifiedName": "Grain_Sort_Order",
                     "name": "Grain_Sort_Order",
                     "type": "Text",
@@ -491,6 +490,18 @@
                     "label": "Used in Hierarchy (Console)"
                 },
                 {
+                    "fullyQualifiedName": "Grain_Name_Console",
+                    "name": "Grain_Name_Console",
+                    "type": "Text",
+                    "label": "Grain Name (Console)"
+                },
+                {
+                    "fullyQualifiedName": "Grain_Segment_Name_Console",
+                    "name": "Grain_Segment_Name_Console",
+                    "type": "Text",
+                    "label": "Grain Segment Name (Console)"
+                },
+                {
                     "fullyQualifiedName": "Geo_Console",
                     "name": "Geo_Console",
                     "type": "Text",
@@ -501,6 +512,12 @@
                     "name": "Region_Console",
                     "type": "Text",
                     "label": "Region (Console)"
+                },
+                {
+                    "fullyQualifiedName": "Subregion_Console",
+                    "name": "Subregion_Console",
+                    "type": "Text",
+                    "label": "Subregion (Console)"
                 },
                 {
                     "fullyQualifiedName": "Portfolio_Console",
