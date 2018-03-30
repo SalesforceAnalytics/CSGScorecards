@@ -94,7 +94,8 @@
     "parameters": {
       "name": "[ADMIN] CSG_Filter",
       "alias": "ADMIN_CSG_Filter",
-      "source": "cCSG_Filter"   
+      "source": "cCSG_Filter"  ,
+      "rowLevelSecurityFilter": "" 
     }
   },
   "eCSG_Filter": {
@@ -270,7 +271,8 @@
     "parameters": {
       "name": "[ADMIN] FY19_CSG_Filter",
       "alias": "ADMIN_FY19_CSG_Filter",
-      "source": "cFY19_CSG_Filter"
+      "source": "cFY19_CSG_Filter",
+      "rowLevelSecurityFilter": ""
     }
   }
 }
