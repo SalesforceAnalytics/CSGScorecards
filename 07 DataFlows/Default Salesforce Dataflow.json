@@ -94,8 +94,7 @@
     "parameters": {
       "name": "[ADMIN] CSG_Filter",
       "alias": "ADMIN_CSG_Filter",
-      "source": "cCSG_Filter",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+      "source": "cCSG_Filter"   
     }
   },
   "eCSG_Filter": {
@@ -266,13 +265,12 @@
       "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""
     }
   },
-  "rCSG_Filter_Admin": {
+  "rFY_19_CSG_Filter_Admin": {
     "action": "sfdcRegister",
     "parameters": {
       "name": "[ADMIN] FY19_CSG_Filter",
       "alias": "ADMIN_FY19_CSG_Filter",
-      "source": "cFY19_CSG_Filter",
-      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""
+      "source": "cFY19_CSG_Filter"
     }
   }
 }
