@@ -266,13 +266,49 @@
       "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""
     }
   },
-  "rFY_19_CSG_Filter_Admin": {
+  "rFY19_CSG_Filter_Admin": {
     "action": "sfdcRegister",
     "parameters": {
       "name": "[ADMIN] FY19_CSG_Filter",
       "alias": "ADMIN_FY19_CSG_Filter",
       "source": "cFY19_CSG_Filter",
       "rowLevelSecurityFilter": ""
+    }
+  },
+  "eFY19_Qualified_Oppty": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_FY19_Qualified_Oppty_Detail_Data_File"
+    }
+  },
+  "aFY19_Qualified_Oppty": {
+    "action": "augment",
+    "parameters": {
+      "left": "eFY19_Qualified_Oppty",
+      "right": "cFY19_CSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "Security_Lookup_KEY"
+      ],
+      "right_key": [
+        "CONCAT"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "rFY19_Qualified_Oppty_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "FY19_Qualified_Oppty_Detail_Data_File",
+      "alias": "FY19_Qualified_Oppty_Detail_Data_File",
+      "source": "aFY19_Qualified_Oppty",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
   }
 }
