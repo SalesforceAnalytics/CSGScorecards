@@ -129,22 +129,22 @@
           "format": "dd/MM/yy"
         },
         {
-            "fullyQualifiedName": "CSG_Hierarchy_Version",
-            "name": "CSG_Hierarchy_Version",
+            "fullyQualifiedName": "CSG_Hierarchy_Fiscal_Year",
+            "name": "CSG_Hierarchy_Fiscal_Year",
             "type": "Text",
-            "label": "CSG Hierarchy Version"
+            "label": "CSG Hierarchy Fiscal Year"
         },
         {
-            "fullyQualifiedName": "CONCAT",
-            "name": "CONCAT",
+            "fullyQualifiedName": "Segment_Key",
+            "name": "Segment_Key",
             "type": "Text",
-            "label": "CONCAT"
+            "label": "Segment Key"
         },
         {
-            "fullyQualifiedName": "Security_KEY",
-            "name": "Security_KEY",
+            "fullyQualifiedName": "Security_Lookup_KEY",
+            "name": "Security_Lookup_KEY",
             "type": "Text",
-            "label": "Security_KEY"
+            "label": "Security Lookup KEY"
         }
       ]
     }

@@ -1,0 +1,152 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "numberOfLinesToIgnore": 1
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "Qualified_Oppty_Detail_Data_File_RL_csv",
+      "label": "Qualified_Oppty_Detail_Data_File_RL.csv",
+      "name": "Qualified_Oppty_Detail_Data_File_RL_csv",
+      "fields": [
+        {
+          "fullyQualifiedName": "CSG_Portfolio",
+          "name": "CSG_Portfolio",
+          "type": "Text",
+          "label": "CSG Portfolio "
+        },
+        {
+          "fullyQualifiedName": "CSG_Subregion",
+          "name": "CSG_Subregion",
+          "type": "Text",
+          "label": "CSG Subregion"
+        },
+        {
+          "fullyQualifiedName": "CSG_Region",
+          "name": "CSG_Region",
+          "type": "Text",
+          "label": "CSG Region"
+        },
+        {
+          "fullyQualifiedName": "Geo",
+          "name": "Geo",
+          "type": "Text",
+          "label": "Geo"
+        },
+        {
+          "fullyQualifiedName": "WW",
+          "name": "WW",
+          "type": "Text",
+          "label": "WW"
+        },
+        {
+          "fullyQualifiedName": "Created_By",
+          "name": "Created_By",
+          "type": "Text",
+          "label": "Created By"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_ID",
+          "name": "Opportunity_ID",
+          "type": "Text",
+          "label": "Opportunity ID"
+        },
+        {
+          "fullyQualifiedName": "Currency",
+          "name": "Currency",
+          "type": "Text",
+          "label": "Currency"
+        },
+        {
+          "fullyQualifiedName": "Amount_converted",
+          "name": "Amount_converted",
+          "type": "Numeric",
+          "label": " Amount (converted) ",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": ".",
+          "groupsSeparator": ","
+        },
+        {
+          "fullyQualifiedName": "Created_Date",
+          "name": "Created_Date",
+          "type": "Date",
+          "label": "Created Date",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Name",
+          "name": "Opportunity_Name",
+          "type": "Text",
+          "label": "Opportunity Name"
+        },
+        {
+          "fullyQualifiedName": "Account_Owner_Role",
+          "name": "Account_Owner_Role",
+          "type": "Text",
+          "label": "Account Owner Role"
+        },
+        {
+          "fullyQualifiedName": "Stage",
+          "name": "Stage",
+          "type": "Text",
+          "label": "Stage"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Record_Type",
+          "name": "Opportunity_Record_Type",
+          "type": "Text",
+          "label": "Opportunity Record Type"
+        },
+        {
+          "fullyQualifiedName": "Type",
+          "name": "Type",
+          "type": "Text",
+          "label": "Type"
+        },
+        {
+          "fullyQualifiedName": "Global_Company",
+          "name": "Global_Company",
+          "type": "Text",
+          "label": "Global Company"
+        },
+        {
+          "fullyQualifiedName": "CSG_Coverage",
+          "name": "CSG_Coverage",
+          "type": "Text",
+          "label": "CSG Coverage"
+        },
+        {
+          "fullyQualifiedName": "Close_Month",
+          "name": "Close_Month",
+          "type": "Date",
+          "label": "Close Month",
+          "format": "dd/MM/yy"
+        },
+        {
+            "fullyQualifiedName": "CSG_Hierarchy_Version",
+            "name": "CSG_Hierarchy_Version",
+            "type": "Text",
+            "label": "CSG Hierarchy Version"
+        },
+        {
+            "fullyQualifiedName": "CONCAT",
+            "name": "CONCAT",
+            "type": "Text",
+            "label": "CONCAT"
+        },
+        {
+            "fullyQualifiedName": "Security_KEY",
+            "name": "Security_KEY",
+            "type": "Text",
+            "label": "Security KEY"
+        }
+      ]
+    }
+  ]
+}
