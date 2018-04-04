@@ -64,7 +64,7 @@
           "fullyQualifiedName": "Amount_converted",
           "name": "Amount_converted",
           "type": "Numeric",
-          "label": " Amount (converted) ",
+          "label": "Amount (converted)",
           "precision": 18,
           "defaultValue": "0",
           "scale": 2,
