@@ -8,9 +8,9 @@
   "objects": [
     {
       "connector": "CSV",
-      "fullyQualifiedName": "Attrition_Detail_Data_File_RL_PL_csv",
-      "label": "Attrition_Detail_Data_File_RL_PL.csv",
-      "name": "Attrition_Detail_Data_File_RL_PL_csv",
+      "fullyQualifiedName": "FY19_Attrition_Detail_Data_File_csv",
+      "label": "FY19_Attrition_Detail_Data_File.csv",
+      "name": "FY19_Attrition_Detail_Data_File",
       "fields": [
         {
           "fullyQualifiedName": "Account_ID",
@@ -77,18 +77,6 @@
           "label": "CSG Coverage"
         },
         {
-          "fullyQualifiedName": "CSG_Region",
-          "name": "CSG_Region",
-          "type": "Text",
-          "label": "CSG Region"
-        },
-        {
-          "fullyQualifiedName": "Channel_Direct",
-          "name": "Channel_Direct",
-          "type": "Text",
-          "label": "Channel/Direct"
-        },
-        {
           "fullyQualifiedName": "Close_Month",
           "name": "Close_Month",
           "type": "Date",
@@ -114,16 +102,22 @@
           "label": "CSG WW"
         },
         {
-          "fullyQualifiedName": "CSG_Portfolio",
-          "name": "CSG_Portfolio",
+          "fullyQualifiedName": "CSG_Region",
+          "name": "CSG_Region",
           "type": "Text",
-          "label": "CSG Portfolio"
+          "label": "CSG Region"
         },
         {
           "fullyQualifiedName": "CSG_Subregion",
           "name": "CSG_Subregion",
           "type": "Text",
           "label": "CSG Subregion"
+        },
+        {
+          "fullyQualifiedName": "CSG_Portfolio",
+          "name": "CSG_Portfolio",
+          "type": "Text",
+          "label": "CSG Portfolio"
         },
         {
           "fullyQualifiedName": "Sales_Current_Mkt_Segment",
@@ -169,12 +163,6 @@
           "scale": 2,
           "format": "$#,##0.00",
           "decimalSeparator": "."
-        },
-        {
-          "fullyQualifiedName": "Licenses_Services",
-          "name": "Licenses_Services",
-          "type": "Text",
-          "label": "Licenses/Services"
         },
         {
           "fullyQualifiedName": "NCO_Attrition_USD",
@@ -225,12 +213,6 @@
           "name": "Oppty_RFL",
           "type": "Text",
           "label": "Oppty RFL"
-        },
-        {
-          "fullyQualifiedName": "PL_Responsibility",
-          "name": "PL_Responsibility",
-          "type": "Text",
-          "label": "PL Responsibility"
         },
         {
           "fullyQualifiedName": "Sales_Region",
@@ -285,28 +267,28 @@
           "decimalSeparator": "."
         },
         {
-          "fullyQualifiedName": "Flag",
-          "name": "Flag",
-          "type": "Text",
-          "label": "Flag"
+            "fullyQualifiedName": "CSG_Hierarchy_Fiscal_Year",
+            "name": "CSG_Hierarchy_Fiscal_Year",
+            "type": "Text",
+            "label": "CSG Hierarchy Fiscal Year"
         },
         {
-            "fullyQualifiedName": "CSG_Hierarchy_Version",
-            "name": "CSG_Hierarchy_Version",
+            "fullyQualifiedName": "Segment_Key",
+            "name": "Segment_Key",
             "type": "Text",
-            "label": "CSG Hierarchy Version"
+            "label": "Segment Key"
         },
         {
-            "fullyQualifiedName": "CONCAT",
-            "name": "CONCAT",
+            "fullyQualifiedName": "Security_Lookup_KEY",
+            "name": "Security_Lookup_KEY",
             "type": "Text",
-            "label": "CONCAT"
+            "label": "Security Lookup KEY"
         },
         {
-            "fullyQualifiedName": "Security_KEY",
-            "name": "Security_KEY",
+            "fullyQualifiedName": "Segment_Key_Validation",
+            "name": "Segment_Key_Validation",
             "type": "Text",
-            "label": "Security_KEY"
+            "label": "Segment Key Validation"
         }
       ]
     }

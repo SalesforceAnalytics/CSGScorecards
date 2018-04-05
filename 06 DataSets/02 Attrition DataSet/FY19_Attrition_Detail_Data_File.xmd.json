@@ -1,22 +1,484 @@
 {
-  "dataset": {},
-  "dates": [],
-  "derivedDimensions": [],
-  "derivedMeasures": [],
-  "dimensions": [
-    {
-      "conditionalFormatting": {},
-      "customActions": [],
-      "field": "Account_Name",
-      "linkTemplateEnabled": true,
-      "members": [],
-      "recordDisplayFields": [],
-      "recordIdField": "Account_ID",
-      "salesforceActions": [],
-      "salesforceActionsEnabled": false
-    }
-  ],
-  "measures": [],
-  "organizations": [],
-  "showDetailsDefaultFields": []
+    "dataset": {},
+    "dates": [],
+    "derivedDimensions": [],
+    "derivedMeasures": [],
+    "dimensions": [
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Account_ID",
+            "fullyQualifiedName": "Account_ID",
+            "label": "Account ID",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Account_ID",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Account_Name",
+            "fullyQualifiedName": "Account_Name",
+            "label": "Account Name",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Account_Name",
+            "recordDisplayFields": [],
+            "recordIdField": "Account_ID",
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Associated_Opportunity_ID",
+            "fullyQualifiedName": "Associated_Opportunity_ID",
+            "label": "Associated Opportunity ID",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Associated_Opportunity_ID",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "AOV_Band",
+            "fullyQualifiedName": "AOV_Band",
+            "label": "AOV Band",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "AOV_Band",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Support_Level",
+            "fullyQualifiedName": "Support_Level",
+            "label": "Support Level",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Support_Level",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Attrition_ID",
+            "fullyQualifiedName": "Attrition_ID",
+            "label": "Attrition ID",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Attrition_ID",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Coverage",
+            "fullyQualifiedName": "CSG_Coverage",
+            "label": "CSG Coverage",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Coverage",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Country",
+            "fullyQualifiedName": "Country",
+            "label": "Country",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Country",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Geo",
+            "fullyQualifiedName": "CSG_Geo",
+            "label": "CSG Geo",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Geo",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_WW",
+            "fullyQualifiedName": "CSG_WW",
+            "label": "CSG WW",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_WW",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Region",
+            "fullyQualifiedName": "CSG_Region",
+            "label": "CSG Region",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Region",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Subregion",
+            "fullyQualifiedName": "CSG_Subregion",
+            "label": "CSG Subregion",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Subregion",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Portfolio",
+            "fullyQualifiedName": "CSG_Portfolio",
+            "label": "CSG Portfolio",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Portfolio",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Sales_Current_Mkt_Segment",
+            "fullyQualifiedName": "Sales_Current_Mkt_Segment",
+            "label": "Sales Current Mkt Segment",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Sales_Current_Mkt_Segment",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Global_Company",
+            "fullyQualifiedName": "Global_Company",
+            "label": "Global Company",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Global_Company",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Oppty_RFL",
+            "fullyQualifiedName": "Oppty_RFL",
+            "label": "Oppty RFL",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Oppty_RFL",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Sales_Region",
+            "fullyQualifiedName": "Sales_Region",
+            "label": "Sales Region",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Sales_Region",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "RO_Reason",
+            "fullyQualifiedName": "RO_Reason",
+            "label": "RO Reason",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "RO_Reason",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Sales_Direct",
+            "fullyQualifiedName": "Sales_Direct",
+            "label": "Sales Direct",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Sales_Direct",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Sales_Extended_Direct",
+            "fullyQualifiedName": "Sales_Extended_Direct",
+            "label": "Sales Extended Direct",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Sales_Extended_Direct",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Type",
+            "fullyQualifiedName": "Type",
+            "label": "Type",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Type",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "CSG_Hierarchy_Fiscal_Year",
+            "fullyQualifiedName": "CSG_Hierarchy_Fiscal_Year",
+            "label": "CSG Hierarchy Fiscal Year",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "CSG_Hierarchy_Fiscal_Year",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Segment_Key",
+            "fullyQualifiedName": "Segment_Key",
+            "label": "Segment Key",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Segment_Key",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Security_Lookup_KEY",
+            "fullyQualifiedName": "Security_Lookup_KEY",
+            "label": "Security Lookup KEY",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Security_Lookup_KEY",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Segment_Key_Validation",
+            "fullyQualifiedName": "Segment_Key_Validation",
+            "label": "Segment Key Validation",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Segment_Key_Validation",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        }
+    ],
+    "measures": [
+        {
+            "field": "Attrition_Decrease_AOV_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Attrition_Decrease_AOV_USD",
+            "label": "Attrition & Decrease AOV (USD)",
+            "origin": "Attrition_Decrease_AOV_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "Uncategorized_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Uncategorized_Attrition_USD",
+            "label": "Uncategorized Attrition (USD)",
+            "origin": "Uncategorized_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "Data_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Data_Attrition_USD",
+            "label": "Data Attrition (USD)",
+            "origin": "Data_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "Heroku_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Heroku_Attrition_USD",
+            "label": "Heroku Attrition (USD)",
+            "origin": "Heroku_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "ISV_Channel_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "ISV_Channel_Attrition_USD",
+            "label": "ISV/Channel Attrition (USD)",
+            "origin": "ISV_Channel_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "NCO_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "NCO_Attrition_USD",
+            "label": "NCO Attrition (USD)",
+            "origin": "NCO_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "Off_cycle_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Off_cycle_Attrition_USD",
+            "label": "Off cycle Attrition (USD)",
+            "origin": "Off_cycle_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "On_cycle_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "On_cycle_Attrition_USD",
+            "label": "On cycle Attrition (USD)",
+            "origin": "On_cycle_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "Oppty_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Oppty_Attrition_USD",
+            "label": "Oppty Attrition (USD)",
+            "origin": "Oppty_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "RO_Attrition_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "RO_Attrition_USD",
+            "label": "RO Attrition (USD)",
+            "origin": "RO_Attrition_USD",
+            "showInExplorer": true
+        },
+        {
+            "field": "Begin_AOV_USD",
+            "format": {
+                "customFormat": "[\"$#,##0.00\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Begin_AOV_USD",
+            "label": "Begin AOV (USD)",
+            "origin": "Begin_AOV_USD",
+            "showInExplorer": true
+        }   
+    ],
+    "organizations": [],
+    "showDetailsDefaultFields": []
 }
