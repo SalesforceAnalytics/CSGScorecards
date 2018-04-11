@@ -255,6 +255,20 @@
             "salesforceActions": [],
             "salesforceActionsEnabled": true,
             "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Segment_Key_Validation",
+            "fullyQualifiedName": "Segment_Key_Validation",
+            "label": "Segment Key Validation",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Segment_Key_Validation",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
         }
     ],
     "measures": [

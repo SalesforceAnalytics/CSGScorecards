@@ -145,6 +145,12 @@
             "name": "Security_Lookup_KEY",
             "type": "Text",
             "label": "Security Lookup KEY"
+        },
+        {
+            "fullyQualifiedName": "Segment_Key_Validation",
+            "name": "Segment_Key_Validation",
+            "type": "Text",
+            "label": "Segment Key Validation"
         }
       ]
     }
