@@ -13,10 +13,22 @@
       "name": "Qualified_Oppty_Detail_Data_File_RL_csv",
       "fields": [
         {
+          "fullyQualifiedName": "Opportunity_ID",
+          "name": "Opportunity_ID",
+          "type": "Text",
+          "label": "Opportunity ID"
+        },
+        {
+          "fullyQualifiedName": "Opportunity_Name",
+          "name": "Opportunity_Name",
+          "type": "Text",
+          "label": "Opportunity Name"
+        },
+        {
           "fullyQualifiedName": "CSG_Portfolio",
           "name": "CSG_Portfolio",
           "type": "Text",
-          "label": "CSG Portfolio "
+          "label": "CSG Portfolio"
         },
         {
           "fullyQualifiedName": "CSG_Subregion",
@@ -34,13 +46,13 @@
           "fullyQualifiedName": "Geo",
           "name": "Geo",
           "type": "Text",
-          "label": "Geo"
+          "label": "CSG Geo"
         },
         {
           "fullyQualifiedName": "WW",
           "name": "WW",
           "type": "Text",
-          "label": "WW"
+          "label": "CSG WW"
         },
         {
           "fullyQualifiedName": "Created_By",
@@ -49,10 +61,29 @@
           "label": "Created By"
         },
         {
-          "fullyQualifiedName": "Opportunity_ID",
-          "name": "Opportunity_ID",
+          "fullyQualifiedName": "Created_By_Title",
+          "name": "Created_By_Title",
           "type": "Text",
-          "label": "Opportunity ID"
+          "label": "Created By Title"
+        },
+        {
+          "fullyQualifiedName": "Created_Date",
+          "name": "Created_Date",
+          "type": "Date",
+          "label": "Created Date",
+          "format": "MM/dd/yy"
+        },
+        {
+          "fullyQualifiedName": "CFL_Role",
+          "name": "CFL_Role",
+          "type": "Text",
+          "label": "CFL Role"
+        },
+        {
+          "fullyQualifiedName": "CSG_Qual_Opp_FY",
+          "name": "CSG_Qual_Opp_FY",
+          "type": "Text",
+          "label": "CSG Qual Opp FY"
         },
         {
           "fullyQualifiedName": "Currency",
@@ -71,19 +102,6 @@
           "format": "$#,##0.00",
           "decimalSeparator": ".",
           "groupsSeparator": ","
-        },
-        {
-          "fullyQualifiedName": "Created_Date",
-          "name": "Created_Date",
-          "type": "Date",
-          "label": "Created Date",
-          "format": "MM/dd/yy"
-        },
-        {
-          "fullyQualifiedName": "Opportunity_Name",
-          "name": "Opportunity_Name",
-          "type": "Text",
-          "label": "Opportunity Name"
         },
         {
           "fullyQualifiedName": "Account_Owner_Role",
@@ -114,19 +132,6 @@
           "name": "Global_Company",
           "type": "Text",
           "label": "Global Company"
-        },
-        {
-          "fullyQualifiedName": "CSG_Coverage",
-          "name": "CSG_Coverage",
-          "type": "Text",
-          "label": "CSG Coverage"
-        },
-        {
-          "fullyQualifiedName": "Close_Month",
-          "name": "Close_Month",
-          "type": "Date",
-          "label": "Close Month",
-          "format": "dd/MM/yy"
         },
         {
             "fullyQualifiedName": "CSG_Hierarchy_Fiscal_Year",
