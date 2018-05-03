@@ -48,6 +48,18 @@
           "decimalSeparator": "."
         },
         {
+          "fullyQualifiedName": "Portfolio_Type",
+          "name": "Portfolio_Type",
+          "type": "Text",
+          "label": "Portfolio Type"
+        },
+        {
+          "fullyQualifiedName": "Shared_Attrition",
+          "name": "Shared_Attrition",
+          "type": "Text",
+          "label": "Shared Attrition"
+        },
+        {
           "fullyQualifiedName": "Support_Level",
           "name": "Support_Level",
           "type": "Text",
