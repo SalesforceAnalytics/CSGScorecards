@@ -10644,6 +10644,7 @@
                 "useGlobal": false,
                 "values": [
                     {
+                        "display": "Yes",
                         "SOQL_Grain_Sort_Order": [
                             "00",
                             "01",
@@ -10653,17 +10654,16 @@
                             "05",
                             "06",
                             "07"
-                        ],
-                        "display": "Yes"
+                        ]
                     },
                     {
+                        "display": "No",
                         "SOQL_Grain_Sort_Order": [
                             "02",
                             "04",
                             "06",
                             "07"
-                        ],
-                        "display": "No"
+                        ]
                     }
                 ],
                 "numbers": [],
