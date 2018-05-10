@@ -310,5 +310,77 @@
       "source": "aFY19_Qualified_Oppty",
       "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
     }
+  },
+  "eFY19_Attrition": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_FY19_Attrition_Detail_Data_File"
+    }
+  },
+  "aFY19_Attrition": {
+    "action": "augment",
+    "parameters": {
+      "left": "eFY19_Attrition",
+      "right": "cFY19_CSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "Security_Lookup_KEY"
+      ],
+      "right_key": [
+        "CONCAT"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "rFY19_Attrition_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "FY19_Attrition_Detail_Data_File",
+      "alias": "FY19_Attrition_Detail_Data_File",
+      "source": "aFY19_Attrition",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+    }
+  },
+  "eFY19_Cloud_Services_Booking": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_FY19_Cloud_Services_Bookings_Detail_Data_File"
+    }
+  },
+  "aFY19_Cloud_Services_Booking": {
+    "action": "augment",
+    "parameters": {
+      "left": "eFY19_Cloud_Services_Booking",
+      "right": "cFY19_CSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "Security_Lookup_KEY"
+      ],
+      "right_key": [
+        "CONCAT"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "rFY19_Cloud_Services_Booking_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "FY19_Cloud_Services_Bookings_Detail_Data_File",
+      "alias": "FY19_Cloud_Services_Bookings_Detail_Data_File",
+      "source": "aFY19_Cloud_Services_Booking",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+    }
   }
 }

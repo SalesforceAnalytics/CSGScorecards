@@ -1,0 +1,308 @@
+{
+  "fileFormat": {
+    "charsetName": "UTF-8",
+    "fieldsDelimitedBy": ",",
+    "fieldsEnclosedBy": "\"",
+    "numberOfLinesToIgnore": 1
+  },
+  "objects": [
+    {
+      "connector": "CSV",
+      "fullyQualifiedName": "FY19_Attrition_Detail_Data_File_csv",
+      "label": "FY19_Attrition_Detail_Data_File.csv",
+      "name": "FY19_Attrition_Detail_Data_File",
+      "fields": [
+        {
+          "fullyQualifiedName": "Account_ID",
+          "name": "Account_ID",
+          "type": "Text",
+          "label": "Account ID"
+        },
+        {
+          "fullyQualifiedName": "Account_Name",
+          "name": "Account_Name",
+          "type": "Text",
+          "label": "Account Name"
+        },
+        {
+          "fullyQualifiedName": "Associated_Opportunity_ID",
+          "name": "Associated_Opportunity_ID",
+          "type": "Text",
+          "label": "Associated Opportunity ID"
+        },
+        {
+          "fullyQualifiedName": "AOV_Band",
+          "name": "AOV_Band",
+          "type": "Text",
+          "label": "AOV Band"
+        },
+        {
+          "fullyQualifiedName": "Attrition_Decrease_AOV_USD",
+          "name": "Attrition_Decrease_AOV_USD",
+          "type": "Numeric",
+          "label": "Attrition & Decrease AOV (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Portfolio_Type",
+          "name": "Portfolio_Type",
+          "type": "Text",
+          "label": "Portfolio Type"
+        },
+        {
+          "fullyQualifiedName": "Shared_Attrition",
+          "name": "Shared_Attrition",
+          "type": "Text",
+          "label": "Shared Attrition"
+        },
+        {
+          "fullyQualifiedName": "Support_Level",
+          "name": "Support_Level",
+          "type": "Text",
+          "label": "Support Level"
+        },
+        {
+          "fullyQualifiedName": "Uncategorized_Attrition_USD",
+          "name": "Uncategorized_Attrition_USD",
+          "type": "Numeric",
+          "label": "Uncategorized Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Attrition_ID",
+          "name": "Attrition_ID",
+          "type": "Text",
+          "label": "Attrition: ID"
+        },
+        {
+          "fullyQualifiedName": "CSG_Coverage",
+          "name": "CSG_Coverage",
+          "type": "Text",
+          "label": "CSG Coverage"
+        },
+        {
+          "fullyQualifiedName": "Close_Month",
+          "name": "Close_Month",
+          "type": "Date",
+          "label": "Close Month",
+          "format": "MM/dd/yyyy"
+        },
+        {
+          "fullyQualifiedName": "Country",
+          "name": "Country",
+          "type": "Text",
+          "label": "Country"
+        },
+        {
+          "fullyQualifiedName": "CSG_Geo",
+          "name": "CSG_Geo",
+          "type": "Text",
+          "label": "CSG Geo"
+        },
+        {
+          "fullyQualifiedName": "CSG_WW",
+          "name": "CSG_WW",
+          "type": "Text",
+          "label": "CSG WW"
+        },
+        {
+          "fullyQualifiedName": "CSG_Region",
+          "name": "CSG_Region",
+          "type": "Text",
+          "label": "CSG Region"
+        },
+        {
+          "fullyQualifiedName": "CSG_Subregion",
+          "name": "CSG_Subregion",
+          "type": "Text",
+          "label": "CSG Subregion"
+        },
+        {
+          "fullyQualifiedName": "CSG_Portfolio",
+          "name": "CSG_Portfolio",
+          "type": "Text",
+          "label": "CSG Portfolio"
+        },
+        {
+          "fullyQualifiedName": "Sales_Current_Mkt_Segment",
+          "name": "Sales_Current_Mkt_Segment",
+          "type": "Text",
+          "label": "Sales Current Mkt Segment"
+        },
+        {
+          "fullyQualifiedName": "Data_Attrition_USD",
+          "name": "Data_Attrition_USD",
+          "type": "Numeric",
+          "label": "Data Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Global_Company",
+          "name": "Global_Company",
+          "type": "Text",
+          "label": "Global Company"
+        },
+        {
+          "fullyQualifiedName": "Heroku_Attrition_USD",
+          "name": "Heroku_Attrition_USD",
+          "type": "Numeric",
+          "label": "Heroku Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "ISV_Channel_Attrition_USD",
+          "name": "ISV_Channel_Attrition_USD",
+          "type": "Numeric",
+          "label": "ISV/Channel Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "NCO_Attrition_USD",
+          "name": "NCO_Attrition_USD",
+          "type": "Numeric",
+          "label": "NCO Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Off_cycle_Attrition_USD",
+          "name": "Off_cycle_Attrition_USD",
+          "type": "Numeric",
+          "label": "Off cycle Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "On_cycle_Attrition_USD",
+          "name": "On_cycle_Attrition_USD",
+          "type": "Numeric",
+          "label": "On cycle Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Oppty_Attrition_USD",
+          "name": "Oppty_Attrition_USD",
+          "type": "Numeric",
+          "label": "Oppty Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "Oppty_RFL",
+          "name": "Oppty_RFL",
+          "type": "Text",
+          "label": "Oppty RFL"
+        },
+        {
+          "fullyQualifiedName": "Sales_Region",
+          "name": "Sales_Region",
+          "type": "Text",
+          "label": "Sales Region"
+        },
+        {
+          "fullyQualifiedName": "RO_Attrition_USD",
+          "name": "RO_Attrition_USD",
+          "type": "Numeric",
+          "label": "RO Attrition (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+          "fullyQualifiedName": "RO_Reason",
+          "name": "RO_Reason",
+          "type": "Text",
+          "label": "RO Reason"
+        },
+        {
+          "fullyQualifiedName": "Sales_Direct",
+          "name": "Sales_Direct",
+          "type": "Text",
+          "label": "Sales Direct"
+        },
+        {
+          "fullyQualifiedName": "Sales_Extended_Direct",
+          "name": "Sales_Extended_Direct",
+          "type": "Text",
+          "label": "Sales Extended Direct"
+        },
+        {
+          "fullyQualifiedName": "Type",
+          "name": "Type",
+          "type": "Text",
+          "label": "Type"
+        },
+        {
+          "fullyQualifiedName": "Begin_AOV_USD",
+          "name": "Begin_AOV_USD",
+          "type": "Numeric",
+          "label": "Begin AOV (USD)",
+          "precision": 18,
+          "defaultValue": "0",
+          "scale": 2,
+          "format": "$#,##0.00",
+          "decimalSeparator": "."
+        },
+        {
+            "fullyQualifiedName": "CSG_Hierarchy_Fiscal_Year",
+            "name": "CSG_Hierarchy_Fiscal_Year",
+            "type": "Text",
+            "label": "CSG Hierarchy Fiscal Year"
+        },
+        {
+            "fullyQualifiedName": "Segment_Key",
+            "name": "Segment_Key",
+            "type": "Text",
+            "label": "Segment Key"
+        },
+        {
+            "fullyQualifiedName": "Security_Lookup_KEY",
+            "name": "Security_Lookup_KEY",
+            "type": "Text",
+            "label": "Security Lookup KEY"
+        },
+        {
+            "fullyQualifiedName": "Segment_Key_Validation",
+            "name": "Segment_Key_Validation",
+            "type": "Text",
+            "label": "Segment Key Validation"
+        }
+      ]
+    }
+  ]
+}
