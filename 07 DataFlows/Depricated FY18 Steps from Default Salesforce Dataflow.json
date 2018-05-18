@@ -1,0 +1,212 @@
+{
+  "rCloud_Services_Booking_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Cloud_Services_Bookings_Detail_Data_File_RL",
+      "alias": "Cloud_Services_Bookings_Detail_Data_File_RL",
+      "source": "aCloud_Services_Booking",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+    }
+  },
+  "aQualified_Oppty": {
+    "action": "augment",
+    "parameters": {
+      "left": "eQualified_Oppty",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "cCSG_Filter": {
+    "action": "computeExpression",
+    "parameters": {
+      "source": "eCSG_Filter",
+      "mergeWithSource": true,
+      "computedFields": [
+        {
+          "name": "Concat",
+          "saqlExpression": "'Geo' + 'CSG_Region' + 'CSG_Subregion' + 'CSG_Portfolio'",
+          "label": "Concat",
+          "type": "Text"
+        }
+      ]
+    }
+  },
+  "rQualified_Oppty_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Qualified_Oppty_Detail_Data_File_RL",
+      "alias": "Qualified_Oppty_Detail_Data_File_RL",
+      "source": "aQualified_Oppty",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+    }
+  },
+  "rAttrition_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "Attrition_Detail_Data_File_RL_PL",
+      "alias": "Attrition_Detail_Data_File_RL_PL",
+      "source": "aAttrition",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+    }
+  },
+  "eFY18_Metric_Scorecard": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_FY18_CSG_RL_SL_PL_Metric_Scorecard"
+    }
+  },
+  "aEWS_Growth": {
+    "action": "augment",
+    "parameters": {
+      "left": "eEWS_Growth",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "rCSG_Filter_Admin": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "[ADMIN] CSG_Filter",
+      "alias": "ADMIN_CSG_Filter",
+      "source": "cCSG_Filter"  ,
+      "rowLevelSecurityFilter": "" 
+    }
+  },
+  "eCSG_Filter": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "DEMO_CSG_Filter"
+    }
+  },
+  "eCloud_Services_Booking": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_Cloud_Services_Bookings_Detail_Data_File_RL"
+    }
+  },
+  "eQualified_Oppty": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_Qualified_Oppty_Detail_Data_File_RL"
+    }
+  },
+  "aCloud_Services_Booking": {
+    "action": "augment",
+    "parameters": {
+      "left": "eCloud_Services_Booking",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "rFY18_Metrix_Scorecard_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+      "alias": "FY18_CSG_RL_SL_PL_Metric_Scorecard",
+      "source": "aFY18_Metric_Scorecard",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+    }
+  },
+  "eEWS_Growth": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_EWS_Growth_Detail_Data_File_RL_PL"
+    }
+  },
+  "rEWS_Growth_Security": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "name": "EWS_Growth_Detail_Data_File_RL_PL",
+      "alias": "EWS_Growth_Detail_Data_File_RL_PL",
+      "source": "aEWS_Growth",
+      "rowLevelSecurityFilter": "'Secure.CSM_User_Id' == \"$User.Id\""     
+    }
+  },
+  "eAttrition": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "ADMIN_Attrition_Detail_Data_File_RL_PL"
+    }
+  },
+  "aAttrition": {
+    "action": "augment",
+    "parameters": {
+      "left": "eAttrition",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  },
+  "aFY18_Metric_Scorecard": {
+    "action": "augment",
+    "parameters": {
+      "left": "eFY18_Metric_Scorecard",
+      "right": "cCSG_Filter",
+      "relationship": "Secure",
+      "operation": "LookupSingleValue",
+      "left_key": [
+        "CONCAT"
+      ],
+      "right_key": [
+        "Concat"
+      ],
+      "right_select": [
+        "Access_Override",
+        "Username",
+        "CSM_User_Name",
+        "CSM_User_Id"
+      ]
+    }
+  }
+}
