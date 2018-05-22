@@ -11228,7 +11228,7 @@
                             },
                             {
                                 "colspan": 14,
-                                "column": 24,
+                                "column": 20,
                                 "name": "pillbox_1",
                                 "row": 25,
                                 "rowspan": 3,
@@ -13922,7 +13922,7 @@
                             },
                             {
                                 "colspan": 4,
-                                "column": 20,
+                                "column": 16,
                                 "name": "text_14",
                                 "row": 25,
                                 "rowspan": 3,
@@ -13951,7 +13951,7 @@
                                 }
                             },
                             {
-                                "colspan": 15,
+                                "colspan": 9,
                                 "column": 5,
                                 "name": "pillbox_3",
                                 "row": 25,
@@ -13965,7 +13965,7 @@
                                 }
                             },
                             {
-                                "colspan": 8,
+                                "colspan": 10,
                                 "column": 1,
                                 "name": "pillbox_4",
                                 "row": 32,
@@ -13979,7 +13979,7 @@
                                 }
                             },
                             {
-                                "colspan": 9,
+                                "colspan": 10,
                                 "column": 1,
                                 "name": "container_2",
                                 "row": 32,
@@ -16900,8 +16900,8 @@
                                 }
                             },
                             {
-                                "colspan": 6,
-                                "column": 12,
+                                "colspan": 7,
+                                "column": 11,
                                 "name": "text_3",
                                 "row": 32,
                                 "rowspan": 3,
@@ -25985,7 +25985,7 @@
                 "parameters": {
                     "fontSize": 14,
                     "text": "Snapshot: {{coalesce(cell(Cal_1.result, 0, \"Month\"), \"Error\").asString()}} {{coalesce(cell(Cal_1.result, 0, \"Year_Number\"), \"Error\").asString()}}",
-                    "textAlignment": "left",
+                    "textAlignment": "right",
                     "textColor": "rgb(22, 50, 92)"
                 },
                 "type": "text"
