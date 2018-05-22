@@ -1,5 +1,5 @@
 {
-    "label": "FY19 CSG Scorecard -- Adoption Growth",
+    "label": "FY19 CSG Scorecard -- Services Margin",
     "mobileDisabled": false,
     "description": "Create a home page for your app",
     "state": {
@@ -12,7 +12,7 @@
                         "fieldName": "Geo"
                     },
                     {
-                        "dataSourceName": "FY19_Attrition_Detail_Data_File",
+                        "dataSourceName": "Attrition_Detail_Data_File_RL_PL",
                         "dataSourceType": "saql",
                         "fieldName": "CSG_Geo"
                     }
@@ -28,7 +28,7 @@
                         "fieldName": "Console_Region"
                     },
                     {
-                        "dataSourceName": "FY19_Attrition_Detail_Data_File",
+                        "dataSourceName": "Attrition_Detail_Data_File_RL_PL",
                         "dataSourceType": "saql",
                         "fieldName": "CSG_Region"
                     }
@@ -44,7 +44,7 @@
                         "fieldName": "Console_Subregion"
                     },
                     {
-                        "dataSourceName": "FY19_Attrition_Detail_Data_File",
+                        "dataSourceName": "Attrition_Detail_Data_File_RL_PL",
                         "dataSourceType": "saql",
                         "fieldName": "CSG_Subregion"
                     }
@@ -60,7 +60,7 @@
                         "fieldName": "Console_Portfolio"
                     },
                     {
-                        "dataSourceName": "FY19_Attrition_Detail_Data_File",
+                        "dataSourceName": "Attrition_Detail_Data_File_RL_PL",
                         "dataSourceType": "saql",
                         "fieldName": "CSG_Portfolio"
                     }
@@ -84,7 +84,7 @@
                             {
                                 "colspan": 11,
                                 "column": 1,
-                                "name": "container_11",
+                                "name": "container_40",
                                 "row": 11,
                                 "rowspan": 4,
                                 "widgetStyle": {
@@ -94,6 +94,20 @@
                                         "top",
                                         "left"
                                     ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 8
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 1,
+                                "name": "text_40",
+                                "row": 11,
+                                "rowspan": 2,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [],
                                     "borderRadius": 0,
                                     "borderWidth": 8
                                 }
@@ -140,6 +154,34 @@
                                         "left"
                                     ],
                                     "borderRadius": 0,
+                                    "borderWidth": 8
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 25,
+                                "name": "listselector_subregion_FFF",
+                                "row": 6,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [
+                                        "left"
+                                    ],
+                                    "borderWidth": 8
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 37,
+                                "name": "listselector_portfolio_FFF",
+                                "row": 6,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [
+                                        "left"
+                                    ],
                                     "borderWidth": 8
                                 }
                             },
@@ -266,7 +308,7 @@
                                 }
                             },
                             {
-                                "colspan": 5,
+                                "colspan": 6,
                                 "column": 7,
                                 "name": "text_1",
                                 "row": 0,
@@ -286,8 +328,8 @@
                                 }
                             },
                             {
-                                "colspan": 29,
-                                "column": 19,
+                                "colspan": 33,
+                                "column": 15,
                                 "name": "container_2",
                                 "row": 22,
                                 "rowspan": 29,
@@ -302,8 +344,8 @@
                                 }
                             },
                             {
-                                "colspan": 29,
-                                "column": 19,
+                                "colspan": 31,
+                                "column": 16,
                                 "name": "chart_1",
                                 "row": 27,
                                 "rowspan": 22,
@@ -328,7 +370,7 @@
                                 }
                             },
                             {
-                                "colspan": 9,
+                                "colspan": 10,
                                 "column": 2,
                                 "name": "text_9",
                                 "row": 27,
@@ -343,7 +385,7 @@
                             },
                             {
                                 "colspan": 2,
-                                "column": 11,
+                                "column": 12,
                                 "name": "text_10",
                                 "row": 27,
                                 "rowspan": 3,
@@ -358,8 +400,8 @@
                                 }
                             },
                             {
-                                "colspan": 18,
-                                "column": 19,
+                                "colspan": 16,
+                                "column": 16,
                                 "name": "text_14",
                                 "row": 23,
                                 "rowspan": 4,
@@ -372,7 +414,7 @@
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 12,
                                 "column": 2,
                                 "name": "text_12",
                                 "row": 30,
@@ -388,8 +430,8 @@
                                 }
                             },
                             {
-                                "colspan": 9,
-                                "column": 1,
+                                "colspan": 12,
+                                "column": 2,
                                 "name": "text_15",
                                 "row": 23,
                                 "rowspan": 4,
@@ -398,7 +440,7 @@
                                 }
                             },
                             {
-                                "colspan": 18,
+                                "colspan": 14,
                                 "column": 1,
                                 "name": "container_9",
                                 "row": 22,
@@ -416,7 +458,7 @@
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 12,
                                 "column": 2,
                                 "name": "text_16",
                                 "row": 34,
@@ -432,7 +474,7 @@
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 12,
                                 "column": 2,
                                 "name": "text_17",
                                 "row": 40,
@@ -448,7 +490,7 @@
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 12,
                                 "column": 2,
                                 "name": "text_18",
                                 "row": 46,
@@ -480,8 +522,8 @@
                                 }
                             },
                             {
-                                "colspan": 9,
-                                "column": 13,
+                                "colspan": 10,
+                                "column": 14,
                                 "name": "text_21",
                                 "row": 0,
                                 "rowspan": 3,
@@ -495,7 +537,7 @@
                             },
                             {
                                 "colspan": 9,
-                                "column": 37,
+                                "column": 38,
                                 "name": "pillbox_3",
                                 "row": 24,
                                 "rowspan": 2,
@@ -518,8 +560,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 5,
+                                "column": 9,
                                 "name": "text_19",
                                 "row": 31,
                                 "rowspan": 3,
@@ -538,8 +580,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 5,
+                                "column": 9,
                                 "name": "text_23",
                                 "row": 35,
                                 "rowspan": 3,
@@ -558,8 +600,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 5,
+                                "column": 9,
                                 "name": "text_25",
                                 "row": 38,
                                 "rowspan": 2,
@@ -588,8 +630,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 5,
+                                "column": 9,
                                 "name": "text_27",
                                 "row": 44,
                                 "rowspan": 2,
@@ -598,8 +640,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 5,
+                                "column": 9,
                                 "name": "text_28",
                                 "row": 41,
                                 "rowspan": 3,
@@ -610,7 +652,7 @@
                             {
                                 "colspan": 1,
                                 "column": 6,
-                                "name": "text_6",
+                                "name": "text_11",
                                 "row": 0,
                                 "rowspan": 3,
                                 "widgetStyle": {
@@ -619,31 +661,7 @@
                             },
                             {
                                 "colspan": 1,
-                                "column": 12,
-                                "name": "text_7",
-                                "row": 0,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "borderEdges": []
-                                }
-                            },
-                            {
-                                "colspan": 11,
-                                "column": 1,
-                                "name": "text_40",
-                                "row": 11,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 1,
-                                "column": 22,
+                                "column": 13,
                                 "name": "text_30",
                                 "row": 0,
                                 "rowspan": 3,
@@ -652,50 +670,19 @@
                                 }
                             },
                             {
-                                "colspan": 9,
-                                "column": 1,
-                                "name": "text_11",
-                                "row": 19,
-                                "rowspan": 2,
+                                "colspan": 1,
+                                "column": 24,
+                                "name": "text_31",
+                                "row": 0,
+                                "rowspan": 3,
                                 "widgetStyle": {
                                     "borderEdges": []
                                 }
                             },
                             {
                                 "colspan": 11,
-                                "column": 13,
-                                "name": "container_1",
-                                "row": 11,
-                                "rowspan": 4,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [
-                                        "top",
-                                        "left"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 11,
-                                "column": 13,
-                                "name": "text_31",
-                                "row": 11,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 11,
                                 "column": 25,
-                                "name": "container_6",
+                                "name": "container_1",
                                 "row": 11,
                                 "rowspan": 4,
                                 "widgetStyle": {
@@ -724,237 +711,54 @@
                                 }
                             },
                             {
-                                "colspan": 2,
-                                "column": 14,
-                                "name": "text_4",
-                                "row": 27,
-                                "rowspan": 3,
+                                "colspan": 11,
+                                "column": 13,
+                                "name": "container_10",
+                                "row": 11,
+                                "rowspan": 4,
                                 "widgetStyle": {
-                                    "backgroundColor": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"Colorization_Hex_Code\"), \"#FFFFFF\").asString()}}",
-                                    "borderColor": "#FFFFFF",
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
                                     "borderEdges": [
-                                        "all"
+                                        "top",
+                                        "left"
                                     ],
                                     "borderRadius": 0,
                                     "borderWidth": 8
                                 }
                             },
                             {
-                                "colspan": 3,
+                                "colspan": 11,
                                 "column": 13,
-                                "name": "text_5",
-                                "row": 31,
-                                "rowspan": 3,
+                                "name": "text_33",
+                                "row": 11,
+                                "rowspan": 2,
                                 "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
+                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
                                     "borderEdges": [],
                                     "borderRadius": 0,
-                                    "borderWidth": 1
+                                    "borderWidth": 8
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 13,
-                                "name": "text_8",
-                                "row": 35,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 16,
+                                "colspan": 9,
+                                "column": 1,
                                 "name": "text_35",
-                                "row": 31,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 2,
-                                "column": 17,
-                                "name": "text_36",
-                                "row": 27,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"Colorization_Hex_Code\"), \"#FFFFFF\").asString()}}",
-                                    "borderColor": "#FFFFFF",
-                                    "borderEdges": [
-                                        "all"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 16,
-                                "name": "text_37",
-                                "row": 35,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 13,
-                                "name": "text_38",
-                                "row": 38,
+                                "row": 19,
                                 "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 16,
-                                "name": "text_39",
-                                "row": 38,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 13,
-                                "name": "text_41",
-                                "row": 41,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 16,
-                                "name": "text_42",
-                                "row": 41,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 13,
-                                "name": "text_43",
-                                "row": 44,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 16,
-                                "name": "text_44",
-                                "row": 44,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 10,
-                                "name": "text_46",
-                                "row": 24,
-                                "rowspan": 3,
                                 "widgetStyle": {
                                     "borderEdges": []
                                 }
                             },
                             {
                                 "colspan": 3,
-                                "column": 13,
-                                "name": "text_47",
-                                "row": 24,
+                                "column": 0,
+                                "name": "container_12",
+                                "row": 178,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "borderEdges": []
-                                }
-                            },
-                            {
-                                "colspan": 3,
-                                "column": 16,
-                                "name": "text_48",
-                                "row": 24,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "borderEdges": []
-                                }
-                            },
-                            {
-                                "colspan": 11,
-                                "column": 25,
-                                "name": "listselector_1",
-                                "row": 6,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [
-                                        "left"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 11,
-                                "column": 37,
-                                "name": "listselector_2",
-                                "row": 6,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [
-                                        "left"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
                                 }
                             }
                         ]
@@ -997,20 +801,117 @@
                     },
                     {
                         "display": "Actuals",
-                        "value": "YTD_Metric",
-                        "axis": "YTD_Metric"
+                        "value": "YTD_Num",
+                        "axis": "YTD_Num"
                     }
                 ],
                 "numbers": [],
                 "strings": [],
                 "groups": []
             },
-            "Account_Name_1": {
+            "step_listselector_region_FFF": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Console_Region",
+                        "CSG_Region",
+                        "Geo"
+                    ],
+                    "filters": [
+                        [
+                            "Console_Region",
+                            [
+                                "ALL"
+                            ],
+                            "not in"
+                        ],
+                        [
+                            "Geo",
+                            "{{column(step_listselector_geo_FFF.selection,[\"Geo\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Subregion",
+                            "{{column(step_listselector_portfolio_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Region",
+                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Region\"]).asObject()}}",
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {}
+                }
+            },
+            "Metric_type": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "Metric_type",
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Type"
+                    ],
+                    "filters": [
+                        [
+                            "Metric",
+                            [
+                                "{{column(Metric_2.selection,[\"value\"]).asObject()}}"
+                            ],
+                            "=="
+                        ]
+                    ]
+                },
+                "receiveFacet": true,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "visualizationType": "hbar"
+                }
+            },
+            "Annual_Target_Metric_1": {
                 "broadcastFacet": true,
                 "groups": [],
-                "label": "Account_Name_1",
+                "label": "Annual_Target_Metric_1",
                 "numbers": [],
-                "query": "q = load \"FY19_Cloud_Services_Bookings_Detail_Data_File\";\nq= filter q by {{column(step_listselector_geo_FFF.selection,[\"CSG_Geo\"]).asEquality(\"Geo_Roll_Up\")}};\nq= filter q by {{column(step_listselector_region_FFF.selection,[\"CSG_Region\"]).asEquality(\"CSG_Region_Roll_Up\")}};\nq= filter q by {{column(step_listselector_subregion_FFF.selection,[\"CSG_Subregion\"]).asEquality(\"Macro_Segment\")}};\nq= filter q by {{column(step_listselector_portfolio_FFF.selection,[\"CSG_Portfolio\"]).asEquality(\"CSG_Qual_Opp_Portfolio\")}};\nq = group q by '{{column(Static_Grouping_mobile.selection,[\"value\"]).asObject()}}';\nq = foreach q generate '{{column(Static_Grouping_mobile.selection,[\"value\"]).asObject()}}' as '{{column(Static_Grouping_mobile.selection,[\"value\"]).asObject()}}', sum('Bookings') as 'sum_Bookings';\nq = order q by 'sum_Bookings' {{column(Static_sort_order_mobile.selection,[\"value\"]).asObject()}};\nq = limit q 10;",
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Services Margin\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
                 "receiveFacet": true,
                 "selectMode": "single",
                 "strings": [],
@@ -1116,6 +1017,62 @@
                     "visualizationType": "hbar"
                 }
             },
+            "step_listselector_geo_FFF": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Geo",
+                        "CSG_Geo"
+                    ],
+                    "filters": [
+                        [
+                            "Geo",
+                            [
+                                "ALL",
+                                "WW"
+                            ],
+                            "not in"
+                        ],
+                        [
+                            "Geo",
+                            "{{column(step_listselector_region_FFF.selection,[\"Geo\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Subregion",
+                            "{{column(step_listselector_portfolio_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Region",
+                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Region\"]).asObject()}}",
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {}
+                }
+            },
             "Is_Current_Month_1": {
                 "broadcastFacet": true,
                 "datasets": [
@@ -1160,17 +1117,17 @@
                     "visualizationType": "hbar"
                 }
             },
-            "Annual_Target_Metric_TLP": {
-                "broadcastFacet": true,
+            "Year_Month_1": {
+                "broadcastFacet": false,
                 "groups": [],
-                "label": "Annual_Target_Metric_1",
+                "label": "Year_Month_1",
                 "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"TLP Growth\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
-                "receiveFacet": true,
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Services Margin\";\nq = group q by 'Year_Month';\nq = foreach q generate 'Year_Month' as 'Year_Month', sum('{{column(Static_Grouping_5.selection,[\"value\"]).asObject()}}') as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
+                "receiveFacet": false,
                 "selectMode": "single",
                 "strings": [],
                 "type": "saql",
-                "useGlobal": true,
+                "useGlobal": false,
                 "visualizationParameters": {
                     "options": {},
                     "parameters": {
@@ -1317,659 +1274,6 @@
                     "options": {}
                 }
             },
-            "step_listselector_portfolio_FFF": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Console_Portfolio",
-                        "CSG_Portfolio",
-                        "Console_Subregion"
-                    ],
-                    "filters": [
-                        [
-                            "Console_Portfolio",
-                            [
-                                "ALL"
-                            ],
-                            "not in"
-                        ],
-                        [
-                            "Geo",
-                            "{{column(step_listselector_geo_FFF.selection,[\"Geo\"]).asObject()}}",
-                            "in"
-                        ],
-                        [
-                            "Console_Region",
-                            "{{column(step_listselector_region_FFF.selection,[\"Console_Region\"]).asObject()}}",
-                            "in"
-                        ],
-                        [
-                            "Console_Subregion",
-                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {}
-                }
-            },
-            "Metric_type": {
-                "broadcastFacet": true,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "label": "Metric_type",
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Type"
-                    ],
-                    "filters": [
-                        [
-                            "Metric",
-                            [
-                                "{{column(Metric_2.selection,[\"value\"]).asObject()}}"
-                            ],
-                            "=="
-                        ]
-                    ]
-                },
-                "receiveFacet": true,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "visualizationType": "hbar"
-                }
-            },
-            "step_listselector_region_FFF": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Console_Region",
-                        "CSG_Region",
-                        "Geo"
-                    ],
-                    "filters": [
-                        [
-                            "Console_Region",
-                            [
-                                "ALL"
-                            ],
-                            "not in"
-                        ],
-                        [
-                            "Geo",
-                            "{{column(step_listselector_geo_FFF.selection,[\"Geo\"]).asObject()}}",
-                            "in"
-                        ],
-                        [
-                            "Console_Subregion",
-                            "{{column(step_listselector_portfolio_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
-                            "in"
-                        ],
-                        [
-                            "Console_Region",
-                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Region\"]).asObject()}}",
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {}
-                }
-            },
-            "step_listselector_geo_FFF": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Geo",
-                        "CSG_Geo"
-                    ],
-                    "filters": [
-                        [
-                            "Geo",
-                            [
-                                "ALL",
-                                "WW"
-                            ],
-                            "not in"
-                        ],
-                        [
-                            "Geo",
-                            "{{column(step_listselector_region_FFF.selection,[\"Geo\"]).asObject()}}",
-                            "in"
-                        ],
-                        [
-                            "Console_Subregion",
-                            "{{column(step_listselector_portfolio_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
-                            "in"
-                        ],
-                        [
-                            "Console_Region",
-                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Region\"]).asObject()}}",
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {}
-                }
-            },
-            "Annual_Target_Metric_1": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "Annual_Target_Metric_1",
-                "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Adoption Growth\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
-                "receiveFacet": true,
-                "selectMode": "single",
-                "strings": [],
-                "type": "saql",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "showValues": true,
-                        "bins": {
-                            "breakpoints": {
-                                "high": 100,
-                                "low": 0
-                            },
-                            "bands": {
-                                "high": {
-                                    "color": "#008000",
-                                    "label": ""
-                                },
-                                "low": {
-                                    "color": "#B22222",
-                                    "label": ""
-                                },
-                                "medium": {
-                                    "color": "#ffa500",
-                                    "label": ""
-                                }
-                            }
-                        },
-                        "legend": {
-                            "showHeader": true,
-                            "show": true,
-                            "customSize": "auto",
-                            "position": "right-top",
-                            "inside": false
-                        },
-                        "axisMode": "multi",
-                        "tooltip": {
-                            "showBinLabel": true,
-                            "measures": "",
-                            "showPercentage": true,
-                            "showDimensions": true,
-                            "showMeasures": true,
-                            "dimensions": "",
-                            "customizeTooltip": false
-                        },
-                        "visualizationType": "hbar",
-                        "title": {
-                            "subtitleFontSize": 11,
-                            "fontSize": 14,
-                            "label": "",
-                            "align": "center",
-                            "subtitleLabel": ""
-                        },
-                        "binValues": false,
-                        "trellis": {
-                            "flipLabels": false,
-                            "showGridLines": true,
-                            "size": [
-                                100,
-                                100
-                            ],
-                            "enable": false,
-                            "type": "x",
-                            "chartsPerLine": 4
-                        },
-                        "measureAxis2": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "measureAxis1": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "theme": "wave",
-                        "dimensionAxis": {
-                            "showTitle": true,
-                            "customSize": "auto",
-                            "showAxis": true,
-                            "icons": {
-                                "useIcons": false,
-                                "iconProps": {
-                                    "fit": "cover",
-                                    "column": "",
-                                    "type": "round"
-                                }
-                            },
-                            "title": ""
-                        }
-                    },
-                    "type": "chart",
-                    "visualizationType": "hbar"
-                }
-            },
-            "Year_Month_1": {
-                "broadcastFacet": false,
-                "groups": [],
-                "label": "Year_Month_1",
-                "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' in [\"TLP Growth\",\"LU Growth\",\"Adoption Growth\"];\nq = group q by ('Year_Month','Metric');\nq = foreach q generate 'Year_Month' as 'Year_Month','Metric', sum('{{column(Static_Grouping_5.selection,[\"value\"]).asObject()}}') as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
-                "receiveFacet": false,
-                "selectMode": "single",
-                "strings": [],
-                "type": "saql",
-                "useGlobal": false,
-                "visualizationParameters": {
-                    "options": {},
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "showValues": true,
-                        "bins": {
-                            "breakpoints": {
-                                "high": 100,
-                                "low": 0
-                            },
-                            "bands": {
-                                "high": {
-                                    "color": "#008000",
-                                    "label": ""
-                                },
-                                "low": {
-                                    "color": "#B22222",
-                                    "label": ""
-                                },
-                                "medium": {
-                                    "color": "#ffa500",
-                                    "label": ""
-                                }
-                            }
-                        },
-                        "legend": {
-                            "showHeader": true,
-                            "show": true,
-                            "customSize": "auto",
-                            "position": "right-top",
-                            "inside": false
-                        },
-                        "axisMode": "multi",
-                        "tooltip": {
-                            "showBinLabel": true,
-                            "measures": "",
-                            "showPercentage": true,
-                            "showDimensions": true,
-                            "showMeasures": true,
-                            "dimensions": "",
-                            "customizeTooltip": false
-                        },
-                        "visualizationType": "hbar",
-                        "title": {
-                            "subtitleFontSize": 11,
-                            "fontSize": 14,
-                            "label": "",
-                            "align": "center",
-                            "subtitleLabel": ""
-                        },
-                        "binValues": false,
-                        "trellis": {
-                            "flipLabels": false,
-                            "showGridLines": true,
-                            "size": [
-                                100,
-                                100
-                            ],
-                            "enable": false,
-                            "type": "x",
-                            "chartsPerLine": 4
-                        },
-                        "measureAxis2": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "measureAxis1": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "theme": "wave",
-                        "dimensionAxis": {
-                            "showTitle": true,
-                            "customSize": "auto",
-                            "showAxis": true,
-                            "icons": {
-                                "useIcons": false,
-                                "iconProps": {
-                                    "fit": "cover",
-                                    "column": "",
-                                    "type": "round"
-                                }
-                            },
-                            "title": ""
-                        }
-                    },
-                    "type": "chart",
-                    "visualizationType": "hbar"
-                }
-            },
-            "Annual_Target_Metric_LU": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "Annual_Target_Metric_1",
-                "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"LU Growth\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
-                "receiveFacet": true,
-                "selectMode": "single",
-                "strings": [],
-                "type": "saql",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "showValues": true,
-                        "bins": {
-                            "breakpoints": {
-                                "high": 100,
-                                "low": 0
-                            },
-                            "bands": {
-                                "high": {
-                                    "color": "#008000",
-                                    "label": ""
-                                },
-                                "low": {
-                                    "color": "#B22222",
-                                    "label": ""
-                                },
-                                "medium": {
-                                    "color": "#ffa500",
-                                    "label": ""
-                                }
-                            }
-                        },
-                        "legend": {
-                            "showHeader": true,
-                            "show": true,
-                            "customSize": "auto",
-                            "position": "right-top",
-                            "inside": false
-                        },
-                        "axisMode": "multi",
-                        "tooltip": {
-                            "showBinLabel": true,
-                            "measures": "",
-                            "showPercentage": true,
-                            "showDimensions": true,
-                            "showMeasures": true,
-                            "dimensions": "",
-                            "customizeTooltip": false
-                        },
-                        "visualizationType": "hbar",
-                        "title": {
-                            "subtitleFontSize": 11,
-                            "fontSize": 14,
-                            "label": "",
-                            "align": "center",
-                            "subtitleLabel": ""
-                        },
-                        "binValues": false,
-                        "trellis": {
-                            "flipLabels": false,
-                            "showGridLines": true,
-                            "size": [
-                                100,
-                                100
-                            ],
-                            "enable": false,
-                            "type": "x",
-                            "chartsPerLine": 4
-                        },
-                        "measureAxis2": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "measureAxis1": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "theme": "wave",
-                        "dimensionAxis": {
-                            "showTitle": true,
-                            "customSize": "auto",
-                            "showAxis": true,
-                            "icons": {
-                                "useIcons": false,
-                                "iconProps": {
-                                    "fit": "cover",
-                                    "column": "",
-                                    "type": "round"
-                                }
-                            },
-                            "title": ""
-                        }
-                    },
-                    "type": "chart",
-                    "visualizationType": "hbar"
-                }
-            },
-            "Top10_Bookings": {
-                "broadcastFacet": true,
-                "groups": [],
-                "label": "Top10_Bookings",
-                "numbers": [],
-                "query": "q = load \"FY19_Cloud_Services_Bookings_Detail_Data_File\";\nq= filter q by {{column(step_listselector_geo_FFF.selection,[\"CSG_Geo\"]).asEquality(\"Geo_Roll_Up\")}};\nq= filter q by {{column(step_listselector_region_FFF.selection,[\"CSG_Region\"]).asEquality(\"CSG_Region_Roll_Up\")}};\nq= filter q by {{column(step_listselector_subregion_FFF.selection,[\"CSG_Subregion\"]).asEquality(\"Macro_Segment\")}};\nq= filter q by {{column(step_listselector_portfolio_FFF.selection,[\"CSG_Portfolio\"]).asEquality(\"CSG_Qual_Opp_Portfolio\")}};\nq = group q by '{{column(Static_Grouping_lightning.selection,[\"value\"]).asObject()}}';\nq = foreach q generate '{{column(Static_Grouping_lightning.selection,[\"value\"]).asObject()}}' as '{{column(Static_Grouping_lightning.selection,[\"value\"]).asObject()}}', sum('Bookings') as 'sum_Bookings';\nq = order q by 'sum_Bookings' {{column(Static_sort_order_lightning.selection,[\"value\"]).asObject()}};\nq = limit q 10;",
-                "receiveFacet": true,
-                "selectMode": "single",
-                "strings": [],
-                "type": "saql",
-                "useGlobal": true,
-                "visualizationParameters": {
-                    "options": {},
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "showValues": true,
-                        "bins": {
-                            "breakpoints": {
-                                "high": 100,
-                                "low": 0
-                            },
-                            "bands": {
-                                "high": {
-                                    "color": "#008000",
-                                    "label": ""
-                                },
-                                "low": {
-                                    "color": "#B22222",
-                                    "label": ""
-                                },
-                                "medium": {
-                                    "color": "#ffa500",
-                                    "label": ""
-                                }
-                            }
-                        },
-                        "legend": {
-                            "showHeader": true,
-                            "show": true,
-                            "customSize": "auto",
-                            "position": "right-top",
-                            "inside": false
-                        },
-                        "axisMode": "multi",
-                        "tooltip": {
-                            "showBinLabel": true,
-                            "measures": "",
-                            "showPercentage": true,
-                            "showDimensions": true,
-                            "showMeasures": true,
-                            "dimensions": "",
-                            "customizeTooltip": false
-                        },
-                        "visualizationType": "hbar",
-                        "title": {
-                            "subtitleFontSize": 11,
-                            "fontSize": 14,
-                            "label": "",
-                            "align": "center",
-                            "subtitleLabel": ""
-                        },
-                        "binValues": false,
-                        "trellis": {
-                            "flipLabels": false,
-                            "showGridLines": true,
-                            "size": [
-                                100,
-                                100
-                            ],
-                            "enable": false,
-                            "type": "x",
-                            "chartsPerLine": 4
-                        },
-                        "measureAxis2": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "measureAxis1": {
-                            "sqrtScale": false,
-                            "showTitle": true,
-                            "showAxis": true,
-                            "title": "",
-                            "customDomain": {
-                                "showDomain": false
-                            }
-                        },
-                        "theme": "wave",
-                        "dimensionAxis": {
-                            "showTitle": true,
-                            "customSize": "auto",
-                            "showAxis": true,
-                            "icons": {
-                                "useIcons": false,
-                                "iconProps": {
-                                    "fit": "cover",
-                                    "column": "",
-                                    "type": "round"
-                                }
-                            },
-                            "title": ""
-                        }
-                    },
-                    "type": "chart",
-                    "visualizationType": "hbar"
-                }
-            },
             "step_listselector_subregion_FFF": {
                 "broadcastFacet": false,
                 "datasets": [
@@ -2064,6 +1368,62 @@
                 "visualizationParameters": {
                     "options": {}
                 }
+            },
+            "step_listselector_portfolio_FFF": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Console_Portfolio",
+                        "CSG_Portfolio",
+                        "Console_Subregion"
+                    ],
+                    "filters": [
+                        [
+                            "Console_Portfolio",
+                            [
+                                "ALL"
+                            ],
+                            "not in"
+                        ],
+                        [
+                            "Geo",
+                            "{{column(step_listselector_geo_FFF.selection,[\"Geo\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Region",
+                            "{{column(step_listselector_region_FFF.selection,[\"Console_Region\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Subregion",
+                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {}
+                }
             }
         },
         "widgetStyle": {
@@ -2146,6 +1506,18 @@
                 },
                 "type": "text"
             },
+            "listselector_subregion_FFF": {
+                "parameters": {
+                    "compact": false,
+                    "displayTemplate": "[Console_Subregion] ",
+                    "exploreLink": false,
+                    "instant": true,
+                    "measureField": "none",
+                    "step": "step_listselector_subregion_FFF",
+                    "title": ""
+                },
+                "type": "listselector"
+            },
             "text_12": {
                 "parameters": {
                     "fontSize": 20,
@@ -2158,9 +1530,9 @@
             "text_11": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "Snapshot: {{coalesce(cell(Cal_1.result, 0, \"Month\"), \"0\").asString()}} {{coalesce(cell(Cal_1.result, 0, \"Year_Number\"), \"Error\").asString()}}",
-                    "textAlignment": "left",
-                    "textColor": "#5C7A99"
+                    "text": ">",
+                    "textAlignment": "center",
+                    "textColor": "#FFFFFF"
                 },
                 "type": "text"
             },
@@ -2191,19 +1563,11 @@
             "text_3": {
                 "parameters": {
                     "fontSize": 20,
-                    "text": "Adoption Growth Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "Services Margin Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
                     "textAlignment": "left",
                     "textColor": "rgb(22, 50, 92)"
                 },
                 "type": "text"
-            },
-            "container_6": {
-                "parameters": {
-                    "alignmentX": "left",
-                    "alignmentY": "top",
-                    "fit": "original"
-                },
-                "type": "container"
             },
             "text_2": {
                 "parameters": {
@@ -2214,15 +1578,6 @@
                 },
                 "type": "text"
             },
-            "text_5": {
-                "parameters": {
-                    "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779"
-                },
-                "type": "text"
-            },
             "container_9": {
                 "parameters": {
                     "alignmentX": "left",
@@ -2230,33 +1585,6 @@
                     "fit": "original"
                 },
                 "type": "container"
-            },
-            "text_4": {
-                "parameters": {
-                    "fontSize": 20,
-                    "text": "",
-                    "textAlignment": "center",
-                    "textColor": "#091A3E"
-                },
-                "type": "text"
-            },
-            "text_7": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": ">",
-                    "textAlignment": "left",
-                    "textColor": "#FFFFFF"
-                },
-                "type": "text"
-            },
-            "text_6": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": ">",
-                    "textAlignment": "left",
-                    "textColor": "#FFFFFF"
-                },
-                "type": "text"
             },
             "chart_1": {
                 "parameters": {
@@ -2390,7 +1718,7 @@
             "listselector_region_FFF": {
                 "parameters": {
                     "compact": false,
-                    "displayTemplate": "[Console_Region]",
+                    "displayTemplate": "[Console_Region] ",
                     "exploreLink": false,
                     "instant": true,
                     "measureField": "none",
@@ -2399,17 +1727,11 @@
                 },
                 "type": "listselector"
             },
-            "text_8": {
-                "parameters": {
-                    "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779"
-                },
-                "type": "text"
-            },
             "text_1": {
                 "parameters": {
+                    "destinationLink": {
+                        "name": "FY19_CSG_Scorecard_View"
+                    },
                     "destinationType": "dashboard",
                     "fontSize": 12,
                     "includeState": false,
@@ -2418,24 +1740,6 @@
                     "textColor": "#FFFFFF"
                 },
                 "type": "link"
-            },
-            "text_47": {
-                "parameters": {
-                    "fontSize": 10,
-                    "text": "TLP Growth",
-                    "textAlignment": "center",
-                    "textColor": "#091A3E"
-                },
-                "type": "text"
-            },
-            "text_46": {
-                "parameters": {
-                    "fontSize": 10,
-                    "text": "Adoption Growth",
-                    "textAlignment": "center",
-                    "textColor": "#091A3E"
-                },
-                "type": "text"
             },
             "listselector_geo_FFF": {
                 "parameters": {
@@ -2449,51 +1753,6 @@
                 },
                 "type": "listselector"
             },
-            "text_48": {
-                "parameters": {
-                    "fontSize": 10,
-                    "text": "LU Growth",
-                    "textAlignment": "center",
-                    "textColor": "#091A3E"
-                },
-                "type": "text"
-            },
-            "text_43": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
-                },
-                "type": "text"
-            },
-            "text_42": {
-                "parameters": {
-                    "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779"
-                },
-                "type": "text"
-            },
-            "text_44": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
-                },
-                "type": "text"
-            },
-            "text_41": {
-                "parameters": {
-                    "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779"
-                },
-                "type": "text"
-            },
             "text_40": {
                 "parameters": {
                     "fontSize": 12,
@@ -2503,7 +1762,7 @@
                 },
                 "type": "text"
             },
-            "container_11": {
+            "container_12": {
                 "parameters": {
                     "alignmentX": "left",
                     "alignmentY": "top",
@@ -2511,48 +1770,20 @@
                 },
                 "type": "container"
             },
-            "text_39": {
+            "container_10": {
                 "parameters": {
-                    "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
                 },
-                "type": "text"
-            },
-            "text_36": {
-                "parameters": {
-                    "fontSize": 20,
-                    "text": "",
-                    "textAlignment": "center",
-                    "textColor": "#091A3E"
-                },
-                "type": "text"
+                "type": "container"
             },
             "text_35": {
                 "parameters": {
-                    "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779"
-                },
-                "type": "text"
-            },
-            "text_38": {
-                "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
-                },
-                "type": "text"
-            },
-            "text_37": {
-                "parameters": {
-                    "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779"
+                    "text": "Snapshot: {{coalesce(cell(Cal_1.result, 0, \"Month\"), \"0\").asString()}} {{coalesce(cell(Cal_1.result, 0, \"Year_Number\"), \"Error\").asString()}}",
+                    "textAlignment": "left",
+                    "textColor": "#5C7A99"
                 },
                 "type": "text"
             },
@@ -2568,6 +1799,15 @@
             "text_31": {
                 "parameters": {
                     "fontSize": 12,
+                    "text": ">",
+                    "textAlignment": "center",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "text"
+            },
+            "text_33": {
+                "parameters": {
+                    "fontSize": 12,
                     "text": "Not Applicable",
                     "textAlignment": "left",
                     "textColor": "#335779"
@@ -2578,10 +1818,18 @@
                 "parameters": {
                     "fontSize": 12,
                     "text": ">",
-                    "textAlignment": "left",
+                    "textAlignment": "center",
                     "textColor": "#FFFFFF"
                 },
                 "type": "text"
+            },
+            "container_40": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
             },
             "text_29": {
                 "parameters": {
@@ -2600,18 +1848,6 @@
                     "textColor": "#335779"
                 },
                 "type": "text"
-            },
-            "listselector_2": {
-                "parameters": {
-                    "compact": false,
-                    "displayTemplate": "[Console_Portfolio] - [CSG_Portfolio] - [Console_Subregion]",
-                    "exploreLink": false,
-                    "instant": true,
-                    "measureField": "count",
-                    "step": "step_listselector_portfolio_FFF",
-                    "title": ""
-                },
-                "type": "listselector"
             },
             "listselector_4": {
                 "parameters": {
@@ -2685,7 +1921,7 @@
                     "destinationType": "dashboard",
                     "fontSize": 12,
                     "includeState": false,
-                    "text": "CSG Cloud Service Bookings Details",
+                    "text": "CSG Services Margin Details",
                     "textAlignment": "left",
                     "textColor": "#FFFFFF"
                 },
@@ -2780,14 +2016,14 @@
                 },
                 "type": "pillbox"
             },
-            "listselector_1": {
+            "listselector_portfolio_FFF": {
                 "parameters": {
                     "compact": false,
-                    "displayTemplate": "[Console_Subregion] - [CSG_Subregion] - [Console_Region]",
+                    "displayTemplate": "[Console_Portfolio] ",
                     "exploreLink": false,
                     "instant": true,
-                    "measureField": "count",
-                    "step": "step_listselector_subregion_FFF",
+                    "measureField": "none",
+                    "step": "step_listselector_portfolio_FFF",
                     "title": ""
                 },
                 "type": "listselector"
@@ -2800,12 +2036,6 @@
             "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
             "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
             "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-        },
-        {
-            "id": "0Fb0t0000008RsgCAE",
-            "label": "FY19_Cloud_Services_Bookings_Detail_Data_File",
-            "name": "FY19_Cloud_Services_Bookings_Detail_Data_File",
-            "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RsgCAE"
         }
     ]
 }

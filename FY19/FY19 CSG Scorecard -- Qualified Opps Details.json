@@ -2401,15 +2401,15 @@
                         }
                     },
                     "legend": {
+                        "descOrder": false,
                         "showHeader": true,
+                        "sorting": {
+                            "order": "asc"
+                        },
                         "show": false,
                         "customSize": "auto",
                         "position": "right-top",
-                        "inside": false,
-                        "descOrder": false,
-                        "sorting": {
-                            "order": "asc"
-                        }
+                        "inside": false
                     },
                     "axisMode": "multi",
                     "tooltip": {
@@ -2558,15 +2558,15 @@
                         }
                     },
                     "legend": {
+                        "descOrder": false,
                         "showHeader": true,
+                        "sorting": {
+                            "order": "asc"
+                        },
                         "show": false,
                         "customSize": "auto",
                         "position": "right-top",
-                        "inside": false,
-                        "descOrder": false,
-                        "sorting": {
-                            "order": "asc"
-                        }
+                        "inside": false
                     },
                     "axisMode": "multi",
                     "tooltip": {
@@ -2649,40 +2649,18 @@
             },
             "chart_1": {
                 "parameters": {
-                    "totalValue": "computeTotal",
-                    "autoFitMode": "fit",
                     "showValues": true,
-                    "bins": {
-                        "breakpoints": {
-                            "high": 100,
-                            "low": 0
-                        },
-                        "bands": {
-                            "high": {
-                                "color": "#008000",
-                                "label": ""
-                            },
-                            "low": {
-                                "color": "#B22222",
-                                "label": ""
-                            },
-                            "medium": {
-                                "color": "#ffa500",
-                                "label": ""
-                            }
-                        }
-                    },
                     "showPoints": true,
                     "legend": {
+                        "descOrder": false,
                         "showHeader": true,
+                        "sorting": {
+                            "order": "asc"
+                        },
                         "show": false,
                         "customSize": "auto",
                         "position": "right-top",
-                        "inside": false,
-                        "descOrder": false,
-                        "sorting": {
-                            "order": "asc"
-                        }
+                        "inside": false
                     },
                     "axisMode": "multi",
                     "tooltip": {
@@ -2695,10 +2673,6 @@
                         "customizeTooltip": false
                     },
                     "visualizationType": "line",
-                    "dashLine": {
-                        "measures": "",
-                        "showDashLine": false
-                    },
                     "exploreLink": true,
                     "binValues": false,
                     "title": {
@@ -2719,30 +2693,9 @@
                         "type": "x",
                         "chartsPerLine": 4
                     },
-                    "totalLabel": "",
-                    "fillArea": true,
                     "showZero": true,
-                    "measureAxis2": {
-                        "sqrtScale": false,
-                        "showTitle": true,
-                        "showAxis": true,
-                        "title": "",
-                        "customDomain": {
-                            "showDomain": false
-                        }
-                    },
                     "valueType": "none",
-                    "measureAxis1": {
-                        "sqrtScale": false,
-                        "showTitle": true,
-                        "showAxis": true,
-                        "title": "",
-                        "customDomain": {
-                            "showDomain": false
-                        }
-                    },
                     "theme": "wave",
-                    "step": "Year_Month_1",
                     "dimensionAxis": {
                         "showTitle": true,
                         "customSize": "auto",
@@ -2757,13 +2710,60 @@
                         },
                         "title": ""
                     },
+                    "applyConditionalFormatting": false,
                     "drawArea": {
                         "measure": "",
                         "bounding1": "",
                         "showDrawArea": false,
                         "bounding2": ""
                     },
-                    "applyConditionalFormatting": false
+                    "totalValue": "computeTotal",
+                    "autoFitMode": "fit",
+                    "bins": {
+                        "breakpoints": {
+                            "high": 100,
+                            "low": 0
+                        },
+                        "bands": {
+                            "high": {
+                                "color": "#008000",
+                                "label": ""
+                            },
+                            "low": {
+                                "color": "#B22222",
+                                "label": ""
+                            },
+                            "medium": {
+                                "color": "#ffa500",
+                                "label": ""
+                            }
+                        }
+                    },
+                    "dashLine": {
+                        "measures": "",
+                        "showDashLine": false
+                    },
+                    "totalLabel": "",
+                    "fillArea": true,
+                    "measureAxis2": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "measureAxis1": {
+                        "sqrtScale": false,
+                        "showTitle": true,
+                        "showAxis": true,
+                        "title": "",
+                        "customDomain": {
+                            "showDomain": false
+                        }
+                    },
+                    "step": "Year_Month_1"
                 },
                 "type": "chart"
             },
@@ -2781,15 +2781,15 @@
                     "totalValue": "computeTotal",
                     "showPoints": false,
                     "legend": {
+                        "descOrder": false,
                         "showHeader": true,
+                        "sorting": {
+                            "order": "asc"
+                        },
                         "show": false,
                         "customSize": "auto",
                         "position": "right-top",
-                        "inside": false,
-                        "descOrder": false,
-                        "sorting": {
-                            "order": "asc"
-                        }
+                        "inside": false
                     },
                     "axisMode": "multi",
                     "tooltip": {
@@ -2855,13 +2855,13 @@
                     "valueType": "none",
                     "step": "QO_trend_1",
                     "theme": "wave",
+                    "applyConditionalFormatting": false,
                     "drawArea": {
                         "measure": "",
                         "bounding1": "",
                         "showDrawArea": false,
                         "bounding2": ""
-                    },
-                    "applyConditionalFormatting": false
+                    }
                 },
                 "type": "chart"
             },
@@ -2900,15 +2900,15 @@
                         }
                     },
                     "legend": {
+                        "descOrder": false,
                         "showHeader": true,
+                        "sorting": {
+                            "order": "asc"
+                        },
                         "show": false,
                         "customSize": "auto",
                         "position": "right-top",
-                        "inside": false,
-                        "descOrder": false,
-                        "sorting": {
-                            "order": "asc"
-                        }
+                        "inside": false
                     },
                     "axisMode": "multi",
                     "tooltip": {
@@ -3303,7 +3303,7 @@
             "text_136": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "CSG Subregion",
+                    "text": "Super Portfolio",
                     "textAlignment": "left",
                     "textColor": "#FFFFFF"
                 },

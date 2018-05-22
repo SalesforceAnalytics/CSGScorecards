@@ -1,5 +1,5 @@
 {
-    "label": "FY19 CSG Scorecard -- Cloud Service Bookings Details",
+    "label": "FY19 CSG Scorecard -- Success Cloud Bookings (Products & Projects)",
     "mobileDisabled": false,
     "description": "Create a home page for your app",
     "state": {
@@ -910,68 +910,6 @@
                                 }
                             },
                             {
-                                "colspan": 11,
-                                "column": 25,
-                                "name": "container_7",
-                                "row": 6,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [
-                                        "top",
-                                        "left"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 11,
-                                "column": 25,
-                                "name": "text_33",
-                                "row": 6,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 11,
-                                "column": 37,
-                                "name": "container_10",
-                                "row": 6,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [
-                                        "top",
-                                        "left"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 11,
-                                "column": 37,
-                                "name": "text_34",
-                                "row": 6,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
                                 "colspan": 9,
                                 "column": 11,
                                 "name": "listselector_1",
@@ -979,6 +917,38 @@
                                 "rowspan": 4,
                                 "widgetStyle": {
                                     "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 25,
+                                "name": "listselector_2",
+                                "row": 6,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [
+                                        "left"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 8
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 37,
+                                "name": "listselector_3",
+                                "row": 6,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [
+                                        "left"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 8
                                 }
                             }
                         ]
@@ -1567,6 +1537,62 @@
                 "visualizationParameters": {
                     "options": {},
                     "visualizationType": "hbar"
+                }
+            },
+            "Console_Region_CSG_R_1": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Console_Region",
+                        "CSG_Region",
+                        "Geo"
+                    ],
+                    "filters": [
+                        [
+                            "Console_Region",
+                            [
+                                "ALL"
+                            ],
+                            "not in"
+                        ],
+                        [
+                            "Geo",
+                            "{{column(step_listselector_geo_FFF.selection,[\"Geo\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Subregion",
+                            "{{column(step_listselector_portfolio_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Region",
+                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Region\"]).asObject()}}",
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {}
                 }
             },
             "step_listselector_ww_FFF": {
@@ -2531,7 +2557,7 @@
             "text_3": {
                 "parameters": {
                     "fontSize": 20,
-                    "text": "Cloud Service Bookings Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "Success Cloud Bookings (Products & Projects) Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
                     "textAlignment": "left",
                     "textColor": "rgb(22, 50, 92)"
                 },
@@ -2553,14 +2579,6 @@
                     "textColor": "#FFFFFF"
                 },
                 "type": "text"
-            },
-            "container_7": {
-                "parameters": {
-                    "alignmentX": "left",
-                    "alignmentY": "top",
-                    "fit": "original"
-                },
-                "type": "container"
             },
             "text_5": {
                 "parameters": {
@@ -3027,14 +3045,6 @@
                 },
                 "type": "listselector"
             },
-            "container_10": {
-                "parameters": {
-                    "alignmentX": "left",
-                    "alignmentY": "top",
-                    "fit": "original"
-                },
-                "type": "container"
-            },
             "text_32": {
                 "parameters": {
                     "fontSize": 12,
@@ -3045,24 +3055,6 @@
                 "type": "text"
             },
             "text_31": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "Not Applicable",
-                    "textAlignment": "left",
-                    "textColor": "#335779"
-                },
-                "type": "text"
-            },
-            "text_34": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "Not Applicable",
-                    "textAlignment": "left",
-                    "textColor": "#335779"
-                },
-                "type": "text"
-            },
-            "text_33": {
                 "parameters": {
                     "fontSize": 12,
                     "text": "Not Applicable",
@@ -3119,6 +3111,18 @@
                 },
                 "type": "text"
             },
+            "listselector_3": {
+                "parameters": {
+                    "compact": false,
+                    "displayTemplate": "[Console_Portfolio] - [CSG_Portfolio] - [Console_Subregion]",
+                    "exploreLink": false,
+                    "instant": true,
+                    "measureField": "count",
+                    "step": "step_listselector_portfolio_FFF",
+                    "title": ""
+                },
+                "type": "listselector"
+            },
             "text_28": {
                 "parameters": {
                     "fontSize": 16,
@@ -3127,6 +3131,18 @@
                     "textColor": "#335779"
                 },
                 "type": "text"
+            },
+            "listselector_2": {
+                "parameters": {
+                    "compact": false,
+                    "displayTemplate": "[Console_Subregion] - [CSG_Subregion] - [Console_Region]",
+                    "exploreLink": false,
+                    "instant": true,
+                    "measureField": "count",
+                    "step": "step_listselector_subregion_FFF",
+                    "title": ""
+                },
+                "type": "listselector"
             },
             "listselector_5": {
                 "parameters": {
@@ -3306,7 +3322,7 @@
             "text_136": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "CSG Subregion",
+                    "text": "Super Portfolio",
                     "textAlignment": "left",
                     "textColor": "#FFFFFF"
                 },
