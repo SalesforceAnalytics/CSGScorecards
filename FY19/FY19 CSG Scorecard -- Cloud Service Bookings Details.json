@@ -922,13 +922,45 @@
                             {
                                 "colspan": 11,
                                 "column": 25,
-                                "name": "listselector_2",
+                                "name": "container_7",
                                 "row": 6,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "rgba(255, 255, 255, 0)",
                                     "borderEdges": [
+                                        "top",
+                                        "left"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 8
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 25,
+                                "name": "text_34",
+                                "row": 6,
+                                "rowspan": 2,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 8
+                                }
+                            },
+                            {
+                                "colspan": 11,
+                                "column": 37,
+                                "name": "container_10",
+                                "row": 6,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "rgba(255, 255, 255, 0)",
+                                    "borderEdges": [
+                                        "top",
                                         "left"
                                     ],
                                     "borderRadius": 0,
@@ -938,15 +970,13 @@
                             {
                                 "colspan": 11,
                                 "column": 37,
-                                "name": "listselector_3",
+                                "name": "text_35",
                                 "row": 6,
-                                "rowspan": 3,
+                                "rowspan": 2,
                                 "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "backgroundColor": "rgba(255, 255, 255, 0.65)",
                                     "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [
-                                        "left"
-                                    ],
+                                    "borderEdges": [],
                                     "borderRadius": 0,
                                     "borderWidth": 8
                                 }
@@ -1782,7 +1812,7 @@
                 "groups": [],
                 "label": "Annual_Target_Metric_1",
                 "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Success Cloud Bookings (Products & Projects)\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Success Cloud Bookings (Products & Projects)\";\nq = group q by ('Display_Type','Region','Console_Segment','Scorecard');\nq = foreach q generate 'Display_Type','Region','Console_Segment','Scorecard',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
                 "receiveFacet": true,
                 "selectMode": "single",
                 "strings": [],
@@ -2557,7 +2587,7 @@
             "text_3": {
                 "parameters": {
                     "fontSize": 20,
-                    "text": "Success Cloud Bookings (Products & Projects) Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "Success Cloud Bookings (Products & Projects) Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "left",
                     "textColor": "rgb(22, 50, 92)"
                 },
@@ -2579,6 +2609,14 @@
                     "textColor": "#FFFFFF"
                 },
                 "type": "text"
+            },
+            "container_7": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
             },
             "text_5": {
                 "parameters": {
@@ -3045,6 +3083,23 @@
                 },
                 "type": "listselector"
             },
+            "container_10": {
+                "parameters": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "fit": "original"
+                },
+                "type": "container"
+            },
+            "text_35": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": "Not Applicable",
+                    "textAlignment": "left",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
             "text_32": {
                 "parameters": {
                     "fontSize": 12,
@@ -3055,6 +3110,15 @@
                 "type": "text"
             },
             "text_31": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": "Not Applicable",
+                    "textAlignment": "left",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
+            "text_34": {
                 "parameters": {
                     "fontSize": 12,
                     "text": "Not Applicable",
@@ -3111,18 +3175,6 @@
                 },
                 "type": "text"
             },
-            "listselector_3": {
-                "parameters": {
-                    "compact": false,
-                    "displayTemplate": "[Console_Portfolio] - [CSG_Portfolio] - [Console_Subregion]",
-                    "exploreLink": false,
-                    "instant": true,
-                    "measureField": "count",
-                    "step": "step_listselector_portfolio_FFF",
-                    "title": ""
-                },
-                "type": "listselector"
-            },
             "text_28": {
                 "parameters": {
                     "fontSize": 16,
@@ -3131,18 +3183,6 @@
                     "textColor": "#335779"
                 },
                 "type": "text"
-            },
-            "listselector_2": {
-                "parameters": {
-                    "compact": false,
-                    "displayTemplate": "[Console_Subregion] - [CSG_Subregion] - [Console_Region]",
-                    "exploreLink": false,
-                    "instant": true,
-                    "measureField": "count",
-                    "step": "step_listselector_subregion_FFF",
-                    "title": ""
-                },
-                "type": "listselector"
             },
             "listselector_5": {
                 "parameters": {
