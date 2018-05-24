@@ -10479,7 +10479,7 @@
                             }
                         ]
                     ],
-                    "pigql": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";q = filter q by !('Metric' in [\"Core Attrition\", \"LU Growth\", \"Marketing Cloud Attrition\", \"Pardot Attrition\", \"TLP Growth\"]);q = foreach q generate 'Geo', 'Console_Region', 'Console_Subregion', 'Console_Portfolio', 'CSG_WW', 'CSG_Geo_Alt', 'CSG_Region_Alt', 'CSG_Subregion_Alt', 'As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Display_Type', 'Annual_Target', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Colorization', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'Is_Current_Month', 'Change_in_Attainment_MoM_Pct', 'Change_in_YTD_MoM_Metric', 'YTD_Metric', 'Annual_Target_Metric', 'Annual_Target_Pct', 'Annual_Target_Num', 'YTD_Attainment_Pct', 'Grain_Sort_Order_Num', 'Grain_Segment_Sort_Order_Num', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Annual_Target_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Annual_Target_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Annual_Target_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_Target_Formatted', (case when q.'YTD_Metric' == null then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_Formatted', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_MoM_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'YTD_Attainment_Pct' == null) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_MoM_Formatted', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then \"CSG_WW\" when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then \"CSG_Geo_Alt\" when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then \"Geo\" when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then \"CSG_Region_Alt\" when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then \"Console_Region\" when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then \"CSG_Subregion_Alt\" when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then \"Console_Subregion\" when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then \"Console_Portfolio\" else \"Region\" end) as 'step_ii_filter_field', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then 'CSG_WW' when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then 'CSG_Geo_Alt' when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then 'Geo' when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then 'CSG_Region_Alt' when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then 'Console_Region' when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then 'CSG_Subregion_Alt' when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then 'Console_Subregion' when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then 'Console_Portfolio' else 'Region' end) as 'step_ii_filter_input';q = group q by ('As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Display_Type', 'Annual_Target', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Colorization', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'number_Target_Formatted', 'number_YTD_Formatted', 'number_YTD_MoM_Formatted', 'number_YTD_A_Formatted', 'number_YTD_A_MoM_Formatted', 'step_ii_filter_field', 'step_ii_filter_input');q_A = filter q by ('Is_Current_Month' in {{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"[]\").asString()}});q_A = filter q_A by {{flatten(column(Step_Static_Show_Alt_FFF.selection,[\"SOQL_Grain_Sort_Order\"])).asEquality('Grain_Sort_Order')}};q_A = filter q_A by {{column(Selected_Colorization_FFF.selection,[\"Colorization\"]).asEquality('Colorization')}};q_A = filter q_A by (({{cell(BIG_TEST_9.result,0, \"step_ii_filter_field\").asString()}} == \"{{cell(BIG_TEST_9.result,0, \"step_ii_filter_input\").asString()}}\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Geo' == \"{{cell(BIG_TEST_9.result,0, \"Geo\").asString()}}\") and ('Console_Segment' == \"GEO\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Console_Region' == \"{{cell(BIG_TEST_9.result,0, \"Console_Region\").asString()}}\") and ('Console_Segment' == \"Region\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Console_Subregion' == \"{{cell(BIG_TEST_9.result,0, \"Console_Subregion\").asString()}}\") and ('Console_Segment' == \"Subregion\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Console_Portfolio' == \"{{cell(BIG_TEST_9.result,0, \"Console_Portfolio\").asString()}}\") and ('Console_Segment' == \"Portfolio\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\"));q_A = filter q_A by ('Console_Segment' in {{column(Selected_Console_Segment_FFF.selection,[\"Console_Segment\"]).asString()}});q_A = filter q_A by ('Metric' == \"{{cell(BIG_TEST_9.result,0, \"Metric\").asString()}}\"); q_A = foreach q_A generate q.'As_of_Date' as 'As_of_Date', q.'Num' as 'Num', q.'Type' as 'Type', q.'Metric' as 'Metric', substr(q.'Metric',1,38) + (case when len(q.'Metric') > 40 then \"...\" else \"\" end) as 'Metric_Short', q.'Console_Segment' as 'Console_Segment',  q.'Region' as 'Region', q.'Grain_Sort_Order' as 'Grain_Sort_Order', q.'Grain_Segment_Sort_Order' as 'Grain_Segment_Sort_Order', q.'Display_Type' as 'Display_Type', q.'Annual_Target' as 'Annual_Target', q.'YTD_Attainment' as 'YTD_Attainment', q.'YTD' as 'YTD', q.'number_Target_Formatted' as 'number_Target_Formatted', q.'number_YTD_Formatted' as 'number_YTD_Formatted', q.'number_YTD_MoM_Formatted' as 'number_YTD_MoM_Formatted', q.'number_YTD_A_Formatted' as 'number_YTD_A_Formatted', q.'number_YTD_A_MoM_Formatted' as 'number_YTD_A_MoM_Formatted', q.'step_ii_filter_field' as 'step_ii_filter_field', q.'step_ii_filter_input' as 'step_ii_filter_input',q.'Colorization_Hex_Code' as 'Colorization_Hex_Code', q.'Colorization_Rank' as 'Colorization_Rank', q.'Colorization' as 'Colorization', q.'Detail_Dashboard_Name' as 'Detail_Dashboard_Name',  q.'CSG_Insights_Central_Link' as 'CSG_Insights_Central_Link', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) < -0)) then \"#C73737\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) > 0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) < -0.000)) then \"#C73737\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) > 0.000)) then \"#3ABC4A\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) < -0.00000)) then \"#C73737\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) > 0.00000)) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color_2',  \"#16325C\" as 'Text_Color_1', \"#697E93\" as 'Text_Color_2', avg(q.'Annual_Target_Metric') as 'A', avg(q.'Annual_Target_Pct') * 100 as 'B', avg(q.'Annual_Target_Num') as 'C', avg(q.'YTD_Attainment_Pct') as 'D', max(q.'Grain_Sort_Order_Num') as 'E', max(q.'Grain_Segment_Sort_Order_Num') as 'F', round(avg(q.'Change_in_Attainment_MoM_Pct')*100) as 'G', sum(1) over ([..] partition by all) as 'H', avg(q.'YTD_Metric') as 'I'; q_A = order q_A by ({{cell(Step_Static_Sort_Order_FFF.selection, 0, \"SOQL_sort_order\").asString()}});q_B = foreach q generate \"--\" as 'As_of_Date', \"ZZ\" + q.'Num' as 'Num', \"--\" as 'Type', \"--\" as 'Metric', \"--\" as 'Metric_Short', \"--\" as 'Console_Segment', \"--\" as 'Region', \"ZZ\" as 'Grain_Sort_Order', \"ZZ\" as 'Grain_Segment_Sort_Order', \"--\" as 'Display_Type', \"--\" as 'Annual_Target', \"--\" as 'YTD_Attainment', \"--\" as 'YTD', \"--\" as 'number_Target_Formatted', \"--\" as 'number_YTD_Formatted', \"--\" as 'number_YTD_MoM_Formatted', \"--\" as 'number_YTD_A_Formatted', \"--\" as 'number_YTD_A_MoM_Formatted', \"--\" as 'step_ii_filter_field',  \"--\" as 'step_ii_filter_input', \"#FFFFFF\" as 'Colorization_Hex_Code', \"ZZ\" as 'Colorization_Rank', \"--\" as 'Colorization', \"0FK0M0000004J3fWAE\" as 'Detail_Dashboard_Name',  \"sites.google.com/salesforce.com/fy19-insightscentral/home\" as 'CSG_Insights_Central_Link', \"#FFFFFF\" as 'Color', \"#FFFFFF\" as 'Color_2', \"#FFFFFF\" as 'Text_Color_1', \"#FFFFFF\" as 'Text_Color_2', 0 as 'A', 0 as 'B', 0 as 'C', 0 as 'D', 99 as 'E', 99 as 'F', 0 as 'G', 0 as 'H', 0 as 'I'; q_B = limit q_B 30; result = union q_A, q_B;result = limit result 2000;",
+                    "pigql": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";q = filter q by !('Metric' in [\"Core Attrition\", \"LU Growth\", \"Marketing Cloud Attrition\", \"Pardot Attrition\", \"TLP Growth\"]);q = foreach q generate 'Geo', 'Console_Region', 'Console_Subregion', 'Console_Portfolio', 'CSG_WW', 'CSG_Geo_Alt', 'CSG_Region_Alt', 'CSG_Subregion_Alt', 'As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Scorecard', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Display_Type', 'Annual_Target', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Colorization', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'Is_Current_Month', 'Change_in_Attainment_MoM_Pct', 'Change_in_YTD_MoM_Metric', 'YTD_Metric', 'Annual_Target_Metric', 'Annual_Target_Pct', 'Annual_Target_Num', 'YTD_Attainment_Pct', 'Grain_Sort_Order_Num', 'Grain_Segment_Sort_Order_Num', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Annual_Target_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Annual_Target_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Annual_Target_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_Target_Formatted', (case when q.'YTD_Metric' == null then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_Formatted', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_MoM_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'YTD_Attainment_Pct' == null) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_MoM_Formatted', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then \"CSG_WW\" when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then \"CSG_Geo_Alt\" when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then \"Geo\" when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then \"CSG_Region_Alt\" when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then \"Console_Region\" when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then \"CSG_Subregion_Alt\" when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then \"Console_Subregion\" when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then \"Console_Portfolio\" else \"Region\" end) as 'step_ii_filter_field', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then 'CSG_WW' when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then 'CSG_Geo_Alt' when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then 'Geo' when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then 'CSG_Region_Alt' when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then 'Console_Region' when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then 'CSG_Subregion_Alt' when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then 'Console_Subregion' when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then 'Console_Portfolio' else 'Region' end) as 'step_ii_filter_input';q = group q by ('As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Scorecard', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Display_Type', 'Annual_Target', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Colorization', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'number_Target_Formatted', 'number_YTD_Formatted', 'number_YTD_MoM_Formatted', 'number_YTD_A_Formatted', 'number_YTD_A_MoM_Formatted', 'step_ii_filter_field', 'step_ii_filter_input');q_A = filter q by ('Is_Current_Month' in {{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"[]\").asString()}});q_A = filter q_A by {{flatten(column(Step_Static_Show_Alt_FFF.selection,[\"SOQL_Grain_Sort_Order\"])).asEquality('Grain_Sort_Order')}};q_A = filter q_A by {{column(Selected_Colorization_FFF.selection,[\"Colorization\"]).asEquality('Colorization')}};q_A = filter q_A by (({{cell(BIG_TEST_9.result,0, \"step_ii_filter_field\").asString()}} == \"{{cell(BIG_TEST_9.result,0, \"step_ii_filter_input\").asString()}}\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Geo' == \"{{cell(BIG_TEST_9.result,0, \"Geo\").asString()}}\") and ('Console_Segment' == \"GEO\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Console_Region' == \"{{cell(BIG_TEST_9.result,0, \"Console_Region\").asString()}}\") and ('Console_Segment' == \"Region\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Console_Subregion' == \"{{cell(BIG_TEST_9.result,0, \"Console_Subregion\").asString()}}\") and ('Console_Segment' == \"Subregion\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\")) or (('Console_Portfolio' == \"{{cell(BIG_TEST_9.result,0, \"Console_Portfolio\").asString()}}\") and ('Console_Segment' == \"Portfolio\") and ('Region' != \"{{cell(BIG_TEST_9.result,0, \"Region\").asString()}}\"));q_A = filter q_A by ('Console_Segment' in {{column(Selected_Console_Segment_FFF.selection,[\"Console_Segment\"]).asString()}});q_A = filter q_A by ('Metric' == \"{{cell(BIG_TEST_9.result,0, \"Metric\").asString()}}\"); q_A = foreach q_A generate q.'As_of_Date' as 'As_of_Date', q.'Num' as 'Num', q.'Type' as 'Type', q.'Metric' as 'Metric', substr(q.'Metric',1,38) + (case when len(q.'Metric') > 40 then \"...\" else \"\" end) as 'Metric_Short', q.'Console_Segment' as 'Console_Segment',  q.'Scorecard' as 'Scorecard', q.'Region' as 'Region', q.'Grain_Sort_Order' as 'Grain_Sort_Order', q.'Grain_Segment_Sort_Order' as 'Grain_Segment_Sort_Order', q.'Display_Type' as 'Display_Type', q.'Annual_Target' as 'Annual_Target', q.'YTD_Attainment' as 'YTD_Attainment', q.'YTD' as 'YTD', q.'number_Target_Formatted' as 'number_Target_Formatted', q.'number_YTD_Formatted' as 'number_YTD_Formatted', q.'number_YTD_MoM_Formatted' as 'number_YTD_MoM_Formatted', q.'number_YTD_A_Formatted' as 'number_YTD_A_Formatted', q.'number_YTD_A_MoM_Formatted' as 'number_YTD_A_MoM_Formatted', q.'step_ii_filter_field' as 'step_ii_filter_field', q.'step_ii_filter_input' as 'step_ii_filter_input',q.'Colorization_Hex_Code' as 'Colorization_Hex_Code', q.'Colorization_Rank' as 'Colorization_Rank', q.'Colorization' as 'Colorization', q.'Detail_Dashboard_Name' as 'Detail_Dashboard_Name',  q.'CSG_Insights_Central_Link' as 'CSG_Insights_Central_Link', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) < -0)) then \"#C73737\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) > 0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) < -0.000)) then \"#C73737\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) > 0.000)) then \"#3ABC4A\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) < -0.00000)) then \"#C73737\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) > 0.00000)) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color_2',  \"#16325C\" as 'Text_Color_1', \"#697E93\" as 'Text_Color_2', avg(q.'Annual_Target_Metric') as 'A', avg(q.'Annual_Target_Pct') * 100 as 'B', avg(q.'Annual_Target_Num') as 'C', avg(q.'YTD_Attainment_Pct') as 'D', max(q.'Grain_Sort_Order_Num') as 'E', max(q.'Grain_Segment_Sort_Order_Num') as 'F', round(avg(q.'Change_in_Attainment_MoM_Pct')*100) as 'G', sum(1) over ([..] partition by all) as 'H', avg(q.'YTD_Metric') as 'I'; q_A = order q_A by ({{cell(Step_Static_Sort_Order_FFF.selection, 0, \"SOQL_sort_order\").asString()}});q_B = foreach q generate \"--\" as 'As_of_Date', \"ZZ\" + q.'Num' as 'Num', \"--\" as 'Type', \"--\" as 'Metric', \"--\" as 'Metric_Short', \"--\" as 'Console_Segment', \"--\" as 'Scorecard', \"--\" as 'Region', \"ZZ\" as 'Grain_Sort_Order', \"ZZ\" as 'Grain_Segment_Sort_Order', \"--\" as 'Display_Type', \"--\" as 'Annual_Target', \"--\" as 'YTD_Attainment', \"--\" as 'YTD', \"--\" as 'number_Target_Formatted', \"--\" as 'number_YTD_Formatted', \"--\" as 'number_YTD_MoM_Formatted', \"--\" as 'number_YTD_A_Formatted', \"--\" as 'number_YTD_A_MoM_Formatted', \"--\" as 'step_ii_filter_field',  \"--\" as 'step_ii_filter_input', \"#FFFFFF\" as 'Colorization_Hex_Code', \"ZZ\" as 'Colorization_Rank', \"--\" as 'Colorization', \"0FK0M0000004J3fWAE\" as 'Detail_Dashboard_Name',  \"sites.google.com/salesforce.com/fy19-insightscentral/home\" as 'CSG_Insights_Central_Link', \"#FFFFFF\" as 'Color', \"#FFFFFF\" as 'Color_2', \"#FFFFFF\" as 'Text_Color_1', \"#FFFFFF\" as 'Text_Color_2', 0 as 'A', 0 as 'B', 0 as 'C', 0 as 'D', 99 as 'E', 99 as 'F', 0 as 'G', 0 as 'H', 0 as 'I'; q_B = limit q_B 30; result = union q_A, q_B;result = limit result 2000;",
                     "autoFilter": false,
                     "groups": [
                         "As_of_Date",
@@ -10488,6 +10488,7 @@
                         "Metric",
                         "Metric_Short",
                         "Console_Segment",
+                        "Scorecard",
                         "Region",
                         "Grain_Sort_Order",
                         "Grain_Segment_Sort_Order",
@@ -11905,7 +11906,7 @@
                             }
                         ]
                     ],
-                    "pigql": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";q = foreach q generate 'As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Geo', 'Console_Region', 'Console_Subregion', 'Console_Portfolio', 'CSG_WW', 'CSG_Geo_Alt', 'CSG_Region_Alt', 'CSG_Subregion_Alt', 'Display_Type', 'Annual_Target', 'YTD_Metric', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'Is_Current_Month', 'Change_in_Attainment_MoM_Pct', 'Change_in_YTD_MoM_Metric', 'Annual_Target_Metric', 'Annual_Target_Pct', 'Annual_Target_Num', 'YTD_Attainment_Pct', 'Grain_Sort_Order_Num', 'Grain_Segment_Sort_Order_Num', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Annual_Target_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Annual_Target_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Annual_Target_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_Target_Formatted', (case when q.'YTD_Metric' == null then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_Formatted', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_MoM_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'YTD_Attainment_Pct' == null) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_MoM_Formatted', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then \"CSG_WW\" when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then \"CSG_Geo_Alt\" when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then \"Geo\" when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then \"CSG_Region_Alt\" when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then \"Console_Region\" when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then \"CSG_Subregion_Alt\" when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then \"Console_Subregion\" when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then \"Console_Portfolio\" else \"Region\" end) as 'step_ii_filter_field', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then 'CSG_WW' when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then 'CSG_Geo_Alt' when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then 'Geo' when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then 'CSG_Region_Alt' when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then 'Console_Region' when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then 'CSG_Subregion_Alt' when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then 'Console_Subregion' when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then 'Console_Portfolio' else 'Region' end) as 'step_ii_filter_input';q = group q by ('As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Geo', 'Console_Region', 'Console_Subregion', 'Console_Portfolio', 'CSG_WW', 'CSG_Geo_Alt', 'CSG_Region_Alt', 'CSG_Subregion_Alt', 'Display_Type', 'Annual_Target', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'number_Target_Formatted', 'number_YTD_Formatted', 'number_YTD_MoM_Formatted', 'number_YTD_A_Formatted', 'number_YTD_A_MoM_Formatted', 'step_ii_filter_field', 'step_ii_filter_input');q = filter q by ('Is_Current_Month' in {{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"[]\").asString()}});q = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}}); q = foreach q generate q.'As_of_Date' as 'As_of_Date', q.'Num' as 'Num', q.'Type' as 'Type', q.'Metric' as 'Metric', substr(q.'Metric',1,38) + (case when len(q.'Metric') > 40 then \"...\" else \"\" end) as 'Metric_Short', q.'Console_Segment' as 'Console_Segment',  q.'Region' as 'Region', q.'Grain_Sort_Order' as 'Grain_Sort_Order', q.'Grain_Segment_Sort_Order' as 'Grain_Segment_Sort_Order', q.'Geo' as 'Geo', q.'Console_Region' as 'Console_Region', q.'Console_Subregion' as 'Console_Subregion', q.'Console_Portfolio' as 'Console_Portfolio', q.'CSG_WW' as 'CSG_WW', q.'CSG_Geo_Alt' as 'CSG_Geo_Alt', q.'CSG_Region_Alt' as 'CSG_Region_Alt', q.'CSG_Subregion_Alt' as 'CSG_Subregion_Alt', q.'Display_Type' as 'Display_Type', q.'Annual_Target' as 'Annual_Target', q.'YTD_Attainment' as 'YTD_Attainment', q.'YTD' as 'YTD', q.'number_Target_Formatted' as 'number_Target_Formatted', q.'number_YTD_Formatted' as 'number_YTD_Formatted', q.'number_YTD_MoM_Formatted' as 'number_YTD_MoM_Formatted', q.'number_YTD_A_Formatted' as 'number_YTD_A_Formatted', q.'number_YTD_A_MoM_Formatted' as 'number_YTD_A_MoM_Formatted', q.'step_ii_filter_field' as 'step_ii_filter_field',  q.'step_ii_filter_input' as 'step_ii_filter_input',q.'Colorization_Hex_Code' as 'Colorization_Hex_Code', q.'Colorization_Rank' as 'Colorization_Rank', q.'Detail_Dashboard_Name' as 'Detail_Dashboard_Name',  q.'CSG_Insights_Central_Link' as 'CSG_Insights_Central_Link', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) < -0)) then \"#C73737\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) > 0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) < -0.000)) then \"#C73737\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) > 0.000)) then \"#3ABC4A\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) < -0.00000)) then \"#C73737\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) > 0.00000)) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color_2',  \"#16325C\" as 'Text_Color_1', \"#697E93\" as 'Text_Color_2', avg(q.'Annual_Target_Metric') as 'A', avg(q.'Annual_Target_Pct') * 100 as 'B', avg(q.'Annual_Target_Num') as 'C', avg(q.'YTD_Attainment_Pct') as 'D', max(q.'Grain_Sort_Order_Num') as 'E', max(q.'Grain_Segment_Sort_Order_Num') as 'F', round(avg(q.'Change_in_Attainment_MoM_Pct')*100) as 'G';q = limit q 2000;",
+                    "pigql": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";q = foreach q generate 'As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Scorecard', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Geo', 'Console_Region', 'Console_Subregion', 'Console_Portfolio', 'CSG_WW', 'CSG_Geo_Alt', 'CSG_Region_Alt', 'CSG_Subregion_Alt', 'Display_Type', 'Annual_Target', 'YTD_Metric', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'Is_Current_Month', 'Change_in_Attainment_MoM_Pct', 'Change_in_YTD_MoM_Metric', 'Annual_Target_Metric', 'Annual_Target_Pct', 'Annual_Target_Num', 'YTD_Attainment_Pct', 'Grain_Sort_Order_Num', 'Grain_Segment_Sort_Order_Num', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Annual_Target_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Annual_Target_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Annual_Target_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Annual_Target_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_Target_Formatted', (case when q.'YTD_Metric' == null then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_Formatted', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"$#,##0.0;-$#,##0.0\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 0), \"#,##0;-#,##0\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 1), \"#,##0.0;-#,##0.0\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_YTD_MoM_Metric', 5), \"#,##0.000%;-#,##0.000%\") else \"--\" end) as 'number_YTD_MoM_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'YTD_Attainment_Pct' == null) then \"NA\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'YTD_Attainment_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_Formatted', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"--\" when q.'Display_Type' == \"Dollar\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Numeric\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Decimal\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"Percent\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") when q.'Display_Type' == \"PercentLong\" then number_to_string(round(q.'Change_in_Attainment_MoM_Pct', 3), \"#,##0.0%;-#,##0.0%\") else \"--\" end) as 'number_YTD_A_MoM_Formatted', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then \"CSG_WW\" when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then \"CSG_Geo_Alt\" when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then \"Geo\" when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then \"CSG_Region_Alt\" when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then \"Console_Region\" when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then \"CSG_Subregion_Alt\" when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then \"Console_Subregion\" when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then \"Console_Portfolio\" else \"Region\" end) as 'step_ii_filter_field', (case when q.'Grain_Sort_Order' == \"00\" and q.'Console_Segment' == \"GEO\" then 'CSG_WW' when q.'Grain_Sort_Order' == \"01\" and q.'Console_Segment' == \"GEO\" then 'CSG_Geo_Alt' when q.'Grain_Sort_Order' == \"02\" and q.'Console_Segment' == \"GEO\" then 'Geo' when q.'Grain_Sort_Order' == \"03\" and q.'Console_Segment' == \"Region\" then 'CSG_Region_Alt' when q.'Grain_Sort_Order' == \"04\" and q.'Console_Segment' == \"Region\" then 'Console_Region' when q.'Grain_Sort_Order' == \"05\" and q.'Console_Segment' == \"Subregion\" then 'CSG_Subregion_Alt' when q.'Grain_Sort_Order' == \"06\" and q.'Console_Segment' == \"Subregion\" then 'Console_Subregion' when q.'Grain_Sort_Order' == \"07\" and q.'Console_Segment' == \"Portfolio\" then 'Console_Portfolio' else 'Region' end) as 'step_ii_filter_input';q = group q by ('As_of_Date', 'Num', 'Type', 'Metric', 'Console_Segment', 'Scorecard', 'Region', 'Grain_Sort_Order', 'Grain_Segment_Sort_Order', 'Geo', 'Console_Region', 'Console_Subregion', 'Console_Portfolio', 'CSG_WW', 'CSG_Geo_Alt', 'CSG_Region_Alt', 'CSG_Subregion_Alt', 'Display_Type', 'Annual_Target', 'YTD_Attainment', 'YTD', 'Colorization_Hex_Code', 'Colorization_Rank', 'Detail_Dashboard_Name', 'CSG_Insights_Central_Link', 'number_Target_Formatted', 'number_YTD_Formatted', 'number_YTD_MoM_Formatted', 'number_YTD_A_Formatted', 'number_YTD_A_MoM_Formatted', 'step_ii_filter_field', 'step_ii_filter_input');q = filter q by ('Is_Current_Month' in {{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"[]\").asString()}});q = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}}); q = foreach q generate q.'As_of_Date' as 'As_of_Date', q.'Num' as 'Num', q.'Type' as 'Type', q.'Metric' as 'Metric', substr(q.'Metric',1,38) + (case when len(q.'Metric') > 40 then \"...\" else \"\" end) as 'Metric_Short', q.'Console_Segment' as 'Console_Segment',  q.'Scorecard' as 'Scorecard', q.'Region' as 'Region', q.'Grain_Sort_Order' as 'Grain_Sort_Order', q.'Grain_Segment_Sort_Order' as 'Grain_Segment_Sort_Order', q.'Geo' as 'Geo', q.'Console_Region' as 'Console_Region', q.'Console_Subregion' as 'Console_Subregion', q.'Console_Portfolio' as 'Console_Portfolio', q.'CSG_WW' as 'CSG_WW', q.'CSG_Geo_Alt' as 'CSG_Geo_Alt', q.'CSG_Region_Alt' as 'CSG_Region_Alt', q.'CSG_Subregion_Alt' as 'CSG_Subregion_Alt', q.'Display_Type' as 'Display_Type', q.'Annual_Target' as 'Annual_Target', q.'YTD_Attainment' as 'YTD_Attainment', q.'YTD' as 'YTD', q.'number_Target_Formatted' as 'number_Target_Formatted', q.'number_YTD_Formatted' as 'number_YTD_Formatted', q.'number_YTD_MoM_Formatted' as 'number_YTD_MoM_Formatted', q.'number_YTD_A_Formatted' as 'number_YTD_A_Formatted', q.'number_YTD_A_MoM_Formatted' as 'number_YTD_A_MoM_Formatted', q.'step_ii_filter_field' as 'step_ii_filter_field',  q.'step_ii_filter_input' as 'step_ii_filter_input',q.'Colorization_Hex_Code' as 'Colorization_Hex_Code', q.'Colorization_Rank' as 'Colorization_Rank', q.'Detail_Dashboard_Name' as 'Detail_Dashboard_Name',  q.'CSG_Insights_Central_Link' as 'CSG_Insights_Central_Link', (case when (q.'Annual_Target_Metric' == null or q.'Annual_Target_Metric' == 0 or q.'Change_in_Attainment_MoM_Pct' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) < -0.000) then \"#C73737\" when (round(avg(q.'Change_in_Attainment_MoM_Pct'), 3) > 0.000) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color', (case when (q.'YTD_Metric' == null or q.'Change_in_YTD_MoM_Metric' == null) then \"#D5D5D5\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#3ABC4A\" when ((round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0) and 'Metric' in [\"Attrition (Core, MC, Pardot)\", \"Core Attrition\",\"Marketing Cloud Attrition\",\"Pardot Attrition\"]) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Dollar\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) < -0)) then \"#C73737\" when (q.'Display_Type' == \"Numeric\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 0) > 0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) < -0.0)) then \"#C73737\" when (q.'Display_Type' == \"Decimal\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 1) > 0.0)) then \"#3ABC4A\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) < -0.000)) then \"#C73737\" when (q.'Display_Type' == \"Percent\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 3) > 0.000)) then \"#3ABC4A\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) < -0.00000)) then \"#C73737\" when (q.'Display_Type' == \"PercentLong\" and (round(avg(q.'Change_in_YTD_MoM_Metric'), 5) > 0.00000)) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color_2',  \"#16325C\" as 'Text_Color_1', \"#697E93\" as 'Text_Color_2', avg(q.'Annual_Target_Metric') as 'A', avg(q.'Annual_Target_Pct') * 100 as 'B', avg(q.'Annual_Target_Num') as 'C', avg(q.'YTD_Attainment_Pct') as 'D', max(q.'Grain_Sort_Order_Num') as 'E', max(q.'Grain_Segment_Sort_Order_Num') as 'F', round(avg(q.'Change_in_Attainment_MoM_Pct')*100) as 'G';q = limit q 2000;",
                     "autoFilter": true,
                     "groups": [
                         "As_of_Date",
@@ -11914,6 +11915,7 @@
                         "Metric",
                         "Metric_Short",
                         "Console_Segment",
+                        "Scorecard",
                         "Region",
                         "Grain_Sort_Order",
                         "Grain_Segment_Sort_Order",
@@ -15596,7 +15598,7 @@
             "Segment_Name_019": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 18, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 18, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 18, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15671,7 +15673,7 @@
             "Segment_Name_015": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 14, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 14, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 14, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15695,7 +15697,7 @@
             "Segment_Name_016": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 15, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 15, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 15, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15719,7 +15721,7 @@
             "Segment_Name_017": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 16, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 16, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 16, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15743,7 +15745,7 @@
             "Segment_Name_018": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 17, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 17, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 17, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15767,7 +15769,7 @@
             "Segment_Name_011": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 10, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 10, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 10, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15791,7 +15793,7 @@
             "Segment_Name_012": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 11, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 11, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 11, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15815,7 +15817,7 @@
             "Segment_Name_013": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 12, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 12, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 12, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15839,7 +15841,7 @@
             "Segment_Name_014": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 13, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 13, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 13, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15899,7 +15901,7 @@
             "Segment_Name_010": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 9, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 9, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 9, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15971,7 +15973,7 @@
             "Segment_Name_008": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 7, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 7, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 7, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -15989,7 +15991,7 @@
             "Segment_Name_009": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 8, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 8, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 8, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16046,7 +16048,7 @@
             "Segment_Name_004": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 3, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 3, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 3, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16070,7 +16072,7 @@
             "Segment_Name_005": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 4, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 4, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 4, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16094,7 +16096,7 @@
             "Segment_Name_006": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 5, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 5, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 5, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16118,7 +16120,7 @@
             "Segment_Name_007": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 6, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 6, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 6, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16142,7 +16144,7 @@
             "Segment_Name_000": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9.result, 0, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9.result, 0, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16166,7 +16168,7 @@
             "Segment_Name_001": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 0, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 0, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16190,7 +16192,7 @@
             "Segment_Name_002": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 1, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 1, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 1, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -16214,7 +16216,7 @@
             "Segment_Name_003": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 2, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 2, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 2, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17133,7 +17135,7 @@
             "Segment_Name_033": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 32, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 32, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 32, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17142,7 +17144,7 @@
             "Segment_Name_034": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 33, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 33, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 33, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17151,7 +17153,7 @@
             "Segment_Name_035": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 34, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 34, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 34, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17160,7 +17162,7 @@
             "Segment_Name_036": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 35, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 35, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 35, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17169,7 +17171,7 @@
             "Segment_Name_030": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 29, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 29, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 29, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17178,7 +17180,7 @@
             "Segment_Name_031": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 30, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 30, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 30, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17187,7 +17189,7 @@
             "Segment_Name_032": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 31, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 31, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 31, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17423,7 +17425,7 @@
             "Segment_Name_026": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 25, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 25, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 25, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17432,7 +17434,7 @@
             "Segment_Name_027": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 26, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 26, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 26, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17441,7 +17443,7 @@
             "Segment_Name_028": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 27, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 27, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 27, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17450,7 +17452,7 @@
             "Segment_Name_029": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 28, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 28, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 28, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17459,7 +17461,7 @@
             "Segment_Name_022": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 21, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 21, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 21, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17468,7 +17470,7 @@
             "Segment_Name_023": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 22, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 22, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 22, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17477,7 +17479,7 @@
             "Segment_Name_024": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 23, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 23, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 23, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17486,7 +17488,7 @@
             "Segment_Name_025": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 24, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 24, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 24, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17495,7 +17497,7 @@
             "Segment_Name_020": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 19, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 19, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 19, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17504,7 +17506,7 @@
             "Segment_Name_021": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 20, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "{{coalesce(cell(BIG_TEST_9_II.result, 20, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 20, \"Text_Color_2\"), \"#FFFFFF\").asString()}}"
                 },
@@ -17675,7 +17677,7 @@
             "text_1": {
                 "parameters": {
                     "fontSize": 20,
-                    "text": "Showing FY19 {{coalesce(cell(BIG_TEST_9.result, 0, \"Metric\"), \"Error\").asString()}} Metric for {{coalesce(cell(BIG_TEST_9.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(BIG_TEST_9.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "Showing FY19 {{coalesce(cell(BIG_TEST_9.result, 0, \"Metric\"), \"Error\").asString()}} Metric for {{coalesce(cell(BIG_TEST_9.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(BIG_TEST_9.result, 0, \"Scorecard\"), \"Error\").asString()}}",
                     "textAlignment": "left",
                     "textColor": "rgb(22, 50, 92)"
                 },
