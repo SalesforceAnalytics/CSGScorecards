@@ -12500,6 +12500,7 @@
                     }
                 ],
                 "isGlobal": false,
+                "label": "Selected_Console_Segment_FFF",
                 "query": {
                     "measures": [
                         [
@@ -12508,6 +12509,7 @@
                         ]
                     ],
                     "groups": [
+                        "Scorecard",
                         "Console_Segment"
                     ],
                     "order": [
@@ -12521,12 +12523,10 @@
                 },
                 "receiveFacet": false,
                 "selectMode": "singlerequired",
-                "start": [
-                    "Region"
-                ],
                 "type": "aggregateflex",
                 "useGlobal": false,
                 "visualizationParameters": {
+                    "options": {},
                     "parameters": {
                         "autoFitMode": "none",
                         "showValues": true,
@@ -12622,7 +12622,7 @@
                         }
                     },
                     "type": "chart",
-                    "options": {}
+                    "visualizationType": "hbar"
                 }
             },
             "Step_Trend_008": {
@@ -14487,7 +14487,7 @@
             "text_136": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Super Portfolio",
+                    "text": "CSG Super Portfolio",
                     "textAlignment": "left",
                     "textColor": "#FFFFFF"
                 },
@@ -16700,9 +16700,7 @@
             "pillbox_1": {
                 "parameters": {
                     "compact": false,
-                    "displayTemplate": [
-                        "Console_Segment"
-                    ],
+                    "displayTemplate": "[Scorecard]",
                     "exploreLink": false,
                     "measureField": "max_Grain_Sort_Order_Num",
                     "step": "Selected_Console_Segment_FFF"

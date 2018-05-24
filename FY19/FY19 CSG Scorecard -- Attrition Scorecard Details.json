@@ -1,5 +1,5 @@
 {
-    "label": "FY19 CSG Scorecard -- Attrition Scorecard Details",
+    "label": "FY19 CSG Scorecard -- Attrition (Core, MC, Pardot) Scorecard Details",
     "mobileDisabled": false,
     "description": "Create a home page for your app",
     "state": {
@@ -1126,7 +1126,7 @@
                             },
                             {
                                 "colspan": 2,
-                                "column": 15,
+                                "column": 16,
                                 "name": "text_37",
                                 "row": 27,
                                 "rowspan": 3,
@@ -1142,7 +1142,7 @@
                             },
                             {
                                 "colspan": 2,
-                                "column": 18,
+                                "column": 19,
                                 "name": "text_38",
                                 "row": 27,
                                 "rowspan": 3,
@@ -1172,7 +1172,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 14,
+                                "column": 15,
                                 "name": "text_41",
                                 "row": 31,
                                 "rowspan": 3,
@@ -1186,7 +1186,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 17,
+                                "column": 18,
                                 "name": "text_42",
                                 "row": 31,
                                 "rowspan": 3,
@@ -1214,7 +1214,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 14,
+                                "column": 15,
                                 "name": "text_44",
                                 "row": 35,
                                 "rowspan": 3,
@@ -1228,7 +1228,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 17,
+                                "column": 18,
                                 "name": "text_45",
                                 "row": 35,
                                 "rowspan": 3,
@@ -1256,7 +1256,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 14,
+                                "column": 15,
                                 "name": "text_47",
                                 "row": 38,
                                 "rowspan": 2,
@@ -1270,7 +1270,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 17,
+                                "column": 18,
                                 "name": "text_48",
                                 "row": 38,
                                 "rowspan": 2,
@@ -1298,7 +1298,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 14,
+                                "column": 15,
                                 "name": "text_50",
                                 "row": 41,
                                 "rowspan": 3,
@@ -1312,7 +1312,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 17,
+                                "column": 18,
                                 "name": "text_51",
                                 "row": 41,
                                 "rowspan": 3,
@@ -1340,7 +1340,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 14,
+                                "column": 15,
                                 "name": "text_53",
                                 "row": 44,
                                 "rowspan": 2,
@@ -1354,7 +1354,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 17,
+                                "column": 18,
                                 "name": "text_54",
                                 "row": 44,
                                 "rowspan": 2,
@@ -2212,6 +2212,228 @@
                     "options": {}
                 }
             },
+            "Annual_Target_Metric_4": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "Annual_Target_Metric_1",
+                "numbers": [],
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Pardot Attrition\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#3ABC4A\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#C73737\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "receiveFacet": true,
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "showValues": true,
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "showBinLabel": true,
+                            "measures": "",
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": "",
+                            "customizeTooltip": false
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "subtitleFontSize": 11,
+                            "fontSize": 14,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            },
+                            "title": ""
+                        }
+                    },
+                    "type": "chart",
+                    "visualizationType": "hbar"
+                }
+            },
+            "Annual_Target_Metric_3": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "Annual_Target_Metric_1",
+                "numbers": [],
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Marketing Cloud Attrition\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#3ABC4A\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#C73737\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "receiveFacet": true,
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "showValues": true,
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "showBinLabel": true,
+                            "measures": "",
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": "",
+                            "customizeTooltip": false
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "subtitleFontSize": 11,
+                            "fontSize": 14,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            },
+                            "title": ""
+                        }
+                    },
+                    "type": "chart",
+                    "visualizationType": "hbar"
+                }
+            },
             "step_listselector_region_FFF": {
                 "broadcastFacet": false,
                 "datasets": [
@@ -2266,6 +2488,117 @@
                 "useGlobal": true,
                 "visualizationParameters": {
                     "options": {}
+                }
+            },
+            "Annual_Target_Metric_2": {
+                "broadcastFacet": true,
+                "groups": [],
+                "label": "Annual_Target_Metric_2",
+                "numbers": [],
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Core Attrition\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#3ABC4A\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#C73737\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "receiveFacet": true,
+                "selectMode": "single",
+                "strings": [],
+                "type": "saql",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "showValues": true,
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "showBinLabel": true,
+                            "measures": "",
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "dimensions": "",
+                            "customizeTooltip": false
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "subtitleFontSize": 11,
+                            "fontSize": 14,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            },
+                            "title": ""
+                        }
+                    },
+                    "type": "chart",
+                    "visualizationType": "hbar"
                 }
             },
             "Annual_Target_Metric_1": {
@@ -3305,7 +3638,7 @@
             "text_3": {
                 "parameters": {
                     "fontSize": 20,
-                    "text": "Attrition Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
+                    "text": "Attrition (Core, MC, Pardot) Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Console_Segment\"), \"Error\").asString()}}",
                     "textAlignment": "left",
                     "textColor": "rgb(22, 50, 92)"
                 },
@@ -4045,7 +4378,7 @@
             "text_136": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "CSG Subregion",
+                    "text": "CSG Super Portfolio",
                     "textAlignment": "left",
                     "textColor": "#FFFFFF"
                 },
@@ -4089,7 +4422,7 @@
                 "parameters": {
                     "fontSize": 10,
                     "text": "Pardot Attrition",
-                    "textAlignment": "center",
+                    "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
                 "type": "text"
@@ -4098,7 +4431,7 @@
                 "parameters": {
                     "fontSize": 10,
                     "text": "Marketing Cloud Attrition",
-                    "textAlignment": "center",
+                    "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
                 "type": "text"
@@ -4106,9 +4439,9 @@
             "text_54": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_4.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_4.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
                 },
                 "type": "text"
             },
@@ -4127,9 +4460,9 @@
             "text_53": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_3.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_3.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
                 },
                 "type": "text"
             },
@@ -4137,7 +4470,7 @@
                 "parameters": {
                     "fontSize": 10,
                     "text": "Core Attrition",
-                    "textAlignment": "center",
+                    "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
                 "type": "text"
@@ -4146,7 +4479,7 @@
                 "parameters": {
                     "fontSize": 10,
                     "text": "Attrition (Core, MC, Pardot)",
-                    "textAlignment": "center",
+                    "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
                 "type": "text"
@@ -4154,7 +4487,7 @@
             "text_50": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_3.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4163,9 +4496,9 @@
             "text_52": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_2.result, 0, \"sum_Change_in_Attainment_MoM_Pct\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_2.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
                 },
                 "type": "text"
             },
@@ -4180,7 +4513,7 @@
             "text_51": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_4.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4253,18 +4586,18 @@
             "text_47": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_3.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_3.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
                 },
                 "type": "text"
             },
             "text_46": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_2.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_2.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
                 },
                 "type": "text"
             },
@@ -4283,7 +4616,7 @@
             "text_49": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_2.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4292,16 +4625,16 @@
             "text_48": {
                 "parameters": {
                     "fontSize": 12,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_4.result, 0, \"sum_Change_in_YTD_MoM_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
-                    "textColor": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
+                    "textColor": "{{coalesce(cell(Annual_Target_Metric_4.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
                 },
                 "type": "text"
             },
             "text_43": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_2.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4310,7 +4643,7 @@
             "text_42": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_4.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4319,7 +4652,7 @@
             "text_45": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_4.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4328,7 +4661,7 @@
             "text_44": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_3.result, 0, \"sum_YTD_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4337,7 +4670,7 @@
             "text_41": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_3.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },
@@ -4416,7 +4749,7 @@
             "text_39": {
                 "parameters": {
                     "fontSize": 16,
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "text": "{{coalesce(cell(Annual_Target_Metric_2.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
                 },

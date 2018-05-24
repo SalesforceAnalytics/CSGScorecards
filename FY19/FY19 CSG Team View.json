@@ -11227,7 +11227,7 @@
                                 }
                             },
                             {
-                                "colspan": 14,
+                                "colspan": 18,
                                 "column": 20,
                                 "name": "pillbox_1",
                                 "row": 25,
@@ -16382,7 +16382,7 @@
                                 }
                             },
                             {
-                                "colspan": 9,
+                                "colspan": 10,
                                 "column": 1,
                                 "name": "container_21",
                                 "row": 155,
@@ -16400,7 +16400,7 @@
                                 }
                             },
                             {
-                                "colspan": 8,
+                                "colspan": 10,
                                 "column": 1,
                                 "name": "pillbox_5",
                                 "row": 155,
@@ -22624,6 +22624,7 @@
                     }
                 ],
                 "isGlobal": false,
+                "label": "Selected_Console_Segment_FFF",
                 "query": {
                     "measures": [
                         [
@@ -22632,7 +22633,8 @@
                         ]
                     ],
                     "groups": [
-                        "Console_Segment"
+                        "Console_Segment",
+                        "Scorecard"
                     ],
                     "order": [
                         [
@@ -22645,12 +22647,10 @@
                 },
                 "receiveFacet": false,
                 "selectMode": "singlerequired",
-                "start": [
-                    "Region"
-                ],
                 "type": "aggregateflex",
                 "useGlobal": false,
                 "visualizationParameters": {
+                    "options": {},
                     "parameters": {
                         "autoFitMode": "none",
                         "showValues": true,
@@ -22746,7 +22746,7 @@
                         }
                     },
                     "type": "chart",
-                    "options": {}
+                    "visualizationType": "hbar"
                 }
             },
             "Step_Static_H_Page_FFF": {
@@ -24341,7 +24341,7 @@
             "text_136": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Super Portfolio",
+                    "text": "CSG Super Portfolio",
                     "textAlignment": "left",
                     "textColor": "#FFFFFF"
                 },
@@ -31118,9 +31118,7 @@
             "pillbox_1": {
                 "parameters": {
                     "compact": false,
-                    "displayTemplate": [
-                        "Console_Segment"
-                    ],
+                    "displayTemplate": "[Scorecard]",
                     "exploreLink": false,
                     "measureField": "max_Grain_Sort_Order_Num",
                     "step": "Selected_Console_Segment_FFF"

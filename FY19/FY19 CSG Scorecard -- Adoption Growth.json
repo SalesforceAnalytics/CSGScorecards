@@ -388,7 +388,7 @@
                                 }
                             },
                             {
-                                "colspan": 9,
+                                "colspan": 8,
                                 "column": 1,
                                 "name": "text_15",
                                 "row": 23,
@@ -896,8 +896,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 4,
+                                "column": 9,
                                 "name": "text_46",
                                 "row": 24,
                                 "rowspan": 3,
@@ -998,7 +998,7 @@
                     {
                         "display": "Actuals",
                         "value": "YTD_Metric",
-                        "axis": "YTD_Metric"
+                        "axis": "YTD_Pct"
                     }
                 ],
                 "numbers": [],
@@ -1165,7 +1165,7 @@
                 "groups": [],
                 "label": "Annual_Target_Metric_1",
                 "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"TLP Growth\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"TLP Growth\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"PercentLong\" then number_to_string(sum('YTD_Metric'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
                 "receiveFacet": true,
                 "selectMode": "single",
                 "strings": [],
@@ -1531,7 +1531,7 @@
                 "groups": [],
                 "label": "Annual_Target_Metric_1",
                 "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Adoption Growth\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' == \"Adoption Growth\";\nq = group q by ('Display_Type','Region','Console_Segment');\nq = foreach q generate 'Display_Type','Region','Console_Segment',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Annual_Target_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('Annual_Target_Metric'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_Annual_Target_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Metric'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"PercentLong\" then number_to_string(sum('YTD_Metric'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_YTD_Metric',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"$#,##0.0;-$#,##0.0\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0;-#,##0\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('Change_in_YTD_MoM_Metric'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_Change_in_YTD_MoM_Metric', (case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('Change_in_Attainment_MoM_Pct'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_Change_in_Attainment_MoM_Pct',(case  when 'Display_Type' == \"Dollar\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Numeric\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\")  when 'Display_Type' == \"Percent\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.0%;-#,##0.0%\") when 'Display_Type' == \"PercentLong\" then number_to_string(sum('YTD_Attainment_Pct'), \"#,##0.000%;-#,##0.000%\")  else \"--\" end) as 'sum_YTD_Attainment_Pct',first('Colorization_Hex_Code') as 'Colorization_Hex_Code',(case when (avg('Change_in_Attainment_MoM_Pct') < -0.005) then \"#C73737\" when (avg('Change_in_Attainment_MoM_Pct') > 0.005) then \"#3ABC4A\" else \"#F6A623\" end) as 'Color';\nq = limit q 200;",
                 "receiveFacet": true,
                 "selectMode": "single",
                 "strings": [],
@@ -2264,13 +2264,13 @@
                     "showPoints": true,
                     "legend": {
                         "descOrder": false,
-                        "showHeader": true,
+                        "showHeader": false,
                         "sorting": {
                             "order": "asc"
                         },
-                        "show": false,
+                        "show": true,
                         "customSize": "auto",
-                        "position": "right-top",
+                        "position": "bottom-center",
                         "inside": false
                     },
                     "axisMode": "multi",
@@ -2423,7 +2423,7 @@
                 "parameters": {
                     "fontSize": 10,
                     "text": "TLP Growth",
-                    "textAlignment": "center",
+                    "textAlignment": "right",
                     "textColor": "#091A3E"
                 },
                 "type": "text"
@@ -2432,7 +2432,7 @@
                 "parameters": {
                     "fontSize": 10,
                     "text": "Adoption Growth",
-                    "textAlignment": "center",
+                    "textAlignment": "right",
                     "textColor": "#091A3E"
                 },
                 "type": "text"
@@ -2453,7 +2453,7 @@
                 "parameters": {
                     "fontSize": 10,
                     "text": "LU Growth",
-                    "textAlignment": "center",
+                    "textAlignment": "right",
                     "textColor": "#091A3E"
                 },
                 "type": "text"
@@ -2607,7 +2607,7 @@
                     "displayTemplate": "[Console_Portfolio] - [CSG_Portfolio] - [Console_Subregion]",
                     "exploreLink": false,
                     "instant": true,
-                    "measureField": "count",
+                    "measureField": "none",
                     "step": "step_listselector_portfolio_FFF",
                     "title": ""
                 },
@@ -2748,7 +2748,7 @@
             "text_136": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Super Portfolio",
+                    "text": "CSG Super Portfolio",
                     "textAlignment": "left",
                     "textColor": "#FFFFFF"
                 },
@@ -2786,7 +2786,7 @@
                     "displayTemplate": "[Console_Subregion] - [CSG_Subregion] - [Console_Region]",
                     "exploreLink": false,
                     "instant": true,
-                    "measureField": "count",
+                    "measureField": "none",
                     "step": "step_listselector_subregion_FFF",
                     "title": ""
                 },
