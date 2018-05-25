@@ -119,6 +119,20 @@
         {
             "customActions": [],
             "customActionsEnabled": true,
+            "field": "Hide_Subregion",
+            "fullyQualifiedName": "Hide_Subregion",
+            "label": "Hide Subregion",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Hide_Subregion",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
             "field": "Console_Portfolio",
             "fullyQualifiedName": "Console_Portfolio",
             "label": "Console Portfolio",
@@ -312,6 +326,34 @@
             "salesforceActionsEnabled": true,
             "showInExplorer": true
         },
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Baseline",
+            "fullyQualifiedName": "Baseline",
+            "label": "Baseline",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Baseline",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },     
+        {
+            "customActions": [],
+            "customActionsEnabled": true,
+            "field": "Score",
+            "fullyQualifiedName": "Score",
+            "label": "Score",
+            "linkTemplateEnabled": true,
+            "members": [],
+            "origin": "Score",
+            "recordDisplayFields": [],
+            "salesforceActions": [],
+            "salesforceActionsEnabled": true,
+            "showInExplorer": true
+        },       
         {
             "customActions": [],
             "customActionsEnabled": true,
@@ -860,6 +902,72 @@
             "fullyQualifiedName": "Target_Copy_Metric",
             "label": "Target (Copy) (Metric)",
             "origin": "Target_Copy_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "Baseline_Metric",
+            "format": {
+                "customFormat": "[\"$#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Baseline_Metric",
+            "label": "Baseline (Metric)",
+            "origin": "Baseline_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "Baseline_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "Baseline_Pct",
+            "label": "Baseline (Pct)",
+            "origin": "Baseline_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "Baseline_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Baseline_Num",
+            "label": "Baseline (Num)",
+            "origin": "Baseline_Num",
+            "showInExplorer": true
+        },
+        {
+            "field": "Score_Metric",
+            "format": {
+                "customFormat": "[\"$#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Score_Metric",
+            "label": "Score (Metric)",
+            "origin": "Score_Metric",
+            "showInExplorer": true
+        },
+        {
+            "field": "Score_Pct",
+            "format": {
+                "customFormat": "[\"#,##0%\",100]",
+                "decimalDigits": 4
+            },
+            "fullyQualifiedName": "Score_Pct",
+            "label": "Score (Pct)",
+            "origin": "Score_Pct",
+            "showInExplorer": true
+        },
+        {
+            "field": "Score_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 2
+            },
+            "fullyQualifiedName": "Score_Num",
+            "label": "Score (Num)",
+            "origin": "Score_Num",
             "showInExplorer": true
         },
         {

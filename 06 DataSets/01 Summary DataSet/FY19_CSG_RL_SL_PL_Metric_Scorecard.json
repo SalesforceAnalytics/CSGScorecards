@@ -55,6 +55,12 @@
                     "label": "Console Subregion"
                 },
                 {
+                    "fullyQualifiedName": "Hide_Subregion",
+                    "name": "Hide_Subregion",
+                    "type": "Text",
+                    "label": "Hide Subregion"
+                },
+                {
                     "fullyQualifiedName": "Console_Portfolio",
                     "name": "Console_Portfolio",
                     "type": "Text",
@@ -139,6 +145,18 @@
                     "label": "Target (Copy)"
                 },
                 {
+                    "fullyQualifiedName": "Baseline",
+                    "name": "Baseline",
+                    "type": "Text",
+                    "label": "Baseline"
+                },
+                {
+                    "fullyQualifiedName": "Score",
+                    "name": "Score",
+                    "type": "Text",
+                    "label": "Score"
+                },
+                {
                     "fullyQualifiedName": "YTD",
                     "name": "YTD",
                     "type": "Text",
@@ -206,6 +224,60 @@
                     "name": "Target_Copy_Metric",
                     "type": "Numeric",
                     "label": "Target (Copy) (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Baseline_Metric",
+                    "name": "Baseline_Metric",
+                    "type": "Numeric",
+                    "label": "Baseline (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Baseline_Pct",
+                    "name": "Baseline_Pct",
+                    "type": "Numeric",
+                    "label": "Baseline (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Baseline_Num",
+                    "name": "Baseline_Num",
+                    "type": "Numeric",
+                    "label": "Baseline (Num)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Score_Metric",
+                    "name": "Score_Metric",
+                    "type": "Numeric",
+                    "label": "Score (Metric)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Score_Pct",
+                    "name": "Score_Pct",
+                    "type": "Numeric",
+                    "label": "Score (Pct)",
+                    "precision": 18,
+                    "defaultValue": "0",
+                    "scale": 4
+                },
+                {
+                    "fullyQualifiedName": "Score_Num",
+                    "name": "Score_Num",
+                    "type": "Numeric",
+                    "label": "Score (Num)",
                     "precision": 18,
                     "defaultValue": "0",
                     "scale": 4
