@@ -290,7 +290,7 @@
                                 "column": 19,
                                 "name": "container_2",
                                 "row": 22,
-                                "rowspan": 29,
+                                "rowspan": 33,
                                 "widgetStyle": {
                                     "backgroundColor": "#FFFFFF",
                                     "borderColor": "#C5D3E0",
@@ -306,7 +306,7 @@
                                 "column": 19,
                                 "name": "chart_1",
                                 "row": 27,
-                                "rowspan": 22,
+                                "rowspan": 27,
                                 "widgetStyle": {
                                     "borderEdges": []
                                 }
@@ -315,7 +315,7 @@
                                 "colspan": 49,
                                 "column": 0,
                                 "name": "container_3",
-                                "row": 51,
+                                "row": 55,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -402,7 +402,7 @@
                                 "column": 1,
                                 "name": "container_9",
                                 "row": 22,
-                                "rowspan": 29,
+                                "rowspan": 33,
                                 "widgetStyle": {
                                     "backgroundColor": "#FFFFFF",
                                     "borderColor": "#C5D3E0",
@@ -435,7 +435,7 @@
                                 "colspan": 17,
                                 "column": 2,
                                 "name": "text_17",
-                                "row": 40,
+                                "row": 48,
                                 "rowspan": 1,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -451,7 +451,7 @@
                                 "colspan": 17,
                                 "column": 2,
                                 "name": "text_18",
-                                "row": 46,
+                                "row": 54,
                                 "rowspan": 1,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -531,7 +531,7 @@
                                 "colspan": 7,
                                 "column": 2,
                                 "name": "text_22",
-                                "row": 35,
+                                "row": 43,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -541,7 +541,7 @@
                                 "colspan": 3,
                                 "column": 10,
                                 "name": "text_23",
-                                "row": 35,
+                                "row": 43,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -551,7 +551,7 @@
                                 "colspan": 7,
                                 "column": 2,
                                 "name": "text_13",
-                                "row": 38,
+                                "row": 46,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -561,7 +561,7 @@
                                 "colspan": 3,
                                 "column": 10,
                                 "name": "text_25",
-                                "row": 38,
+                                "row": 46,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -571,7 +571,7 @@
                                 "colspan": 7,
                                 "column": 2,
                                 "name": "text_24",
-                                "row": 41,
+                                "row": 49,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -581,7 +581,7 @@
                                 "colspan": 7,
                                 "column": 2,
                                 "name": "text_26",
-                                "row": 44,
+                                "row": 52,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -591,7 +591,7 @@
                                 "colspan": 3,
                                 "column": 10,
                                 "name": "text_27",
-                                "row": 44,
+                                "row": 52,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -601,7 +601,7 @@
                                 "colspan": 3,
                                 "column": 10,
                                 "name": "text_28",
-                                "row": 41,
+                                "row": 49,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "borderEdges": []
@@ -757,7 +757,7 @@
                                 "colspan": 3,
                                 "column": 13,
                                 "name": "text_8",
-                                "row": 35,
+                                "row": 43,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -801,7 +801,7 @@
                                 "colspan": 3,
                                 "column": 16,
                                 "name": "text_37",
-                                "row": 35,
+                                "row": 43,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -815,7 +815,7 @@
                                 "colspan": 3,
                                 "column": 13,
                                 "name": "text_38",
-                                "row": 38,
+                                "row": 46,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -829,7 +829,7 @@
                                 "colspan": 3,
                                 "column": 16,
                                 "name": "text_39",
-                                "row": 38,
+                                "row": 46,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -843,7 +843,7 @@
                                 "colspan": 3,
                                 "column": 13,
                                 "name": "text_41",
-                                "row": 41,
+                                "row": 49,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -857,7 +857,7 @@
                                 "colspan": 3,
                                 "column": 16,
                                 "name": "text_42",
-                                "row": 41,
+                                "row": 49,
                                 "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -871,7 +871,7 @@
                                 "colspan": 3,
                                 "column": 13,
                                 "name": "text_43",
-                                "row": 44,
+                                "row": 52,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -885,7 +885,7 @@
                                 "colspan": 3,
                                 "column": 16,
                                 "name": "text_44",
-                                "row": 44,
+                                "row": 52,
                                 "rowspan": 2,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -955,6 +955,150 @@
                                     ],
                                     "borderRadius": 0,
                                     "borderWidth": 8
+                                }
+                            },
+                            {
+                                "row": 35,
+                                "column": 2,
+                                "rowspan": 3,
+                                "colspan": 7,
+                                "name": "text_33",
+                                "widgetStyle": {
+                                    "borderEdges": [],
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 39,
+                                "column": 2,
+                                "rowspan": 3,
+                                "colspan": 7,
+                                "name": "text_34",
+                                "widgetStyle": {
+                                    "borderEdges": [],
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 42,
+                                "column": 2,
+                                "rowspan": 1,
+                                "colspan": 17,
+                                "name": "text_45",
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#C5D3E0",
+                                    "borderEdges": [
+                                        "top"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 38,
+                                "column": 2,
+                                "rowspan": 1,
+                                "colspan": 17,
+                                "name": "text_49",
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#C5D3E0",
+                                    "borderEdges": [
+                                        "top"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 35,
+                                "column": 10,
+                                "rowspan": 3,
+                                "colspan": 3,
+                                "name": "text_50",
+                                "widgetStyle": {
+                                    "borderEdges": [],
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 35,
+                                "column": 13,
+                                "rowspan": 3,
+                                "colspan": 3,
+                                "name": "text_51",
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 35,
+                                "column": 16,
+                                "rowspan": 3,
+                                "colspan": 3,
+                                "name": "text_52",
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 39,
+                                "column": 10,
+                                "rowspan": 3,
+                                "colspan": 3,
+                                "name": "text_53",
+                                "widgetStyle": {
+                                    "borderEdges": [],
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 39,
+                                "column": 13,
+                                "rowspan": 3,
+                                "colspan": 3,
+                                "name": "text_54",
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "row": 39,
+                                "column": 16,
+                                "rowspan": 3,
+                                "colspan": 3,
+                                "name": "text_55",
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
                                 }
                             }
                         ]
@@ -2798,6 +2942,96 @@
                     "title": ""
                 },
                 "type": "listselector"
+            },
+            "text_33": {
+                "type": "text",
+                "parameters": {
+                    "text": "Baseline",
+                    "textAlignment": "left",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
+            },
+            "text_34": {
+                "type": "text",
+                "parameters": {
+                    "text": "Actual Score",
+                    "textAlignment": "left",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
+            },
+            "text_45": {
+                "type": "text",
+                "parameters": {
+                    "text": "",
+                    "textAlignment": "center",
+                    "textColor": "#091A3E",
+                    "fontSize": 20
+                }
+            },
+            "text_49": {
+                "type": "text",
+                "parameters": {
+                    "text": "",
+                    "textAlignment": "center",
+                    "textColor": "#091A3E",
+                    "fontSize": 20
+                }
+            },
+            "text_50": {
+                "type": "text",
+                "parameters": {
+                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
+            },
+            "text_51": {
+                "type": "text",
+                "parameters": {
+                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
+            },
+            "text_52": {
+                "type": "text",
+                "parameters": {
+                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
+            },
+            "text_53": {
+                "type": "text",
+                "parameters": {
+                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
+            },
+            "text_54": {
+                "type": "text",
+                "parameters": {
+                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
+            },
+            "text_55": {
+                "type": "text",
+                "parameters": {
+                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Annual_Target_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779",
+                    "fontSize": 16
+                }
             }
         }
     },
