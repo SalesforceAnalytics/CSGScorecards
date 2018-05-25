@@ -716,7 +716,7 @@
                                 }
                             },
                             {
-                                "colspan": 8,
+                                "colspan": 6,
                                 "column": 1,
                                 "name": "text_9",
                                 "row": 27,
@@ -787,7 +787,7 @@
                                 }
                             },
                             {
-                                "colspan": 8,
+                                "colspan": 7,
                                 "column": 0,
                                 "name": "text_15",
                                 "row": 23,
@@ -907,7 +907,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 1,
                                 "name": "text_29",
                                 "row": 31,
@@ -917,17 +917,19 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 8,
+                                "colspan": 4,
+                                "column": 7,
                                 "name": "text_19",
                                 "row": 31,
                                 "rowspan": 3,
                                 "widgetStyle": {
-                                    "borderEdges": []
+                                    "borderEdges": [],
+                                    "borderWidth": 4,
+                                    "borderColor": "#FFFFFF"
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 1,
                                 "name": "text_22",
                                 "row": 35,
@@ -937,8 +939,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 8,
+                                "colspan": 4,
+                                "column": 7,
                                 "name": "text_23",
                                 "row": 35,
                                 "rowspan": 3,
@@ -947,7 +949,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 1,
                                 "name": "text_13",
                                 "row": 38,
@@ -957,8 +959,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 8,
+                                "colspan": 4,
+                                "column": 7,
                                 "name": "text_25",
                                 "row": 38,
                                 "rowspan": 2,
@@ -967,7 +969,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 1,
                                 "name": "text_24",
                                 "row": 41,
@@ -977,7 +979,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 1,
                                 "name": "text_26",
                                 "row": 44,
@@ -987,8 +989,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 8,
+                                "colspan": 4,
+                                "column": 7,
                                 "name": "text_27",
                                 "row": 44,
                                 "rowspan": 2,
@@ -997,8 +999,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 8,
+                                "colspan": 4,
+                                "column": 7,
                                 "name": "text_28",
                                 "row": 41,
                                 "rowspan": 3,
@@ -1110,7 +1112,7 @@
                             },
                             {
                                 "colspan": 2,
-                                "column": 12,
+                                "column": 13,
                                 "name": "text_36",
                                 "row": 27,
                                 "rowspan": 3,
@@ -1158,7 +1160,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 11,
+                                "column": 12,
                                 "name": "text_39",
                                 "row": 31,
                                 "rowspan": 3,
@@ -1200,7 +1202,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 11,
+                                "column": 12,
                                 "name": "text_43",
                                 "row": 35,
                                 "rowspan": 3,
@@ -1242,7 +1244,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 11,
+                                "column": 12,
                                 "name": "text_46",
                                 "row": 38,
                                 "rowspan": 2,
@@ -1284,7 +1286,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 11,
+                                "column": 12,
                                 "name": "text_49",
                                 "row": 41,
                                 "rowspan": 3,
@@ -1326,7 +1328,7 @@
                             },
                             {
                                 "colspan": 3,
-                                "column": 11,
+                                "column": 12,
                                 "name": "text_52",
                                 "row": 44,
                                 "rowspan": 2,
@@ -1368,16 +1370,16 @@
                             },
                             {
                                 "colspan": 4,
-                                "column": 8,
+                                "column": 7,
                                 "name": "text_55",
-                                "row": 24,
-                                "rowspan": 3,
+                                "row": 23,
+                                "rowspan": 4,
                                 "widgetStyle": {
                                     "borderEdges": []
                                 }
                             },
                             {
-                                "colspan": 2,
+                                "colspan": 3,
                                 "column": 12,
                                 "name": "text_56",
                                 "row": 24,
@@ -1387,11 +1389,11 @@
                                 }
                             },
                             {
-                                "colspan": 4,
-                                "column": 14,
+                                "colspan": 3,
+                                "column": 15,
                                 "name": "text_57",
-                                "row": 24,
-                                "rowspan": 3,
+                                "row": 23,
+                                "rowspan": 4,
                                 "widgetStyle": {
                                     "borderEdges": []
                                 }
@@ -4428,7 +4430,7 @@
             "text_58": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Pardot Attrition",
+                    "text": "Pardot\nAttrition",
                     "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
@@ -4437,7 +4439,7 @@
             "text_57": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Marketing Cloud Attrition",
+                    "text": "Marketing\nCloud\nAttrition",
                     "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
@@ -4476,7 +4478,7 @@
             "text_56": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Core Attrition",
+                    "text": "Core\nAttrition",
                     "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
@@ -4485,7 +4487,7 @@
             "text_55": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Attrition (Core, MC, Pardot)",
+                    "text": "Attrition\n(Core,\nMC, Pardot)",
                     "textAlignment": "right",
                     "textColor": "rgb(51, 87, 121)"
                 },
