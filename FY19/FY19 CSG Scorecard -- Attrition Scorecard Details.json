@@ -3647,7 +3647,7 @@
             "text_3": {
                 "parameters": {
                     "fontSize": 20,
-                    "text": "Attrition (Core, MC, Pardot) Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Scorecard\"), \"Error\").asString()}}",
+                    "text": "Attrition (Core, MC, Pardot) Scorecard Details for the {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Region\"), \"--\").asString()}} {{coalesce(cell(Annual_Target_Metric_1.result, 0, \"Scorecard\"), \"--\").asString()}}",
                     "textAlignment": "left",
                     "textColor": "rgb(22, 50, 92)"
                 },

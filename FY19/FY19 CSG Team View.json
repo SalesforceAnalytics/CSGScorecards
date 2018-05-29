@@ -26150,7 +26150,7 @@
             "text_1": {
                 "parameters": {
                     "fontSize": 20,
-                    "text": "Showing FY19 Metrics Team Matrix for {{coalesce(cell(BIG_TEST_9.result, 0, \"Region\"), \"Error\").asString()}} {{coalesce(cell(BIG_TEST_9.result, 0, \"Scorecard\"), \"Error\").asString()}}",
+                    "text": "Showing FY19 Metrics Team Matrix for {{coalesce(cell(BIG_TEST_9.result, 0, \"Region\"), \"--\").asString()}} {{coalesce(cell(BIG_TEST_9.result, 0, \"Scorecard\"), \"--\").asString()}}",
                     "textAlignment": "left",
                     "textColor": "rgb(22, 50, 92)"
                 },
