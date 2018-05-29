@@ -198,8 +198,8 @@
                     "type": "Numeric",
                     "label": "Annual Target (Metric)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Annual_Target_Pct",
@@ -207,8 +207,8 @@
                     "type": "Numeric",
                     "label": "Annual Target (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Annual_Target_Num",
@@ -216,8 +216,8 @@
                     "type": "Numeric",
                     "label": "Annual Target (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Target_Copy_Metric",
@@ -225,8 +225,8 @@
                     "type": "Numeric",
                     "label": "Target (Copy) (Metric)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Baseline_Metric",
@@ -234,8 +234,8 @@
                     "type": "Numeric",
                     "label": "Baseline (Metric)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Baseline_Pct",
@@ -243,8 +243,8 @@
                     "type": "Numeric",
                     "label": "Baseline (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Baseline_Num",
@@ -252,8 +252,8 @@
                     "type": "Numeric",
                     "label": "Baseline (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Score_Metric",
@@ -261,8 +261,8 @@
                     "type": "Numeric",
                     "label": "Score (Metric)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Score_Pct",
@@ -270,8 +270,8 @@
                     "type": "Numeric",
                     "label": "Score (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Score_Num",
@@ -279,8 +279,8 @@
                     "type": "Numeric",
                     "label": "Score (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "YTD_Metric",
@@ -288,8 +288,8 @@
                     "type": "Numeric",
                     "label": "YTD (Metric)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "YTD_Pct",
@@ -297,8 +297,8 @@
                     "type": "Numeric",
                     "label": "YTD (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "YTD_Num",
@@ -306,8 +306,8 @@
                     "type": "Numeric",
                     "label": "YTD (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "YTD_Attainment_Pct",
@@ -315,8 +315,8 @@
                     "type": "Numeric",
                     "label": "YTD Attainment (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Prior_Month_Metric",
@@ -324,8 +324,8 @@
                     "type": "Numeric",
                     "label": "Prior Month (Metric)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Prior_Month_Pct",
@@ -333,8 +333,8 @@
                     "type": "Numeric",
                     "label": "Prior Month (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Prior_Month_Num",
@@ -342,8 +342,8 @@
                     "type": "Numeric",
                     "label": "Prior Month (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Prior_Month_Attainment_Pct",
@@ -351,8 +351,8 @@
                     "type": "Numeric",
                     "label": "Prior Month Attainment (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Change_in_YTD_MoM_Metric",
@@ -360,8 +360,8 @@
                     "type": "Numeric",
                     "label": "Change in YTD (MoM) (Metric)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Change_in_YTD_MoM_Pct",
@@ -369,8 +369,8 @@
                     "type": "Numeric",
                     "label": "Change in YTD (MoM) (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Change_in_YTD_MoM_Num",
@@ -378,8 +378,8 @@
                     "type": "Numeric",
                     "label": "Change in YTD (MoM) (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Change_in_Attainment_MoM_Pct",
@@ -387,8 +387,8 @@
                     "type": "Numeric",
                     "label": "Change in Attainment (MoM) (Pct)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "User",
@@ -402,7 +402,7 @@
                     "type": "Numeric",
                     "label": "On Track",
                     "precision": 18,
-                    "defaultValue": "0",
+                    "defaultValue": 0,
                     "scale": 1
                 },
                 {
@@ -477,8 +477,8 @@
                     "type": "Numeric",
                     "label": "Grain Sort Order (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "Grain_Segment_Sort_Order_Num",
@@ -486,8 +486,8 @@
                     "type": "Numeric",
                     "label": "Grain Segment Sort Order (Num)",
                     "precision": 18,
-                    "defaultValue": "0",
-                    "scale": 4
+                    "defaultValue": 0,
+                    "scale": 5
                 },
                 {
                     "fullyQualifiedName": "CSG_WW",

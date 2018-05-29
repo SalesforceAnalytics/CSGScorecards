@@ -864,7 +864,7 @@
             "field": "Annual_Target_Metric",
             "format": {
                 "customFormat": "[\"$#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Annual_Target_Metric",
             "label": "Annual Target (Metric)",
@@ -875,7 +875,7 @@
             "field": "Annual_Target_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Annual_Target_Pct",
             "label": "Annual Target (Pct)",
@@ -886,7 +886,7 @@
             "field": "Annual_Target_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Annual_Target_Num",
             "label": "Annual Target (Num)",
@@ -897,7 +897,7 @@
             "field": "Target_Copy_Metric",
             "format": {
                 "customFormat": "[\"$#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Target_Copy_Metric",
             "label": "Target (Copy) (Metric)",
@@ -908,7 +908,7 @@
             "field": "Baseline_Metric",
             "format": {
                 "customFormat": "[\"$#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Baseline_Metric",
             "label": "Baseline (Metric)",
@@ -919,7 +919,7 @@
             "field": "Baseline_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Baseline_Pct",
             "label": "Baseline (Pct)",
@@ -930,7 +930,7 @@
             "field": "Baseline_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Baseline_Num",
             "label": "Baseline (Num)",
@@ -941,7 +941,7 @@
             "field": "Score_Metric",
             "format": {
                 "customFormat": "[\"$#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Score_Metric",
             "label": "Score (Metric)",
@@ -952,7 +952,7 @@
             "field": "Score_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Score_Pct",
             "label": "Score (Pct)",
@@ -963,7 +963,7 @@
             "field": "Score_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Score_Num",
             "label": "Score (Num)",
@@ -974,7 +974,7 @@
             "field": "YTD_Metric",
             "format": {
                 "customFormat": "[\"$#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "YTD_Metric",
             "label": "YTD (Metric)",
@@ -985,7 +985,7 @@
             "field": "YTD_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "YTD_Pct",
             "label": "YTD (Pct)",
@@ -996,7 +996,7 @@
             "field": "YTD_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "YTD_Num",
             "label": "YTD (Num)",
@@ -1007,7 +1007,7 @@
             "field": "YTD_Attainment_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "YTD_Attainment_Pct",
             "label": "YTD Attainment (Pct)",
@@ -1018,7 +1018,7 @@
             "field": "Prior_Month_Metric",
             "format": {
                 "customFormat": "[\"$#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Prior_Month_Metric",
             "label": "Prior Month (Metric)",
@@ -1029,7 +1029,7 @@
             "field": "Prior_Month_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Prior_Month_Pct",
             "label": "Prior Month (Pct)",
@@ -1040,7 +1040,7 @@
             "field": "Prior_Month_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Prior_Month_Num",
             "label": "Prior Month (Num)",
@@ -1051,7 +1051,7 @@
             "field": "Prior_Month_Attainment_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Prior_Month_Attainment_Pct",
             "label": "Prior Month Attainment (Pct)",
@@ -1062,7 +1062,7 @@
             "field": "Change_in_YTD_MoM_Metric",
             "format": {
                 "customFormat": "[\"$#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Change_in_YTD_MoM_Metric",
             "label": "Change in YTD (MoM) (Metric)",
@@ -1073,7 +1073,7 @@
             "field": "Change_in_YTD_MoM_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Change_in_YTD_MoM_Pct",
             "label": "Change in YTD (MoM) (Pct)",
@@ -1084,7 +1084,7 @@
             "field": "Change_in_YTD_MoM_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Change_in_YTD_MoM_Num",
             "label": "Change in YTD (MoM) (Num)",
@@ -1095,7 +1095,7 @@
             "field": "Change_in_Attainment_MoM_Pct",
             "format": {
                 "customFormat": "[\"#,##0%\",100]",
-                "decimalDigits": 4
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Change_in_Attainment_MoM_Pct",
             "label": "Change in Attainment (MoM) (Pct)",
@@ -1117,7 +1117,7 @@
             "field": "Grain_Sort_Order_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Grain_Sort_Order_Num",
             "label": "Grain Sort Order (Num)",
@@ -1128,7 +1128,7 @@
             "field": "Grain_Segment_Sort_Order_Num",
             "format": {
                 "customFormat": "[\"#,##0\",1]",
-                "decimalDigits": 2
+                "decimalDigits": 5
             },
             "fullyQualifiedName": "Grain_Segment_Sort_Order_Num",
             "label": "Grain Segment Sort Order (Num)",
