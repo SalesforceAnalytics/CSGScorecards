@@ -286,8 +286,8 @@
                                 }
                             },
                             {
-                                "colspan": 29,
-                                "column": 19,
+                                "colspan": 28,
+                                "column": 20,
                                 "name": "container_2",
                                 "row": 22,
                                 "rowspan": 33,
@@ -302,8 +302,8 @@
                                 }
                             },
                             {
-                                "colspan": 29,
-                                "column": 19,
+                                "colspan": 28,
+                                "column": 20,
                                 "name": "chart_1",
                                 "row": 27,
                                 "rowspan": 27,
@@ -328,7 +328,7 @@
                                 }
                             },
                             {
-                                "colspan": 9,
+                                "colspan": 6,
                                 "column": 2,
                                 "name": "text_9",
                                 "row": 27,
@@ -343,7 +343,7 @@
                             },
                             {
                                 "colspan": 2,
-                                "column": 11,
+                                "column": 10,
                                 "name": "text_10",
                                 "row": 27,
                                 "rowspan": 3,
@@ -358,21 +358,19 @@
                                 }
                             },
                             {
-                                "colspan": 18,
-                                "column": 19,
+                                "colspan": 17,
+                                "column": 20,
                                 "name": "text_14",
                                 "row": 23,
                                 "rowspan": 4,
                                 "widgetStyle": {
                                     "borderColor": "#FFFFFF",
-                                    "borderEdges": [
-                                        "left"
-                                    ],
+                                    "borderEdges": [],
                                     "borderWidth": 8
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 18,
                                 "column": 2,
                                 "name": "text_12",
                                 "row": 30,
@@ -388,7 +386,7 @@
                                 }
                             },
                             {
-                                "colspan": 8,
+                                "colspan": 7,
                                 "column": 1,
                                 "name": "text_15",
                                 "row": 23,
@@ -398,7 +396,7 @@
                                 }
                             },
                             {
-                                "colspan": 18,
+                                "colspan": 19,
                                 "column": 1,
                                 "name": "container_9",
                                 "row": 22,
@@ -416,7 +414,7 @@
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 18,
                                 "column": 2,
                                 "name": "text_16",
                                 "row": 34,
@@ -432,7 +430,7 @@
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 18,
                                 "column": 2,
                                 "name": "text_17",
                                 "row": 48,
@@ -448,7 +446,7 @@
                                 }
                             },
                             {
-                                "colspan": 17,
+                                "colspan": 18,
                                 "column": 2,
                                 "name": "text_18",
                                 "row": 54,
@@ -508,7 +506,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 2,
                                 "name": "text_29",
                                 "row": 31,
@@ -518,8 +516,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 4,
+                                "column": 8,
                                 "name": "text_19",
                                 "row": 31,
                                 "rowspan": 3,
@@ -528,7 +526,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 2,
                                 "name": "text_22",
                                 "row": 43,
@@ -538,8 +536,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 4,
+                                "column": 8,
                                 "name": "text_23",
                                 "row": 43,
                                 "rowspan": 3,
@@ -548,7 +546,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 2,
                                 "name": "text_13",
                                 "row": 46,
@@ -558,8 +556,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 4,
+                                "column": 8,
                                 "name": "text_25",
                                 "row": 46,
                                 "rowspan": 2,
@@ -568,7 +566,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 2,
                                 "name": "text_24",
                                 "row": 49,
@@ -578,7 +576,7 @@
                                 }
                             },
                             {
-                                "colspan": 7,
+                                "colspan": 6,
                                 "column": 2,
                                 "name": "text_26",
                                 "row": 52,
@@ -588,8 +586,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 4,
+                                "column": 8,
                                 "name": "text_27",
                                 "row": 52,
                                 "rowspan": 2,
@@ -598,8 +596,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 10,
+                                "colspan": 4,
+                                "column": 8,
                                 "name": "text_28",
                                 "row": 49,
                                 "rowspan": 3,
@@ -740,8 +738,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 13,
+                                "colspan": 4,
+                                "column": 12,
                                 "name": "text_5",
                                 "row": 31,
                                 "rowspan": 3,
@@ -754,8 +752,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 13,
+                                "colspan": 4,
+                                "column": 12,
                                 "name": "text_8",
                                 "row": 43,
                                 "rowspan": 3,
@@ -768,7 +766,7 @@
                                 }
                             },
                             {
-                                "colspan": 3,
+                                "colspan": 4,
                                 "column": 16,
                                 "name": "text_35",
                                 "row": 31,
@@ -783,7 +781,7 @@
                             },
                             {
                                 "colspan": 2,
-                                "column": 17,
+                                "column": 18,
                                 "name": "text_36",
                                 "row": 27,
                                 "rowspan": 3,
@@ -798,7 +796,7 @@
                                 }
                             },
                             {
-                                "colspan": 3,
+                                "colspan": 4,
                                 "column": 16,
                                 "name": "text_37",
                                 "row": 43,
@@ -812,8 +810,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 13,
+                                "colspan": 4,
+                                "column": 12,
                                 "name": "text_38",
                                 "row": 46,
                                 "rowspan": 2,
@@ -826,7 +824,7 @@
                                 }
                             },
                             {
-                                "colspan": 3,
+                                "colspan": 4,
                                 "column": 16,
                                 "name": "text_39",
                                 "row": 46,
@@ -840,8 +838,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 13,
+                                "colspan": 4,
+                                "column": 12,
                                 "name": "text_41",
                                 "row": 49,
                                 "rowspan": 3,
@@ -854,7 +852,7 @@
                                 }
                             },
                             {
-                                "colspan": 3,
+                                "colspan": 4,
                                 "column": 16,
                                 "name": "text_42",
                                 "row": 49,
@@ -868,8 +866,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 13,
+                                "colspan": 4,
+                                "column": 12,
                                 "name": "text_43",
                                 "row": 52,
                                 "rowspan": 2,
@@ -882,7 +880,7 @@
                                 }
                             },
                             {
-                                "colspan": 3,
+                                "colspan": 4,
                                 "column": 16,
                                 "name": "text_44",
                                 "row": 52,
@@ -896,7 +894,7 @@
                                 }
                             },
                             {
-                                "colspan": 4,
+                                "colspan": 3,
                                 "column": 9,
                                 "name": "text_46",
                                 "row": 24,
@@ -906,8 +904,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 13,
+                                "colspan": 2,
+                                "column": 14,
                                 "name": "text_47",
                                 "row": 24,
                                 "rowspan": 3,
@@ -916,8 +914,8 @@
                                 }
                             },
                             {
-                                "colspan": 3,
-                                "column": 16,
+                                "colspan": 2,
+                                "column": 18,
                                 "name": "text_48",
                                 "row": 24,
                                 "rowspan": 3,
@@ -958,55 +956,39 @@
                                 }
                             },
                             {
-                                "row": 35,
+                                "colspan": 6,
                                 "column": 2,
-                                "rowspan": 3,
-                                "colspan": 7,
                                 "name": "text_33",
+                                "row": 35,
+                                "rowspan": 3,
                                 "widgetStyle": {
-                                    "borderEdges": [],
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
                                     "borderRadius": 0,
                                     "borderWidth": 1
                                 }
                             },
                             {
-                                "row": 39,
+                                "colspan": 6,
                                 "column": 2,
-                                "rowspan": 3,
-                                "colspan": 7,
                                 "name": "text_34",
+                                "row": 39,
+                                "rowspan": 3,
                                 "widgetStyle": {
-                                    "borderEdges": [],
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
                                     "borderRadius": 0,
                                     "borderWidth": 1
                                 }
                             },
                             {
-                                "row": 42,
+                                "colspan": 18,
                                 "column": 2,
-                                "rowspan": 1,
-                                "colspan": 17,
                                 "name": "text_45",
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#C5D3E0",
-                                    "borderEdges": [
-                                        "top"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
-                                "row": 38,
-                                "column": 2,
+                                "row": 42,
                                 "rowspan": 1,
-                                "colspan": 17,
-                                "name": "text_49",
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#C5D3E0",
@@ -1018,39 +1000,55 @@
                                 }
                             },
                             {
-                                "row": 35,
-                                "column": 10,
-                                "rowspan": 3,
-                                "colspan": 3,
+                                "colspan": 18,
+                                "column": 2,
+                                "name": "text_49",
+                                "row": 38,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#C5D3E0",
+                                    "borderEdges": [
+                                        "top"
+                                    ],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 4,
+                                "column": 8,
                                 "name": "text_50",
+                                "row": 35,
+                                "rowspan": 3,
                                 "widgetStyle": {
-                                    "borderEdges": [],
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
                                     "borderRadius": 0,
                                     "borderWidth": 1
                                 }
                             },
                             {
-                                "row": 35,
-                                "column": 13,
-                                "rowspan": 3,
-                                "colspan": 3,
+                                "colspan": 4,
+                                "column": 12,
                                 "name": "text_51",
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
                                 "row": 35,
-                                "column": 16,
                                 "rowspan": 3,
-                                "colspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 4,
+                                "column": 16,
                                 "name": "text_52",
+                                "row": 35,
+                                "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#E6ECF2",
@@ -1060,25 +1058,25 @@
                                 }
                             },
                             {
-                                "row": 39,
-                                "column": 10,
-                                "rowspan": 3,
-                                "colspan": 3,
+                                "colspan": 4,
+                                "column": 8,
                                 "name": "text_53",
+                                "row": 39,
+                                "rowspan": 3,
                                 "widgetStyle": {
-                                    "borderEdges": [],
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
                                     "borderRadius": 0,
                                     "borderWidth": 1
                                 }
                             },
                             {
-                                "row": 39,
-                                "column": 13,
-                                "rowspan": 3,
-                                "colspan": 3,
+                                "colspan": 4,
+                                "column": 12,
                                 "name": "text_54",
+                                "row": 39,
+                                "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#E6ECF2",
@@ -1088,11 +1086,11 @@
                                 }
                             },
                             {
-                                "row": 39,
+                                "colspan": 4,
                                 "column": 16,
-                                "rowspan": 3,
-                                "colspan": 3,
                                 "name": "text_55",
+                                "row": 39,
+                                "rowspan": 3,
                                 "widgetStyle": {
                                     "backgroundColor": "rgba(255, 255, 255, 0)",
                                     "borderColor": "#E6ECF2",
@@ -2297,6 +2295,24 @@
                 },
                 "type": "text"
             },
+            "text_54": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Score_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
+            "text_53": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Score_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
             "text_12": {
                 "parameters": {
                     "fontSize": 20,
@@ -2315,6 +2331,33 @@
                 },
                 "type": "text"
             },
+            "text_55": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Score_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
+            "text_50": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Baseline_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
+            "text_52": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Baseline_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
             "container_1": {
                 "parameters": {
                     "alignmentX": "left",
@@ -2322,6 +2365,15 @@
                     "fit": "original"
                 },
                 "type": "container"
+            },
+            "text_51": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Baseline_Metric\"), \"xxx\").asString()}}",
+                    "textAlignment": "right",
+                    "textColor": "#335779"
+                },
+                "type": "text"
             },
             "container_2": {
                 "parameters": {
@@ -2573,7 +2625,7 @@
             "text_47": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "TLP Growth",
+                    "text": "TLP\nGrowth",
                     "textAlignment": "right",
                     "textColor": "#091A3E"
                 },
@@ -2582,7 +2634,7 @@
             "text_46": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "Adoption Growth",
+                    "text": "Adoption\nGrowth",
                     "textAlignment": "right",
                     "textColor": "#091A3E"
                 },
@@ -2600,10 +2652,19 @@
                 },
                 "type": "listselector"
             },
+            "text_49": {
+                "parameters": {
+                    "fontSize": 20,
+                    "text": "",
+                    "textAlignment": "center",
+                    "textColor": "#091A3E"
+                },
+                "type": "text"
+            },
             "text_48": {
                 "parameters": {
                     "fontSize": 10,
-                    "text": "LU Growth",
+                    "text": "LU\nGrowth",
                     "textAlignment": "right",
                     "textColor": "#091A3E"
                 },
@@ -2624,6 +2685,15 @@
                     "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_YTD_Attainment_Pct\"), \"xxx\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "#335779"
+                },
+                "type": "text"
+            },
+            "text_45": {
+                "parameters": {
+                    "fontSize": 20,
+                    "text": "",
+                    "textAlignment": "center",
+                    "textColor": "#091A3E"
                 },
                 "type": "text"
             },
@@ -2720,6 +2790,24 @@
                 "parameters": {
                     "fontSize": 12,
                     "text": "Not Applicable",
+                    "textAlignment": "left",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
+            "text_34": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "Actual Score",
+                    "textAlignment": "left",
+                    "textColor": "#335779"
+                },
+                "type": "text"
+            },
+            "text_33": {
+                "parameters": {
+                    "fontSize": 16,
+                    "text": "Baseline",
                     "textAlignment": "left",
                     "textColor": "#335779"
                 },
@@ -2942,96 +3030,6 @@
                     "title": ""
                 },
                 "type": "listselector"
-            },
-            "text_33": {
-                "type": "text",
-                "parameters": {
-                    "text": "Baseline",
-                    "textAlignment": "left",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
-            },
-            "text_34": {
-                "type": "text",
-                "parameters": {
-                    "text": "Actual Score",
-                    "textAlignment": "left",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
-            },
-            "text_45": {
-                "type": "text",
-                "parameters": {
-                    "text": "",
-                    "textAlignment": "center",
-                    "textColor": "#091A3E",
-                    "fontSize": 20
-                }
-            },
-            "text_49": {
-                "type": "text",
-                "parameters": {
-                    "text": "",
-                    "textAlignment": "center",
-                    "textColor": "#091A3E",
-                    "fontSize": 20
-                }
-            },
-            "text_50": {
-                "type": "text",
-                "parameters": {
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Baseline_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
-            },
-            "text_51": {
-                "type": "text",
-                "parameters": {
-                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Baseline_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
-            },
-            "text_52": {
-                "type": "text",
-                "parameters": {
-                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Baseline_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
-            },
-            "text_53": {
-                "type": "text",
-                "parameters": {
-                    "text": "{{coalesce(cell(Annual_Target_Metric_1.result, 0, \"sum_Score_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
-            },
-            "text_54": {
-                "type": "text",
-                "parameters": {
-                    "text": "{{coalesce(cell(Annual_Target_Metric_TLP.result, 0, \"sum_Score_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
-            },
-            "text_55": {
-                "type": "text",
-                "parameters": {
-                    "text": "{{coalesce(cell(Annual_Target_Metric_LU.result, 0, \"sum_Score_Metric\"), \"xxx\").asString()}}",
-                    "textAlignment": "right",
-                    "textColor": "#335779",
-                    "fontSize": 16
-                }
             }
         }
     },
