@@ -12291,13 +12291,12 @@
                 "query": {
                     "measures": [
                         [
-                            "count",
-                            "*"
+                            "min",
+                            "Num_Num"
                         ]
                     ],
                     "groups": [
-                        "Metric",
-                        "Num"
+                        "Metric"
                     ],
                     "filters": [
                         [
@@ -12322,10 +12321,23 @@
                             "in"
                         ],
                         [
-                            "Region",
-                            [
-                                "{{coalesce(cell(BIG_TEST_9.result, 0, \"Region\"), \"Error\").asString()}}"
-                            ],
+                            "Geo",
+                            "{{column(step_listselector_geo_FFF.selection,[\"Geo\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Region",
+                            "{{column(step_listselector_region_FFF.selection,[\"Console_Region\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Subregion",
+                            "{{column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]).asObject()}}",
+                            "in"
+                        ],
+                        [
+                            "Console_Portfolio",
+                            "{{column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]).asObject()}}",
                             "in"
                         ],
                         [
@@ -12336,14 +12348,14 @@
                     ],
                     "order": [
                         [
-                            "Num",
+                            "min_Num_Num",
                             {
                                 "ascending": true
                             }
                         ]
                     ]
                 },
-                "receiveFacet": true,
+                "receiveFacet": false,
                 "selectMode": "singlerequired",
                 "start": [
                     [

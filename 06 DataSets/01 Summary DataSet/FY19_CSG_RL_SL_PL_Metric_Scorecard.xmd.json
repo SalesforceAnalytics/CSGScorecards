@@ -1134,6 +1134,17 @@
             "label": "Grain Segment Sort Order (Num)",
             "origin": "Grain_Segment_Sort_Order_Num",
             "showInExplorer": true
+        },
+        {
+            "field": "Num_Num",
+            "format": {
+                "customFormat": "[\"#,##0\",1]",
+                "decimalDigits": 5
+            },
+            "fullyQualifiedName": "Num_Num",
+            "label": "# (Num)",
+            "origin": "Num_Num",
+            "showInExplorer": true
         }
     ],
     "organizations": [],

@@ -73,6 +73,15 @@
                     "label": "#"
                 },
                 {
+                    "fullyQualifiedName": "Num_Num",
+                    "name": "Num_Num",
+                    "type": "Numeric",
+                    "label": "# (Num)",
+                    "precision": 18,
+                    "defaultValue": 0,
+                    "scale": 5
+                },
+                {
                     "fullyQualifiedName": "Metric",
                     "name": "Metric",
                     "type": "Text",
