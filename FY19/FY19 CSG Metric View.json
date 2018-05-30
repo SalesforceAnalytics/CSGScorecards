@@ -8381,34 +8381,17 @@
                                 }
                             },
                             {
-                                "colspan": 5,
-                                "column": 43,
-                                "name": "container_33",
-                                "row": 36,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "rgba(255, 255, 255, 0)",
-                                    "borderEdges": [
-                                        "top",
-                                        "bottom"
-                                    ],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
-                                "colspan": 5,
-                                "column": 43,
+                                "colspan": 1,
+                                "column": 47,
                                 "name": "pillbox_3",
-                                "row": 36,
-                                "rowspan": 3,
+                                "row": 224,
+                                "rowspan": 2,
                                 "widgetStyle": {
-                                    "backgroundColor": "#FFFFFF",
-                                    "borderColor": "#E6ECF2",
+                                    "backgroundColor": "rgb(242, 246, 250)",
+                                    "borderColor": "rgb(242, 246, 250)",
                                     "borderEdges": [],
                                     "borderRadius": 0,
-                                    "borderWidth": 1
+                                    "borderWidth": 8
                                 }
                             },
                             {
@@ -8425,20 +8408,6 @@
                                     ],
                                     "borderRadius": 0,
                                     "borderWidth": 2
-                                }
-                            },
-                            {
-                                "colspan": 7,
-                                "column": 36,
-                                "name": "text_29",
-                                "row": 36,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
                                 }
                             },
                             {
@@ -10171,7 +10140,7 @@
                 "style": {
                     "alignmentX": "center",
                     "alignmentY": "top",
-                    "backgroundColor": "#F2F6FA",
+                    "backgroundColor": "rgb(242, 246, 250)",
                     "cellSpacingX": 0,
                     "cellSpacingY": 0,
                     "fit": "original",
@@ -10631,7 +10600,7 @@
                 "selectMode": "singlerequired",
                 "start": {
                     "display": [
-                        "No"
+                        "Yes"
                     ]
                 },
                 "type": "staticflex",
@@ -16746,14 +16715,6 @@
                 },
                 "type": "container"
             },
-            "container_33": {
-                "parameters": {
-                    "alignmentX": "left",
-                    "alignmentY": "top",
-                    "fit": "original"
-                },
-                "type": "container"
-            },
             "container_32": {
                 "parameters": {
                     "alignmentX": "left",
@@ -17248,15 +17209,6 @@
                     "text": "{{coalesce(cell(BIG_TEST_9_II.result, 0, \"number_YTD_A_MoM_Formatted\"), \"--\").asString()}}",
                     "textAlignment": "right",
                     "textColor": "{{coalesce(cell(BIG_TEST_9_II.result, 0, \"Color\"), \"#FFFFFF\").asString()}}"
-                },
-                "type": "text"
-            },
-            "text_29": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "Show Alt Hierarchy",
-                    "textAlignment": "right",
-                    "textColor": "rgb(22, 50, 92)"
                 },
                 "type": "text"
             },

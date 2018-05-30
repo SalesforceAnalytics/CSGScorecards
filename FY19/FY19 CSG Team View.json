@@ -11228,7 +11228,7 @@
                             },
                             {
                                 "colspan": 18,
-                                "column": 20,
+                                "column": 30,
                                 "name": "pillbox_1",
                                 "row": 25,
                                 "rowspan": 3,
@@ -12671,14 +12671,17 @@
                                 }
                             },
                             {
-                                "colspan": 5,
-                                "column": 43,
+                                "colspan": 1,
+                                "column": 47,
                                 "name": "pillbox_2",
-                                "row": 25,
-                                "rowspan": 3,
+                                "row": 162,
+                                "rowspan": 2,
                                 "widgetStyle": {
-                                    "backgroundColor": "#FFFFFF",
-                                    "borderEdges": []
+                                    "backgroundColor": "rgb(242, 246, 250)",
+                                    "borderColor": "rgb(242, 246, 250)",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 8
                                 }
                             },
                             {
@@ -13890,20 +13893,6 @@
                                 }
                             },
                             {
-                                "colspan": 5,
-                                "column": 38,
-                                "name": "text_9",
-                                "row": 25,
-                                "rowspan": 3,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgba(255, 255, 255, 0)",
-                                    "borderColor": "#E6ECF2",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 1
-                                }
-                            },
-                            {
                                 "colspan": 47,
                                 "column": 1,
                                 "name": "container_1",
@@ -13922,7 +13911,7 @@
                             },
                             {
                                 "colspan": 4,
-                                "column": 16,
+                                "column": 26,
                                 "name": "text_14",
                                 "row": 25,
                                 "rowspan": 3,
@@ -26061,15 +26050,6 @@
                 "parameters": {
                     "fontSize": 12,
                     "text": "Sort by",
-                    "textAlignment": "right",
-                    "textColor": "rgb(22, 50, 92)"
-                },
-                "type": "text"
-            },
-            "text_9": {
-                "parameters": {
-                    "fontSize": 12,
-                    "text": "Show Alt Hierarchy",
                     "textAlignment": "right",
                     "textColor": "rgb(22, 50, 92)"
                 },
