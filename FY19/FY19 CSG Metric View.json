@@ -8381,20 +8381,6 @@
                                 }
                             },
                             {
-                                "colspan": 1,
-                                "column": 47,
-                                "name": "pillbox_3",
-                                "row": 224,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgb(242, 246, 250)",
-                                    "borderColor": "rgb(242, 246, 250)",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
                                 "colspan": 47,
                                 "column": 1,
                                 "name": "text_26",
@@ -10131,6 +10117,20 @@
                                     "borderRadius": 0,
                                     "borderWidth": 1
                                 }
+                            },
+                            {
+                                "colspan": 1,
+                                "column": 48,
+                                "name": "table_2",
+                                "row": 193,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
                             }
                         ]
                     }
@@ -10362,6 +10362,58 @@
                     "options": {}
                 }
             },
+            "Step_Trend_023": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "avg",
+                            "YTD_Attainment_Pct"
+                        ]
+                    ],
+                    "groups": [
+                        "Month_Number"
+                    ],
+                    "filters": [
+                        [
+                            "Metric",
+                            [
+                                "{{coalesce(cell(BIG_TEST_9_II.result, 22, \"Metric\"), \"Error\").asString()}}"
+                            ],
+                            "in"
+                        ],
+                        [
+                            "Region",
+                            [
+                                "{{coalesce(cell(BIG_TEST_9_II.result, 22, \"Region\"), \"Error\").asString()}}"
+                            ],
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": false,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "visualizationType": "line",
+                        "theme": "wave"
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
             "BIG_TEST_9_II": {
                 "broadcastFacet": false,
                 "datasets": [
@@ -10487,58 +10539,6 @@
                 "type": "aggregateflex",
                 "useGlobal": false,
                 "visualizationParameters": {
-                    "options": {}
-                }
-            },
-            "Step_Trend_023": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "avg",
-                            "YTD_Attainment_Pct"
-                        ]
-                    ],
-                    "groups": [
-                        "Month_Number"
-                    ],
-                    "filters": [
-                        [
-                            "Metric",
-                            [
-                                "{{coalesce(cell(BIG_TEST_9_II.result, 22, \"Metric\"), \"Error\").asString()}}"
-                            ],
-                            "in"
-                        ],
-                        [
-                            "Region",
-                            [
-                                "{{coalesce(cell(BIG_TEST_9_II.result, 22, \"Region\"), \"Error\").asString()}}"
-                            ],
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": false,
-                "visualizationParameters": {
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "visualizationType": "line",
-                        "theme": "wave"
-                    },
-                    "type": "chart",
                     "options": {}
                 }
             },
@@ -10737,6 +10737,58 @@
                     "options": {}
                 }
             },
+            "Step_Trend_021": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "avg",
+                            "YTD_Attainment_Pct"
+                        ]
+                    ],
+                    "groups": [
+                        "Month_Number"
+                    ],
+                    "filters": [
+                        [
+                            "Metric",
+                            [
+                                "{{coalesce(cell(BIG_TEST_9_II.result, 20, \"Metric\"), \"Error\").asString()}}"
+                            ],
+                            "in"
+                        ],
+                        [
+                            "Region",
+                            [
+                                "{{coalesce(cell(BIG_TEST_9_II.result, 20, \"Region\"), \"Error\").asString()}}"
+                            ],
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": false,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "visualizationType": "line",
+                        "theme": "wave"
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            },
             "Step_Static_Sort_Order_FFF": {
                 "broadcastFacet": false,
                 "isGlobal": false,
@@ -10790,58 +10842,6 @@
                 "strings": [],
                 "groups": []
             },
-            "Step_Trend_021": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "avg",
-                            "YTD_Attainment_Pct"
-                        ]
-                    ],
-                    "groups": [
-                        "Month_Number"
-                    ],
-                    "filters": [
-                        [
-                            "Metric",
-                            [
-                                "{{coalesce(cell(BIG_TEST_9_II.result, 20, \"Metric\"), \"Error\").asString()}}"
-                            ],
-                            "in"
-                        ],
-                        [
-                            "Region",
-                            [
-                                "{{coalesce(cell(BIG_TEST_9_II.result, 20, \"Region\"), \"Error\").asString()}}"
-                            ],
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": false,
-                "visualizationParameters": {
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "visualizationType": "line",
-                        "theme": "wave"
-                    },
-                    "type": "chart",
-                    "options": {}
-                }
-            },
             "Step_Trend_022": {
                 "broadcastFacet": false,
                 "datasets": [
@@ -10875,58 +10875,6 @@
                             "Region",
                             [
                                 "{{coalesce(cell(BIG_TEST_9_II.result, 21, \"Region\"), \"Error\").asString()}}"
-                            ],
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "single",
-                "type": "aggregateflex",
-                "useGlobal": false,
-                "visualizationParameters": {
-                    "parameters": {
-                        "autoFitMode": "none",
-                        "visualizationType": "line",
-                        "theme": "wave"
-                    },
-                    "type": "chart",
-                    "options": {}
-                }
-            },
-            "Step_Trend_000": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "avg",
-                            "YTD_Attainment_Pct"
-                        ]
-                    ],
-                    "groups": [
-                        "Month_Number"
-                    ],
-                    "filters": [
-                        [
-                            "Metric",
-                            [
-                                "{{coalesce(cell(BIG_TEST_9.result, 0, \"Metric\"), \"Error\").asString()}}"
-                            ],
-                            "in"
-                        ],
-                        [
-                            "Region",
-                            [
-                                "{{coalesce(cell(BIG_TEST_9.result, 0, \"Region\"), \"Error\").asString()}}"
                             ],
                             "in"
                         ]
@@ -10987,6 +10935,58 @@
                 "type": "aggregateflex",
                 "useGlobal": true,
                 "visualizationParameters": {
+                    "options": {}
+                }
+            },
+            "Step_Trend_000": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "avg",
+                            "YTD_Attainment_Pct"
+                        ]
+                    ],
+                    "groups": [
+                        "Month_Number"
+                    ],
+                    "filters": [
+                        [
+                            "Metric",
+                            [
+                                "{{coalesce(cell(BIG_TEST_9.result, 0, \"Metric\"), \"Error\").asString()}}"
+                            ],
+                            "in"
+                        ],
+                        [
+                            "Region",
+                            [
+                                "{{coalesce(cell(BIG_TEST_9.result, 0, \"Region\"), \"Error\").asString()}}"
+                            ],
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": false,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "none",
+                        "visualizationType": "line",
+                        "theme": "wave"
+                    },
+                    "type": "chart",
                     "options": {}
                 }
             },
@@ -11265,43 +11265,6 @@
                     "options": {}
                 }
             },
-            "Selected_Colorization_FFF": {
-                "broadcastFacet": false,
-                "datasets": [
-                    {
-                        "id": "0Fb0t0000008RpmCAE",
-                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
-                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
-                    }
-                ],
-                "isGlobal": false,
-                "query": {
-                    "measures": [
-                        [
-                            "count",
-                            "*"
-                        ]
-                    ],
-                    "groups": [
-                        "Colorization"
-                    ],
-                    "filters": [
-                        [
-                            "Is_Current_Month",
-                            "{{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"Error\").asObject()}}",
-                            "in"
-                        ]
-                    ]
-                },
-                "receiveFacet": false,
-                "selectMode": "multi",
-                "type": "aggregateflex",
-                "useGlobal": false,
-                "visualizationParameters": {
-                    "options": {}
-                }
-            },
             "Step_Trend_016": {
                 "broadcastFacet": false,
                 "datasets": [
@@ -11351,6 +11314,43 @@
                         "theme": "wave"
                     },
                     "type": "chart",
+                    "options": {}
+                }
+            },
+            "Selected_Colorization_FFF": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Colorization"
+                    ],
+                    "filters": [
+                        [
+                            "Is_Current_Month",
+                            "{{coalesce(column(Is_Current_Month_1.selection,[\"Is_Current_Month\"]), \"Error\").asObject()}}",
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "multi",
+                "type": "aggregateflex",
+                "useGlobal": false,
+                "visualizationParameters": {
                     "options": {}
                 }
             },
@@ -16699,14 +16699,6 @@
                 },
                 "type": "pillbox"
             },
-            "pillbox_3": {
-                "parameters": {
-                    "compact": false,
-                    "exploreLink": false,
-                    "step": "Step_Static_Show_Alt_FFF"
-                },
-                "type": "pillbox"
-            },
             "container_34": {
                 "parameters": {
                     "alignmentX": "left",
@@ -19953,6 +19945,38 @@
                     "numberOfLines": 1,
                     "pivoted": true,
                     "step": "step_listselector_ww_FFF",
+                    "totals": false,
+                    "verticalPadding": 4,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
+            },
+            "table_2": {
+                "parameters": {
+                    "borderColor": "#F3F2F2",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#F3F2F2",
+                        "fontColor": "#F3F2F2",
+                        "fontSize": 12
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "fixedColumnWidth": 1,
+                    "header": {
+                        "backgroundColor": "#f4f6f9",
+                        "fontColor": "#F3F2F2",
+                        "fontSize": 12
+                    },
+                    "innerMajorBorderColor": "#F3F2F2",
+                    "innerMinorBorderColor": "#F3F2F2",
+                    "mode": "fixed",
+                    "numberOfLines": 1,
+                    "pivoted": true,
+                    "step": "Step_Static_Show_Alt_FFF",
                     "totals": false,
                     "verticalPadding": 4,
                     "evenRowColor": null,

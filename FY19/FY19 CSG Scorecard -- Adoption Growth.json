@@ -1134,12 +1134,12 @@
                 "values": [
                     {
                         "display": "Attainment",
-                        "value": "YTD_Attainment_Pct",
+                        "value": "sum(YTD_Attainment_Pct)",
                         "axis": "YTD_Attainment_Pct"
                     },
                     {
                         "display": "Actuals",
-                        "value": "YTD_Metric",
+                        "value": "round(sum(YTD_Metric),5)",
                         "axis": "YTD_Pct"
                     }
                 ],
@@ -1784,7 +1784,7 @@
                 "groups": [],
                 "label": "Year_Month_1",
                 "numbers": [],
-                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' in [\"TLP Growth\",\"LU Growth\",\"Adoption Growth\"];\nq = group q by ('Year_Month','Metric');\nq = foreach q generate 'Year_Month' as 'Year_Month','Metric', sum('{{column(Static_Grouping_5.selection,[\"value\"]).asObject()}}') as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
+                "query": "q = load \"FY19_CSG_RL_SL_PL_Metric_Scorecard\";\nq = filter q by ('Region' in {{coalesce(column(step_listselector_portfolio_FFF.selection,[\"Console_Portfolio\"]), column(step_listselector_subregion_FFF.selection,[\"Console_Subregion\"]), column(step_listselector_region_FFF.selection,[\"Console_Region\"]), column(step_listselector_geo_FFF.selection,[\"Geo\"]), column(step_listselector_ww_FFF.selection,[\"Geo\"]), \"[]\").asString()}});\nq = filter q by 'Metric' in [\"TLP Growth\",\"LU Growth\",\"Adoption Growth\"];\nq = group q by ('Year_Month','Metric');\nq = foreach q generate 'Year_Month' as 'Year_Month','Metric', {{column(Static_Grouping_5.selection,[\"value\"]).asObject()}} as '{{column(Static_Grouping_5.selection,[\"axis\"]).asObject()}}';\nq = order q by 'Year_Month' asc;\nq = limit q 20;",
                 "receiveFacet": false,
                 "selectMode": "single",
                 "strings": [],

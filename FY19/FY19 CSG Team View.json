@@ -12671,20 +12671,6 @@
                                 }
                             },
                             {
-                                "colspan": 1,
-                                "column": 47,
-                                "name": "pillbox_2",
-                                "row": 162,
-                                "rowspan": 2,
-                                "widgetStyle": {
-                                    "backgroundColor": "rgb(242, 246, 250)",
-                                    "borderColor": "rgb(242, 246, 250)",
-                                    "borderEdges": [],
-                                    "borderRadius": 0,
-                                    "borderWidth": 8
-                                }
-                            },
-                            {
                                 "colspan": 17,
                                 "column": 1,
                                 "name": "container_14",
@@ -16925,6 +16911,20 @@
                                     "borderRadius": 0,
                                     "borderWidth": 1
                                 }
+                            },
+                            {
+                                "colspan": 1,
+                                "column": 48,
+                                "name": "table_2",
+                                "row": 143,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "rgba(255, 255, 255, 0)",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [],
+                                    "borderRadius": 0,
+                                    "borderWidth": 1
+                                }
                             }
                         ]
                     }
@@ -19205,6 +19205,52 @@
                 "selectMode": "single",
                 "type": "aggregateflex",
                 "useGlobal": false,
+                "visualizationParameters": {
+                    "options": {}
+                }
+            },
+            "Geo_CSG_WW_1": {
+                "broadcastFacet": false,
+                "datasets": [
+                    {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "Geo",
+                        "CSG_WW"
+                    ],
+                    "filters": [
+                        [
+                            "Geo",
+                            [
+                                "WW"
+                            ],
+                            "in"
+                        ]
+                    ]
+                },
+                "receiveFacet": false,
+                "selectMode": "single",
+                "start": [
+                    [
+                        "WW",
+                        "WW"
+                    ]
+                ],
+                "type": "aggregateflex",
+                "useGlobal": true,
                 "visualizationParameters": {
                     "options": {}
                 }
@@ -31126,15 +31172,6 @@
                 },
                 "type": "text"
             },
-            "pillbox_2": {
-                "parameters": {
-                    "compact": false,
-                    "displayTemplate": "[display]",
-                    "exploreLink": false,
-                    "step": "Step_Static_Show_Alt_FFF"
-                },
-                "type": "pillbox"
-            },
             "text_YTD_A_F_020": {
                 "parameters": {
                     "fontSize": 12,
@@ -32854,6 +32891,38 @@
                     "fit": "original"
                 },
                 "type": "container"
+            },
+            "table_2": {
+                "parameters": {
+                    "borderColor": "rgb(244, 246, 249)",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "rgb(244, 246, 249)",
+                        "fontColor": "#16325c",
+                        "fontSize": 12
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "fixedColumnWidth": 1,
+                    "header": {
+                        "backgroundColor": "rgb(244, 246, 249)",
+                        "fontColor": "rgb(244, 246, 249)",
+                        "fontSize": 12
+                    },
+                    "innerMajorBorderColor": "rgb(244, 246, 249)",
+                    "innerMinorBorderColor": "rgb(244, 246, 249)",
+                    "mode": "fixed",
+                    "numberOfLines": 1,
+                    "pivoted": true,
+                    "step": "Step_Static_Show_Alt_FFF",
+                    "totals": false,
+                    "verticalPadding": 4,
+                    "evenRowColor": null,
+                    "oddRowColor": null
+                },
+                "type": "table"
             },
             "container_188": {
                 "parameters": {
