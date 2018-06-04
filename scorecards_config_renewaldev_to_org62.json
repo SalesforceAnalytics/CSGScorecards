@@ -1,0 +1,84 @@
+{
+  "SRC_DIR": "/Users/kpolakala/csg/CSGScorecards",
+  "DST_DIR": "/Users/kpolakala/csg/CSGScorecards/tmp",
+  "dashboards": [
+    "FY19/FY19 CSG Metric View.json",
+"FY19/FY19 CSG Scorecard -- Adoption Growth.json",
+"FY19/FY19 CSG Scorecard -- Attrition Scorecard Details.json",
+"FY19/FY19 CSG Scorecard -- Cloud Service Bookings Details.json",
+"FY19/FY19 CSG Scorecard -- Qualified Opps Details.json",
+"FY19/FY19 CSG Scorecard -- Services Margin.json",
+"FY19/FY19 CSG Scorecard View.json",
+"FY19/FY19 CSG Team View.json"
+  ],
+  "db_url_map": {
+    "https://org62--renewaldev.cs77.my.salesforce.com" : "https://org62.my.salesforce.com"
+  },
+  "db_image_map": {
+    "Scorecard_Banner_Detailspng": "Scorecard_Banner_Detailspng3",
+    "Scorecard_Banner_Summarypng": "Scorecard_Banner_Summarypng2",
+    "underConstructionPagepng": "underConstructionPagepng"
+  },
+  "db_links_map": {
+    "CSG_Scorecard_View_POC_UI2_Test_30_v10": "CSG_Scorecard_View_POC_UI2_Test_30_v104",
+    "CSG_Metric_View_POC_UI2_Test_30_v10": "CSG_Metric_View_POC_UI2_Test_30_v104"
+  },
+  "db_datasets_map": {
+    "FY19_CSG_RL_SL_PL_Metric_Scorecard": {
+      "from": {
+                        "id": "0Fb0t0000008RpmCAE",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RpmCAE"
+      },
+      "to": {
+                        "id": "0Fb0M000000TigpSAC",
+                        "name": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "label": "FY19_CSG_RL_SL_PL_Metric_Scorecard",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0M000000TigpSAC"
+      }
+    },
+    "Qualified_Oppty_Detail_Data_File_RL": {
+      "from": {
+                        "id": "0Fb0t0000008RrNCAU",
+                        "name": "FY19_Qualified_Oppty_Detail_Data_File",
+                        "label": "FY19_Qualified_Oppty_Detail_Data_File",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RrNCAU"
+      },
+      "to": {
+                        "id": "0Fb0M000000TigqSAC",
+                        "name": "FY19_Qualified_Oppty_Detail_Data_File",
+                        "label": "FY19_Qualified_Oppty_Detail_Data_File",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0M000000TigqSAC"
+      }
+    },
+    "FY19_Attrition_Detail_Data_File": {
+      "from": {
+                        "id": "0Fb0t0000008RsfCAE",
+                        "name": "FY19_Attrition_Detail_Data_File",
+                        "label": "FY19_Attrition_Detail_Data_File",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RsfCAE"
+      },
+      "to": {
+                        "id": "0Fb0M000000TigrSAC",
+                        "name": "FY19_Attrition_Detail_Data_File",
+                        "label": "FY19_Attrition_Detail_Data_File",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0M000000TigrSAC"
+      }
+    },
+    "FY19_Cloud_Services_Bookings_Detail_Data_File": {
+      "from": {
+            "id": "0Fb0t0000008RsgCAE",
+            "label": "FY19_Cloud_Services_Bookings_Detail_Data_File",
+            "name": "FY19_Cloud_Services_Bookings_Detail_Data_File",
+            "url": "/services/data/v43.0/wave/datasets/0Fb0t0000008RsgCAE"
+      },
+      "to": {
+                        "id": "0Fb0M000000TigoSAC",
+                        "name": "FY19_Cloud_Services_Bookings_Detail_Data_File",
+                        "label": "FY19_Cloud_Services_Bookings_Detail_Data_File",
+                        "url": "/services/data/v43.0/wave/datasets/0Fb0M000000TigoSAC"
+      }
+    }
+  }
+}
