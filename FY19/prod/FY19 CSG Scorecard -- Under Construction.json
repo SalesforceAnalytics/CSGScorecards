@@ -1,0 +1,204 @@
+{
+    "label": "FY19 CSG Scorecard -- Under Construction",
+    "mobileDisabled": false,
+    "description": "Create a home page for your app",
+    "state": {
+        "dataSourceLinks": [],
+        "filters": [],
+        "gridLayouts": [
+            {
+                "maxWidth": 1280,
+                "name": "Default",
+                "numColumns": 49,
+                "pages": [
+                    {
+                        "label": "Untitled",
+                        "name": "9de29ebe-ef43-4a80-bc16-4e290f8e73d2",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 6,
+                                "column": 22,
+                                "name": "link_1",
+                                "row": 30,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "backgroundColor": "#335779",
+                                    "borderColor": "#FFFFFF",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 6,
+                                "column": 0,
+                                "name": "link_2",
+                                "row": 0,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 4,
+                                "column": 7,
+                                "name": "link_3",
+                                "row": 0,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 1,
+                                "column": 6,
+                                "name": "text_1",
+                                "row": 0,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 7,
+                                "column": 12,
+                                "name": "text_2",
+                                "row": 0,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 1,
+                                "column": 11,
+                                "name": "text_3",
+                                "row": 0,
+                                "rowspan": 3,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            },
+                            {
+                                "colspan": 9,
+                                "column": 20,
+                                "name": "text_5",
+                                "row": 75,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "fine",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "center",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 0,
+                    "cellSpacingY": 0,
+                    "fit": "fitwidth",
+                    "image": {
+                        "name": "underConstructionPagepng",
+                        "namespace": ""
+                    }
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {},
+        "widgetStyle": {
+            "backgroundColor": "rgba(255, 255, 255, 0)",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "text_1": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": ">",
+                    "textAlignment": "center",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "text"
+            },
+            "link_3": {
+                "parameters": {
+                    "destinationLink": {
+                        "name": "CSG_Scorecard_View_POC_UI2_Test_30_v10"
+                    },
+                    "destinationType": "dashboard",
+                    "fontSize": 12,
+                    "includeState": false,
+                    "text": "CSG Scorecard",
+                    "textAlignment": "left",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "link"
+            },
+            "text_3": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": ">",
+                    "textAlignment": "center",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "text"
+            },
+            "text_2": {
+                "parameters": {
+                    "fontSize": 12,
+                    "text": "Under Construction Page",
+                    "textAlignment": "left",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "text"
+            },
+            "link_1": {
+                "parameters": {
+                    "destinationLink": {
+                        "name": "CSG_Scorecard_View_POC_UI2_Test_30_v10"
+                    },
+                    "destinationType": "dashboard",
+                    "fontSize": 16,
+                    "includeState": false,
+                    "text": "Go Back",
+                    "textAlignment": "center",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "link"
+            },
+            "text_5": {
+                "parameters": {
+                    "fontSize": 10,
+                    "text": "",
+                    "textAlignment": "center",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "text"
+            },
+            "link_2": {
+                "parameters": {
+                    "destinationType": "lens",
+                    "fontSize": 12,
+                    "includeState": false,
+                    "text": "CSG Executive Insights",
+                    "textAlignment": "left",
+                    "textColor": "#FFFFFF"
+                },
+                "type": "link"
+            }
+        }
+    },
+    "datasets": []
+}
+
